@@ -2,3 +2,10 @@
 
 <p>techs: {{techs| json}}</p>
 <p>civs: {{civs|json}}</p>
+
+<div *ngFor="let tech of techs">
+  <input type="checkbox" (change)="onChange(tech, $event.target.checked)" />
+  {{ tech.name }}
+</div>
+
+<p>selected techs: {{selectedTechs|json}}</p>

@@ -12,8 +12,21 @@ import { Civilization } from './models/civilization.model';
 export class AppComponent implements OnInit, OnDestroy {
   title = 'civfinder';
   techs: Technology[];
+  selectedTechs: Technology[] = [];
   civs: Civilization[];
   subs = new Subscription();
+
+  public onChange(tech: Technology, checked: boolean): void {
+
+    if (checked) {
+      this.selectedTechs.push(tech);
+
+    } else {
+      let i: number = this.selectedTechs.indexOf(tech)
+      this.selectedTechs.splice(i, 1);
+    }
+
+  }
 
   constructor(private db: AngularFirestore) {
   }
