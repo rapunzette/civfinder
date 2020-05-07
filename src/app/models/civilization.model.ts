@@ -1,5 +1,6 @@
 export interface Civilization {
   "name": string;
+  "cavalry archer": boolean;
   "hand cannoneer": boolean;
   "eagle scout": boolean;
   "barracks": boolean;

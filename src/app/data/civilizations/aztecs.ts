@@ -1,6 +1,7 @@
 import { Civilization } from 'src/app/models/civilization.model';
 
 export const aztecs: Civilization = {
+  "cavalry archer": false,
   "hand cannoneer": false,
   "name": "aztecs",
   "eagle scout": true,

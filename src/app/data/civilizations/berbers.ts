@@ -1,7 +1,8 @@
 import { Civilization } from 'src/app/models/civilization.model';
 
 export const berbers: Civilization = {
-  "hand cannoneer": false,
+  "cavalry archer": true,
+  "hand cannoneer": true,
   "name": "berbers",
   "eagle scout": false,
   "barracks": true,
@@ -18,7 +19,7 @@ export const berbers: Civilization = {
   "eagle warrior": true,
   "squires": true,
   "arson": true,
-  "arbalester": true,
+  "arbalester": false,
   "two-handed swordsman": true,
   "elite eagle warrior": true,
   "champion": true,
