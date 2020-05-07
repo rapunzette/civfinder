@@ -16,12 +16,34 @@ import { crossbowman } from './crossbowman';
 import { man_at_arms } from './man-at-arms';
 import { thumb_ring } from './thumb_ring';
 import { parthian_tactics } from './parthian_tactics';
+import { spearman } from './spearman';
+import { supplies } from './supplies';
+import { long_swordsman } from './long_swordsman';
+import { pikeman } from './pikeman';
+import { halberdier } from './halberdier';
+import { elite_eagle_warrior } from './elite_eagle_warrior';
+import { squires } from './squires';
+import { arson } from './arson';
+import { eagle_warrior } from './eagle_warrior';
+import { two_handed_swordsman } from './two_handed_swordsman';
+import { champion } from './champion';
 
 export const technologies: Technology[] = [
   barracks,
   militia,
   man_at_arms,
+  spearman,
   eagle_scout,
+  supplies,
+  long_swordsman,
+  pikeman,
+  eagle_warrior,
+  squires,
+  arson,
+  two_handed_swordsman,
+  champion,
+  halberdier,
+  elite_eagle_warrior,
 
   archery_range,
   archer,
