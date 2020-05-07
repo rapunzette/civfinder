@@ -27,6 +27,21 @@ import { arson } from './arson';
 import { eagle_warrior } from './eagle_warrior';
 import { two_handed_swordsman } from './two_handed_swordsman';
 import { champion } from './champion';
+import { stable } from './stable';
+import { scout_cavalary } from './scout_cavalry';
+import { bloodlines } from './bloodlines';
+import { light_cavalary } from './light_cavalry';
+import { knight } from './knight';
+import { camel_rider } from './camel_rider';
+import { battle_elephant } from './battle_elephant';
+import { steppe_lancer } from './steppe_lancer';
+import { husbandry } from './husbandry';
+import { hussar } from './hussar';
+import { cavalier } from './cavalier';
+import { paladin } from './paladin';
+import { heavy_camel_rider } from './heavy_camel_rider';
+import { elite_battle_elephant } from './elite_battle_elephant';
+import { elite_steppe_lancer } from './elite_steppe_lancer';
 
 export const technologies: Technology[] = [
   barracks,
@@ -56,4 +71,20 @@ export const technologies: Technology[] = [
   heavy_cavalry_archer,
   thumb_ring,
   parthian_tactics,
+
+  stable,
+  scout_cavalary,
+  bloodlines,
+  light_cavalary,
+  knight,
+  camel_rider,
+  battle_elephant,
+  steppe_lancer,
+  husbandry,
+  hussar,
+  cavalier,
+  paladin,
+  heavy_camel_rider,
+  elite_battle_elephant,
+  elite_steppe_lancer,
 ]
