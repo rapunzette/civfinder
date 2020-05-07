@@ -1,5 +1,5 @@
 export interface Technology {
   name: string;
-  age: string;
-  color: string;
+  age: "dark" | "feudal" | "castle" | "imperial";
+  color: "blue" | "red" | "green" | "purple";
 }
