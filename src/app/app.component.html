@@ -9,3 +9,8 @@
 </div>
 
 <p>selected techs: {{selectedTechs|json}}</p>
+
+<p>Corresponding civs: </p>
+<ul>
+  <li *ngFor="let civ of correspondingCivs">{{civ.name}}</li>
+</ul>

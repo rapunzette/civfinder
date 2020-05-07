@@ -12,31 +12,49 @@ import { Civilization } from './models/civilization.model';
 export class AppComponent implements OnInit, OnDestroy {
   title = 'civfinder';
   techs: Technology[];
-  selectedTechs: Technology[] = [];
+  selectedTechs: string[] = [];
   civs: Civilization[];
+  correspondingCivs: Civilization[];
   subs = new Subscription();
 
   public onChange(tech: Technology, checked: boolean): void {
 
     if (checked) {
-      this.selectedTechs.push(tech);
+      this.selectedTechs.push(tech.name);
 
     } else {
-      let i: number = this.selectedTechs.indexOf(tech)
+      let i: number = this.selectedTechs.indexOf(tech.name)
       this.selectedTechs.splice(i, 1);
     }
 
+    this.updateCorrespondingCivs();
+  }
+
+  private updateCorrespondingCivs(): void {
+
+    this.correspondingCivs = this.civs.filter(civ => {
+      return this.selectedTechs.every(tech => {
+        return civ.technologies.includes(tech)
+      });
+    })
   }
 
   constructor(private db: AngularFirestore) {
   }
   ngOnInit(): void {
     this.subs.add(
-      this.db.collection<Technology>("Technologies").valueChanges().subscribe(techs => (this.techs = techs))
+      this.db.collection<Technology>("technologies").valueChanges().subscribe(techs => this.techs = techs)
     )
 
     this.subs.add(
-      this.db.collection<Civilization>("Civilizations").valueChanges().subscribe(civs => (this.civs = civs))
+      this.db.collection<Civilization>("civilizations").valueChanges().subscribe(civs => {
+        this.civs = civs;
+        this.correspondingCivs = civs.filter(civ => {
+          return this.selectedTechs.every(tech => {
+            return civ.technologies.includes(tech)
+          });
+        })
+      })
     )
 
   }
