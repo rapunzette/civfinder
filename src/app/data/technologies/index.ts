@@ -1,3 +1,19 @@
+import { plate_mail_armor } from './plate_mail_armor';
+import { chain_mail_armor } from './chain_mail_armor';
+import { scale_mail_armor } from './scale_mail_armor';
+import { plate_barding_armor } from './plate_barding_armor';
+import { chain_barding_armor } from './chain_barding_armor';
+import { scale_barding_armor } from './scale_barding_armor';
+import { blast_furnace } from './blast_furnace';
+import { iron_casting } from './iron_casting';
+import { forging } from './forging';
+import { bracer } from './bracer';
+import { bodkin_arrow } from './bodkin_arrow';
+import { fletching } from './fletching';
+import { ring_archer_armor } from './ring_archer_armor';
+import { leather_archer_armor } from './leather_archer_armor';
+import { padded_archer_armor } from './padded_archer_armor';
+import { blacksmith } from './blacksmith';
 import { bombard_cannon } from './bombard_cannon';
 import { heavy_scorpion } from './heavy_scorpion';
 import { siege_onager } from './siege_onager';
@@ -109,4 +125,20 @@ export const technologies: Technology[] = [
   siege_onager,
   heavy_scorpion,
   bombard_cannon,
+  blacksmith,
+  padded_archer_armor,
+  leather_archer_armor,
+  ring_archer_armor,
+  fletching,
+  bodkin_arrow,
+  bracer,
+  forging,
+  iron_casting,
+  blast_furnace,
+  scale_barding_armor,
+  chain_barding_armor,
+  plate_barding_armor,
+  scale_mail_armor,
+  chain_mail_armor,
+  plate_mail_armor,
 ]
