@@ -1,3 +1,35 @@
+import { crop_rotation } from './crop_rotation';
+import { guilds } from './guilds';
+import { banking } from './banking';
+import { heavy_plow } from './heavy_plow';
+import { caravan } from './caravan';
+import { coinage } from './coinage';
+import { horse_collar } from './horse_collar';
+import { trade_cart } from './trade_cart';
+import { market } from './market';
+import { farm } from './farm';
+import { mill } from './mill';
+import { two_man_saw } from './two_man_saw';
+import { bow_saw } from './bow_saw';
+import { double_bit_axe } from './double_bit_axe';
+import { lumber_camp } from './lumber_camp';
+import { stone_shaft_mining } from './stone_shaft_mining';
+import { gold_shaft_mining } from './gold_shaft_mining';
+import { stone_mining } from './stone_mining';
+import { gold_mining } from './gold_mining';
+import { mining_camp } from './mining_camp';
+import { wonder } from './wonder';
+import { imperial_age } from './imperial_age';
+import { castle_age } from './castle_age';
+import { feudal_age } from './feudal_age';
+import { hand_cart } from './hand_cart';
+import { town_patrol } from './town_patrol';
+import { wheelbarrow } from './wheelbarrow';
+import { town_watch } from './town_watch';
+import { loom } from './loom';
+import { villager } from './villager';
+import { town_center } from './town_center';
+import { house } from './house';
 import { theocracy } from './theocracy';
 import { block_printing } from './block_printing';
 import { illumination } from './illumination';
@@ -259,4 +291,36 @@ export const technologies: Technology[] = [
   illumination,
   block_printing,
   theocracy,
+  house,
+  town_center,
+  villager,
+  loom,
+  town_watch,
+  wheelbarrow,
+  town_patrol,
+  hand_cart,
+  feudal_age,
+  castle_age,
+  imperial_age,
+  wonder,
+  mining_camp,
+  gold_mining,
+  stone_mining,
+  gold_shaft_mining,
+  stone_shaft_mining,
+  lumber_camp,
+  double_bit_axe,
+  bow_saw,
+  two_man_saw,
+  mill,
+  farm,
+  market,
+  trade_cart,
+  horse_collar,
+  coinage,
+  caravan,
+  heavy_plow,
+  banking,
+  guilds,
+  crop_rotation,
 ]
