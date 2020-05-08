@@ -17,6 +17,11 @@ export const ${underscoreName}: Technology = {
 `
 
     tree.create(filepath, code);
+    let techIndexFilePath = "/src/app/data/technologies/index.ts"
+    let techIndexFileEntry = tree.get(techIndexFilePath)
+    let newImport = `import { ${underscoreName} } from './${underscoreName}';`
+    let newContent = newImport + techIndexFileEntry?.content.toString();
+    tree.overwrite(techIndexFilePath, newContent);
     return tree;
   };
 }
