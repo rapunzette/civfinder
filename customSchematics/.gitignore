@@ -44,9 +44,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-customSchematics/src/technology/index.js.map
-customSchematics/src/technology/index.d.ts
-customSchematics/src/technology/index_spec.js.map
-customSchematics/src/technology/index_spec.d.ts
-customSchematics/src/technology/index_spec.js
-customSchematics/src/technology/index.js

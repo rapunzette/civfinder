@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "HelloSchematics",
+  "title": "Hello Options Schema",
+  "type": "object",
+  "description": "Says hello",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "the name of the technology",
+      "x-prompt": "Name of the technology:"
+    },
+    "age": {
+      "type": "string",
+      "description": "the age the technology can be researched",
+      "x-prompt": "Age:",
+      "enum": [
+        "dark",
+        "feudal",
+        "castle",
+        "imperial"
+      ]
+    },
+    "color": {
+      "type": "string",
+      "description": "the color of the technology",
+      "x-prompt": "Color:",
+      "enum": [
+        "blue",
+        "red",
+        "green"
+      ]
+    }
+  },
+  "required": [
+    "name",
+    "age",
+    "color"
+  ]
+}
