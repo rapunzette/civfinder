@@ -1,3 +1,14 @@
+import { bombard_cannon } from './bombard_cannon';
+import { heavy_scorpion } from './heavy_scorpion';
+import { siege_onager } from './siege_onager';
+import { onager } from './onager';
+import { siege_ram } from './siege_ram';
+import { capped_ram } from './capped_ram';
+import { siege_tower } from './siege_tower';
+import { scorpion } from './scorpion';
+import { mangonel } from './mangonel';
+import { battering_ram } from './battering_ram';
+import { siege_workshop } from './siege_workshop';
 
 import { Technology } from 'src/app/models/technology.model';
 
@@ -87,4 +98,15 @@ export const technologies: Technology[] = [
   heavy_camel_rider,
   elite_battle_elephant,
   elite_steppe_lancer,
+  siege_workshop,
+  battering_ram,
+  mangonel,
+  scorpion,
+  siege_tower,
+  capped_ram,
+  siege_ram,
+  onager,
+  siege_onager,
+  heavy_scorpion,
+  bombard_cannon,
 ]
