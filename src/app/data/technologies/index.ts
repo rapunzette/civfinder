@@ -1,3 +1,10 @@
+import { spies } from './spies';
+import { conscription } from './conscription';
+import { sappers } from './sappers';
+import { hoardings } from './hoardings';
+import { trebuchet } from './trebuchet';
+import { petard } from './petard';
+import { castle } from './castle';
 import { stone_wall } from './stone_wall';
 import { gate } from './gate';
 import { palisade_gate } from './palisade_gate';
@@ -221,4 +228,11 @@ export const technologies: Technology[] = [
   palisade_gate,
   gate,
   stone_wall,
+  castle,
+  petard,
+  trebuchet,
+  hoardings,
+  sappers,
+  conscription,
+  spies,
 ]
