@@ -131,7 +131,7 @@ import { cavalry_archer } from './cavalry_archer';
 import { arbalester } from './arbalester';
 import { heavy_cavalry_archer } from './heavy_cavalry_archer';
 import { crossbowman } from './crossbowman';
-import { man_at_arms } from './man-at-arms';
+import { man_at_arms } from './man_at_arms';
 import { thumb_ring } from './thumb_ring';
 import { parthian_tactics } from './parthian_tactics';
 import { spearman } from './spearman';
@@ -177,7 +177,6 @@ export const technologies: Technology[] = [
   champion,
   halberdier,
   elite_eagle_warrior,
-
   archery_range,
   archer,
   crossbowman,
@@ -189,7 +188,6 @@ export const technologies: Technology[] = [
   heavy_cavalry_archer,
   thumb_ring,
   parthian_tactics,
-
   stable,
   scout_cavalary,
   bloodlines,
