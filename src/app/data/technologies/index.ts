@@ -1,3 +1,12 @@
+import { stone_wall } from './stone_wall';
+import { gate } from './gate';
+import { palisade_gate } from './palisade_gate';
+import { palisade_wall } from './palisade_wall';
+import { bombard_tower } from './bombard_tower';
+import { keep } from './keep';
+import { guard_tower } from './guard_tower';
+import { watch_tower } from './watch_tower';
+import { outpost } from './outpost';
 import { arrowslits } from './arrowslits';
 import { siege_engineers } from './siege_engineers';
 import { chemistry } from './chemistry';
@@ -203,4 +212,13 @@ export const technologies: Technology[] = [
   chemistry,
   siege_engineers,
   arrowslits,
+  outpost,
+  watch_tower,
+  guard_tower,
+  keep,
+  bombard_tower,
+  palisade_wall,
+  palisade_gate,
+  gate,
+  stone_wall,
 ]
