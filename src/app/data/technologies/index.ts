@@ -1,3 +1,14 @@
+import { arrowslits } from './arrowslits';
+import { siege_engineers } from './siege_engineers';
+import { chemistry } from './chemistry';
+import { architecture } from './architecture';
+import { treadmill_crane } from './treadmill_crane';
+import { murder_holes } from './murder_holes';
+import { heated_shot } from './heated_shot';
+import { ballistics } from './ballistics';
+import { fortified_wall } from './fortified_wall';
+import { masonry } from './masonry';
+import { university } from './university';
 import { shipwright } from './shipwright';
 import { dry_dock } from './dry_dock';
 import { galleon } from './galleon';
@@ -181,4 +192,15 @@ export const technologies: Technology[] = [
   galleon,
   dry_dock,
   shipwright,
+  university,
+  masonry,
+  fortified_wall,
+  ballistics,
+  heated_shot,
+  murder_holes,
+  treadmill_crane,
+  architecture,
+  chemistry,
+  siege_engineers,
+  arrowslits,
 ]
