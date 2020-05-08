@@ -1,3 +1,15 @@
+import { theocracy } from './theocracy';
+import { block_printing } from './block_printing';
+import { illumination } from './illumination';
+import { faith } from './faith';
+import { fervor } from './fervor';
+import { sanctity } from './sanctity';
+import { heresy } from './heresy';
+import { herbal_medicine } from './herbal_medicine';
+import { atonement } from './atonement';
+import { redemption } from './redemption';
+import { monk } from './monk';
+import { monastery } from './monastery';
 import { spies } from './spies';
 import { conscription } from './conscription';
 import { sappers } from './sappers';
@@ -235,4 +247,16 @@ export const technologies: Technology[] = [
   sappers,
   conscription,
   spies,
+  monastery,
+  monk,
+  redemption,
+  atonement,
+  herbal_medicine,
+  heresy,
+  sanctity,
+  fervor,
+  faith,
+  illumination,
+  block_printing,
+  theocracy,
 ]
