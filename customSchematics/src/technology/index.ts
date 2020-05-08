@@ -19,8 +19,10 @@ export const ${underscoreName}: Technology = {
     tree.create(filepath, code);
     let techIndexFilePath = "/src/app/data/technologies/index.ts"
     let techIndexFileEntry = tree.get(techIndexFilePath)
-    let newImport = `import { ${underscoreName} } from './${underscoreName}';`
+    let newImport = `import { ${underscoreName} } from './${underscoreName}';\n`
     let newContent = newImport + techIndexFileEntry?.content.toString();
+    newContent = newContent.substring(0, newContent.length - 1) // chopping off the last bracket
+    newContent += `  ${underscoreName},\n]` // adding the tech to the array
     tree.overwrite(techIndexFilePath, newContent);
     return tree;
   };
