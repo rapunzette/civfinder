@@ -1,3 +1,23 @@
+import { shipwright } from './shipwright';
+import { dry_dock } from './dry_dock';
+import { galleon } from './galleon';
+import { heavy_demo_ship } from './heavy_demo_ship';
+import { elite_cannon_galleon } from './elite_cannon_galleon';
+import { cannon_galleon } from './cannon_galleon';
+import { fast_fire_ship } from './fast_fire_ship';
+import { careening } from './careening';
+import { war_galley } from './war_galley';
+import { demolition_raft } from './demolition_raft';
+import { gillnets } from './gillnets';
+import { fire_ship } from './fire_ship';
+import { fish_trap } from './fish_trap';
+import { galley } from './galley';
+import { demolition_ship } from './demolition_ship';
+import { trade_cog } from './trade_cog';
+import { fire_galley } from './fire_galley';
+import { transport_ship } from './transport_ship';
+import { fishing_ship } from './fishing_ship';
+import { dock } from './dock';
 import { plate_mail_armor } from './plate_mail_armor';
 import { chain_mail_armor } from './chain_mail_armor';
 import { scale_mail_armor } from './scale_mail_armor';
@@ -141,4 +161,24 @@ export const technologies: Technology[] = [
   scale_mail_armor,
   chain_mail_armor,
   plate_mail_armor,
+  dock,
+  fishing_ship,
+  transport_ship,
+  fire_galley,
+  trade_cog,
+  demolition_ship,
+  galley,
+  fish_trap,
+  fire_ship,
+  gillnets,
+  demolition_raft,
+  war_galley,
+  careening,
+  fast_fire_ship,
+  cannon_galleon,
+  elite_cannon_galleon,
+  heavy_demo_ship,
+  galleon,
+  dry_dock,
+  shipwright,
 ]
