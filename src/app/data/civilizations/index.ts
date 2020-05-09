@@ -12,6 +12,7 @@ import { vikings } from './vikings';
 import { mongols } from './mongols';
 import { persians } from './persians';
 import { saracens } from './saracens';
+import { teutons } from './teutons';
 
 export const civilizations: Civilization[] = [
   aztecs,
@@ -27,4 +28,5 @@ export const civilizations: Civilization[] = [
   mongols,
   persians,
   saracens,
+  teutons,
 ]
