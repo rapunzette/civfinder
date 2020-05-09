@@ -20,6 +20,7 @@ import { mayans } from './mayans';
 import { spanish } from './spanish';
 import { incas } from './incas';
 import { italians } from './italians';
+import { magyars } from './magyars';
 
 export const civilizations: Civilization[] = [
   aztecs,
@@ -43,4 +44,5 @@ export const civilizations: Civilization[] = [
   spanish,
   incas,
   italians,
+  magyars,
 ]
