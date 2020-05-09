@@ -17,6 +17,7 @@ import { turks } from './turks';
 import { huns } from './huns';
 import { koreans } from './koreans';
 import { mayans } from './mayans';
+import { spanish } from './spanish';
 
 export const civilizations: Civilization[] = [
   aztecs,
@@ -37,4 +38,5 @@ export const civilizations: Civilization[] = [
   huns,
   koreans,
   mayans,
+  spanish,
 ]
