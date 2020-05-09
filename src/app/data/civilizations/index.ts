@@ -27,6 +27,7 @@ import { malians } from './malians';
 import { portuguese } from './portuguese';
 import { burmese } from './burmese';
 import { khmer } from './khmer';
+import { malay } from './malay';
 
 export const civilizations: Civilization[] = [
   aztecs,
@@ -57,4 +58,5 @@ export const civilizations: Civilization[] = [
   portuguese,
   burmese,
   khmer,
+  malay,
 ]
