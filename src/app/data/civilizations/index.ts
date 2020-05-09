@@ -32,6 +32,7 @@ import { vietnamese } from './vietnamese';
 import { bulgarians } from './bulgarians';
 import { cumans } from './cumans';
 import { lithuanians } from './lithuanians';
+import { tatars } from './tatars';
 
 export const civilizations: Civilization[] = [
   aztecs,
@@ -67,4 +68,5 @@ export const civilizations: Civilization[] = [
   bulgarians,
   cumans,
   lithuanians,
+  tatars,
 ]
