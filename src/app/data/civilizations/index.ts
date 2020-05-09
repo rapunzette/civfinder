@@ -6,6 +6,7 @@ import { byzantines } from './byzantines';
 import { celts } from './celts';
 import { chinese } from './chinese';
 import { franks } from './franks';
+import { goths } from './goths';
 
 export const civilizations: Civilization[] = [
   aztecs,
@@ -15,4 +16,5 @@ export const civilizations: Civilization[] = [
   celts,
   chinese,
   franks,
+  goths,
 ]
