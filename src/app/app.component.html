@@ -3,6 +3,29 @@
 <!-- <p>techs: {{techs| json}}</p> -->
 <!-- <p>civs: {{civs|json}}</p> -->
 
+<mat-table #table [dataSource]="dataSource" matSort class="animate">
+
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+    <mat-cell *matCellDef="let hacker"> {{ hacker.name }} </mat-cell>
+  </ng-container>
+
+
+  <ng-container matColumnDef="age">
+    <mat-header-cell *matHeaderCellDef mat-sort-header> age </mat-header-cell>
+    <mat-cell *matCellDef="let hacker"> {{ hacker.age }} </mat-cell>
+  </ng-container>
+
+
+  <ng-container matColumnDef="color">
+    <mat-header-cell *matHeaderCellDef mat-sort-header> color </mat-header-cell>
+    <mat-cell *matCellDef="let hacker"> {{ hacker.color }} </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;" class="animate"></mat-row>
+</mat-table>
+
 <div *ngFor="let tech of techs">
   <input type="checkbox" (change)="onChange(tech, $event.target.checked)" />
   {{ tech.name }}

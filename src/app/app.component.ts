@@ -6,6 +6,7 @@ import { civilizations } from './data/civilizations';
 import { technologies } from './data/technologies';
 
 import { difference } from 'lodash';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-root',
@@ -31,6 +32,9 @@ export class AppComponent implements OnInit, OnDestroy {
    * Civilizations that do NOT have the selected technologies
    */
   public excludedCivs: Civilization[];
+
+  public displayedColumns = ['name', 'age', 'color'];
+  public dataSource: MatTableDataSource<Technology>;
 
   /**
    * Ran everytime a new technology is selected or unselected
@@ -68,6 +72,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
   ngOnInit(): void {
     this.updateCivs();
+    this.dataSource = new MatTableDataSource(this.techs);
   }
   ngOnDestroy() {
   }

@@ -9,6 +9,8 @@ import { MatButtonModule } from "@angular/material/button";
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 
+import { MatTableModule } from '@angular/material/table';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -17,7 +19,8 @@ import { environment } from '../environments/environment';
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
