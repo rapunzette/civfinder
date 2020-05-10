@@ -11,15 +11,14 @@ import { technologies } from './data/technologies';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, OnDestroy {
-  title = 'civfinder';
   public techs: Technology[] = technologies;
-  selectedTechs: string[] = [];
-  public civs: Civilization[] = civilizations;
-  correspondingCivs: Civilization[];
+  public selectedTechs: string[] = [];
+  public correspondingCivs: Civilization[];
+  public excludedCivs: Civilization[];
 
-  public onChange(tech: Technology, checked: boolean): void {
+  public onChange(tech: Technology, nowChecked: boolean): void {
 
-    if (checked) {
+    if (nowChecked) {
       this.selectedTechs.push(tech.name);
 
     } else {
@@ -32,7 +31,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   private updateCorrespondingCivs(): void {
 
-    this.correspondingCivs = this.civs.filter(civ => {
+    this.correspondingCivs = civilizations.filter(civ => {
       return this.selectedTechs.every(tech => {
         return civ[tech];
       });
