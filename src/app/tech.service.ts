@@ -7,25 +7,24 @@ import { Technology } from './models/technology.model';
 })
 export class TechService {
   private selectedTechs: Technology[] = [];
-  private source = new BehaviorSubject(this.selectedTechs);
-  public selectedTechs$ = this.source.asObservable();
+  private subject = new BehaviorSubject(this.selectedTechs);
+  public selectedTechs$ = this.subject.asObservable();
 
-  add(techName: Technology) {
-    this.selectedTechs.push(techName);
+  public add(tech: Technology) {
+    this.selectedTechs.push(tech);
 
     this.updateSubject();
   }
 
-  remove(techName: Technology) {
-    let i: number = this.selectedTechs.indexOf(techName)
+  public remove(tech: Technology) {
+    let i: number = this.selectedTechs.indexOf(tech)
     this.selectedTechs.splice(i, 1);
 
     this.updateSubject();
   }
 
   private updateSubject() {
-
-    this.source.next(this.selectedTechs)
+    this.subject.next(this.selectedTechs)
   }
   constructor() { }
 }
