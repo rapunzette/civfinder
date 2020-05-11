@@ -1,16 +1,11 @@
-<app-tech-table></app-tech-table>
+<!-- <app-tech-table></app-tech-table> -->
 
 <div *ngFor="let tech of techs">
   <input type="checkbox" (change)="onChange(tech, $event.target.checked)" />
   {{ tech.name }}
 </div>
 
-<p>selected techs: {{selectedTechs|json}}</p>
-
-<p>Corresponding civs: </p>
-<ul>
-  <li *ngFor="let civ of correspondingCivs">{{civ.name}}</li>
-</ul>
+<app-corresponding-civ-table></app-corresponding-civ-table>
 
 <p>excluded civs: </p>
 <ul>

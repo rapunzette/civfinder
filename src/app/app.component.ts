@@ -2,11 +2,9 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Technology } from './models/technology.model';
 import { Civilization } from './models/civilization.model';
 
-import { civilizations } from './data/civilizations';
 import { technologies } from './data/technologies';
 
-import { difference } from 'lodash';
-import { MatTableDataSource } from '@angular/material/table';
+import { TechService } from './tech.service';
 
 @Component({
   selector: 'app-root',
@@ -21,20 +19,11 @@ export class AppComponent implements OnInit, OnDestroy {
    */
   public techs: Technology[] = technologies;
   /**
-   * The technologies the user cares about
-   */
-  public selectedTechs: string[] = [];
-  /**
- * Civilizations that have the selected technologies
- */
-  public correspondingCivs: Civilization[];
-  /**
    * Civilizations that do NOT have the selected technologies
    */
   public excludedCivs: Civilization[];
 
   public displayedColumns = ['name', 'age', 'color'];
-  public dataSource: MatTableDataSource<Technology>;
 
   /**
    * Ran everytime a new technology is selected or unselected
@@ -44,35 +33,16 @@ export class AppComponent implements OnInit, OnDestroy {
   public onChange(tech: Technology, nowChecked: boolean): void {
 
     if (nowChecked) {
-      this.selectedTechs.push(tech.name);
+      this.techService.add(tech);
 
     } else {
-      let i: number = this.selectedTechs.indexOf(tech.name)
-      this.selectedTechs.splice(i, 1);
+      this.techService.remove(tech);
     }
-
-    this.updateCivs();
   }
 
-  /**
-   * Updates correspondingCivs and excludedCivs depending on the selected techs
-   */
-  private updateCivs(): void {
-
-    this.correspondingCivs = civilizations.filter(civ => {
-      return this.selectedTechs.every(tech => {
-        return civ[tech];
-      });
-    });
-
-    this.excludedCivs = difference(civilizations, this.correspondingCivs);
-  }
-
-  constructor() {
+  constructor(private techService: TechService) {
   }
   ngOnInit(): void {
-    this.updateCivs();
-    this.dataSource = new MatTableDataSource(this.techs);
   }
   ngOnDestroy() {
   }

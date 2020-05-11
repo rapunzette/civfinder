@@ -11,11 +11,13 @@ import { environment } from '../environments/environment';
 
 import { MatTableModule } from '@angular/material/table';
 import { TechTableComponent } from './components/tech-table/tech-table.component';
+import { CorrespondingCivTableComponent } from './components/corresponding-civ-table/corresponding-civ-table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TechTableComponent
+    TechTableComponent,
+    CorrespondingCivTableComponent
   ],
   imports: [
     BrowserModule,
