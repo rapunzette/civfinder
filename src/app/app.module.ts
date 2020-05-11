@@ -10,10 +10,12 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 
 import { MatTableModule } from '@angular/material/table';
+import { TechTableComponent } from './components/tech-table/tech-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TechTableComponent
   ],
   imports: [
     BrowserModule,
