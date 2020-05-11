@@ -50,3 +50,6 @@ customSchematics/src/technology/index_spec.js.map
 customSchematics/src/technology/index_spec.d.ts
 customSchematics/src/technology/index_spec.js
 customSchematics/src/technology/index.js
+
+
+.firebase/
