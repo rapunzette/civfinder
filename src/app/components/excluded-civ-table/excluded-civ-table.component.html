@@ -1,0 +1,10 @@
+<mat-table #table [dataSource]="dataSource" matSort class="animate">
+
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef mat-sort-header> Excluded Civs: </mat-header-cell>
+    <mat-cell *matCellDef="let civ"> {{ civ.name }} </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;" class="animate"></mat-row>
+</mat-table>
