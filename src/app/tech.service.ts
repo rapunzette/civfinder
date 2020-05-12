@@ -39,24 +39,28 @@ export class TechService {
     this.updateSubject();
   }
 
-  public remove(tech: Technology) {
-    let i: number = this.selectedTechs.indexOf(tech)
-    if (i < 0) {
+  public remove(techToDelete: Technology, index?: number) {
+    index = index || this.selectedTechs.indexOf(techToDelete)
+    if (index < 0) {
       return;
     }
-    this.selectedTechs.splice(i, 1);
+    this.selectedTechs.splice(index, 1);
+
+    // remove children techs if they exist
+    this.selectedTechs.filter((selectedTech) => {
+      return selectedTech.parentName === techToDelete.name;
+    }).forEach(childTech => this.remove(childTech));;
 
     this.updateSubject();
   }
 
   public toggle(tech: Technology) {
+    // add or remove depending if the tech is already selected
     let i: number = this.selectedTechs.indexOf(tech)
-
-    // is is already selected?
     if (i >= 0) {
-      this.selectedTechs.splice(i, 1); // yes, so remove
+      this.remove(tech, i);
     } else {
-      this.add(tech); // no, so add
+      this.add(tech);
     }
 
 
