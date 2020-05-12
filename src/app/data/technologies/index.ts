@@ -146,9 +146,9 @@ import { eagle_warrior } from './eagle_warrior';
 import { two_handed_swordsman } from './two_handed_swordsman';
 import { champion } from './champion';
 import { stable } from './stable';
-import { scout_cavalary } from './scout_cavalry';
+import { scout_cavalry } from './scout_cavalry';
 import { bloodlines } from './bloodlines';
-import { light_cavalary } from './light_cavalry';
+import { light_cavalry } from './light_cavalry';
 import { knight } from './knight';
 import { camel_rider } from './camel_rider';
 import { battle_elephant } from './battle_elephant';
@@ -189,9 +189,9 @@ export const technologies: Technology[] = [
   thumb_ring,
   parthian_tactics,
   stable,
-  scout_cavalary,
+  scout_cavalry,
   bloodlines,
-  light_cavalary,
+  light_cavalry,
   knight,
   camel_rider,
   battle_elephant,
@@ -468,9 +468,9 @@ export { eagle_warrior } from './eagle_warrior';
 export { two_handed_swordsman } from './two_handed_swordsman';
 export { champion } from './champion';
 export { stable } from './stable';
-export { scout_cavalary } from './scout_cavalry';
+export { scout_cavalry } from './scout_cavalry';
 export { bloodlines } from './bloodlines';
-export { light_cavalary } from './light_cavalry';
+export { light_cavalry } from './light_cavalry';
 export { knight } from './knight';
 export { camel_rider } from './camel_rider';
 export { battle_elephant } from './battle_elephant';
