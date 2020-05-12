@@ -13,6 +13,7 @@ import { MatTableModule } from '@angular/material/table';
 import { TechTableComponent } from './components/tech-table/tech-table.component';
 import { CorrespondingCivTableComponent } from './components/corresponding-civ-table/corresponding-civ-table.component';
 import { ExcludedCivTableComponent } from './components/excluded-civ-table/excluded-civ-table.component';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ExcludedCivTableComponent } from './components/excluded-civ-table/exclu
     MatButtonModule,
     AngularFireModule.initializeApp(environment.firebase),
     MatTableModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
-<mat-table #table [dataSource]="dataSource" matSort class="animate">
+<mat-table #table [dataSource]="dataSource" matSort class="animate" matSortActive="name" matSortDirection="asc"
+  matSortDisabled>
 
   <ng-container matColumnDef="name">
     <mat-header-cell *matHeaderCellDef mat-sort-header> Corresponding Civs: </mat-header-cell>
