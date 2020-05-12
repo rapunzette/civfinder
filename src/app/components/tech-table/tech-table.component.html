@@ -1,22 +1,27 @@
-<mat-table #table [dataSource]="dataSource" matSort class="animate">
+<table class="animate">
+  <!-- headers -->
+  <tr>
+    <th>Dark</th>
+    <th>Feudal</th>
+    <th>Castle</th>
+    <th>Imperial</th>
+  </tr>
 
-  <ng-container matColumnDef="name">
-    <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
-    <mat-cell *matCellDef="let hacker"> {{ hacker.name }} </mat-cell>
-  </ng-container>
+  <tr>
+    <td>Barracks</td>
+  </tr>
 
+  <tr>
+    <td>Militia</td>
+    <td>Man-at-Arms</td>
+    <td>Long Swordsman</td>
+    <td>Two-Handed Swordsman & Champion</td>
+  </tr>
 
-  <ng-container matColumnDef="age">
-    <mat-header-cell *matHeaderCellDef mat-sort-header> age </mat-header-cell>
-    <mat-cell *matCellDef="let hacker"> {{ hacker.age }} </mat-cell>
-  </ng-container>
+  <tr>
+    <td>
+      <app-tech-cell [technology]="techs.halberdier"></app-tech-cell>
+    </td>
+  </tr>
 
-
-  <ng-container matColumnDef="color">
-    <mat-header-cell *matHeaderCellDef mat-sort-header> color </mat-header-cell>
-    <mat-cell *matCellDef="let hacker"> {{ hacker.color }} </mat-cell>
-  </ng-container>
-
-  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-  <mat-row *matRowDef="let row; columns: displayedColumns;" class="animate"></mat-row>
-</mat-table>
+</table>
