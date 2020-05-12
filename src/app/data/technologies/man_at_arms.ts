@@ -4,4 +4,5 @@ export const man_at_arms: Technology = {
   "name": "man at arms",
   "age": "feudal",
   "color": "blue",
+  "parentName": "militia",
 }
