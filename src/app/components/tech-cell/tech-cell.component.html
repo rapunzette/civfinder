@@ -1,5 +1,4 @@
 <button (click)="buttonPressed()">
   {{technology.name}}
-  <input type="checkbox" [checked]="alreadySelected">
+  <input type="checkbox" [checked]="(techService.selectedTechs$ | async).indexOf(this.technology) >= 0">
 </button>
-<!-- <input type="checkbox" (change)="buttonPressed()" [checked]="alreadySelected"> -->

@@ -11,18 +11,10 @@ export class TechCellComponent implements OnInit {
 
   @Input() public technology: Technology;
 
-  public alreadySelected: boolean = false;
-
-  constructor(private techService: TechService) { }
+  constructor(public techService: TechService) { }
 
   public buttonPressed(): void {
-    if (this.alreadySelected) {
-      this.techService.remove(this.technology)
-      this.alreadySelected = false;
-    } else {
-      this.techService.add(this.technology);
-      this.alreadySelected = true;
-    }
+    this.techService.toggle(this.technology)
   }
 
   ngOnInit(): void {

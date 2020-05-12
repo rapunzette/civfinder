@@ -10,15 +10,19 @@ export class TechService {
   private subject = new BehaviorSubject(this.selectedTechs);
   public selectedTechs$ = this.subject.asObservable();
 
-  public add(tech: Technology) {
-    this.selectedTechs.push(tech);
+
+  public clear() {
+    this.selectedTechs.splice(0);
 
     this.updateSubject();
   }
 
-  public remove(tech: Technology) {
+  public toggle(tech: Technology) {
     let i: number = this.selectedTechs.indexOf(tech)
-    this.selectedTechs.splice(i, 1);
+    i >= 0 ? // is is already selected?
+      this.selectedTechs.splice(i, 1) : // yes, so remove
+      this.selectedTechs.push(tech); // no, so add
+
 
     this.updateSubject();
   }
