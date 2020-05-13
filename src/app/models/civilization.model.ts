@@ -27,9 +27,9 @@ export interface Civilization {
   "thumb ring": boolean;
   "parthian tactics": boolean;
   "stable": boolean;
-  "scout cavalary": boolean;
+  "scout cavalry": boolean;
   "bloodlines": boolean;
-  "light cavalary": boolean;
+  "light cavalry": boolean;
   "knight": boolean;
   "camel rider": boolean;
   "battle elephant": boolean;
