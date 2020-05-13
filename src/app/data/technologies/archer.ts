@@ -5,5 +5,5 @@ export const archer: Technology = {
   "name": "archer",
   "age": "feudal",
   "color": "blue",
-  parentName: archery_range.name,
+  dependencies: [archery_range.name],
 }

@@ -3,9 +3,15 @@
   <!-- headers -->
   <tr>
     <th>Dark Age</th>
-    <th>Feudal Age</th>
-    <th>Castle Age</th>
-    <th>Imperial Age</th>
+    <th>
+      <app-tech-cell [technology]="techs.feudal_age"></app-tech-cell>
+    </th>
+    <th>
+      <app-tech-cell [technology]="techs.castle_age"></app-tech-cell>
+    </th>
+    <th>
+      <app-tech-cell [technology]="techs.imperial_age"></app-tech-cell>
+    </th>
   </tr>
 
   <tr>
@@ -87,20 +93,9 @@
     <td></td>
   </tr>
 
-</table>
-
-<!-- archery table -->
-<table class="animate">
-  <!-- headers -->
-  <tr>
-    <!-- <th>Dark Age</th> -->
-    <th>Feudal Age</th>
-    <th>Castle Age</th>
-    <th>Imperial Age</th>
-  </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.archery_range"></app-tech-cell>
     </td>
@@ -109,7 +104,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.archer"></app-tech-cell>
     </td>
@@ -122,7 +117,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.skirmisher"></app-tech-cell>
     </td>
@@ -133,7 +128,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td></td>
     <td>
       <app-tech-cell [technology]="techs.cavalry_archer"></app-tech-cell>
@@ -144,7 +139,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td></td>
     <td></td>
     <td>
@@ -153,7 +148,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td></td>
     <td>
       <app-tech-cell [technology]="techs.thumb_ring"></app-tech-cell>
@@ -162,7 +157,7 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td></td>
     <td>
     </td>
@@ -170,20 +165,9 @@
       <app-tech-cell [technology]="techs.parthian_tactics"></app-tech-cell>
     </td>
   </tr>
-</table>
-
-<!-- stable table -->
-<table class="animate">
-  <!-- headers -->
-  <tr>
-    <!-- <th>Dark Age</th> -->
-    <th>Feudal Age</th>
-    <th>Castle Age</th>
-    <th>Imperial Age</th>
-  </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.stable"></app-tech-cell>
     </td>
@@ -192,7 +176,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.scout_cavalry"></app-tech-cell>
     </td>
@@ -205,7 +189,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
     </td>
     <td>
@@ -217,7 +201,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td></td>
     <td>
       <app-tech-cell [technology]="techs.battle_elephant"></app-tech-cell>
@@ -228,7 +212,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td></td>
     <td>
       <app-tech-cell [technology]="techs.steppe_lancer"></app-tech-cell>
@@ -239,7 +223,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.bloodlines"></app-tech-cell>
     </td>
@@ -248,7 +232,7 @@
     <td></td>
   </tr>
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
     </td>
     <td>
@@ -256,22 +240,10 @@
     </td>
     <td></td>
   </tr>
-</table>
-
-
-<!-- siege table -->
-<table class="animate">
-  <!-- headers -->
-  <tr>
-    <!-- <th>Dark Age</th> -->
-    <!-- <th>Feudal Age</th> -->
-    <th>Castle Age</th>
-    <th>Imperial Age</th>
-  </tr>
 
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.siege_workshop"></app-tech-cell>
     </td>
@@ -279,8 +251,8 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.battering_ram"></app-tech-cell>
     </td>
@@ -291,8 +263,8 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.mangonel"></app-tech-cell>
     </td>
@@ -303,8 +275,8 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.scorpion"></app-tech-cell>
     </td>
@@ -314,38 +286,26 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.siege_tower"></app-tech-cell>
     </td>
-    <!-- <td></td> -->
+    <td></td>
   </tr>
 
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
     </td>
     <td>
       <app-tech-cell [technology]="techs.bombard_cannon"></app-tech-cell>
     </td>
   </tr>
-</table>
-
-<!-- castle table -->
-<table class="animate">
-  <!-- headers -->
   <tr>
-    <!-- <th>Dark Age</th> -->
-    <!-- <th>Feudal Age</th> -->
-    <th>Castle Age</th>
-    <th>Imperial Age</th>
-  </tr>
-
-  <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.castle"></app-tech-cell>
     </td>
@@ -353,8 +313,8 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.petard"></app-tech-cell>
     </td>
@@ -362,8 +322,8 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
     </td>
     <td>
@@ -372,8 +332,8 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
     </td>
     <td>
@@ -381,8 +341,8 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
     </td>
     <td>
@@ -390,8 +350,8 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
     </td>
     <td>
@@ -399,27 +359,14 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
     </td>
     <td>
       <app-tech-cell [technology]="techs.spies"></app-tech-cell>
     </td>
   </tr>
-
-</table>
-
-<!-- dock table -->
-<table class="animate">
-  <!-- headers -->
-  <tr>
-    <th>Dark Age</th>
-    <th>Feudal Age</th>
-    <th>Castle Age</th>
-    <th>Imperial Age</th>
-  </tr>
-
   <tr>
     <td>
       <app-tech-cell [technology]="techs.dock"></app-tech-cell>
@@ -547,21 +494,9 @@
     </td>
   </tr>
 
-</table>
-
-<!-- monastery table -->
-<table class="animate">
-  <!-- headers -->
   <tr>
-    <!-- <th>Dark Age</th> -->
-    <!-- <th>Feudal Age</th> -->
-    <th>Castle Age</th>
-    <th>Imperial Age</th>
-  </tr>
-
-  <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.monastery"></app-tech-cell>
     </td>
@@ -569,8 +504,8 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.monk"></app-tech-cell>
     </td>
@@ -578,48 +513,48 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.redemption"></app-tech-cell>
     </td>
     <td></td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.atonement"></app-tech-cell>
     </td>
     <td></td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.herbal_medicine"></app-tech-cell>
     </td>
     <td></td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.heresy"></app-tech-cell>
     </td>
     <td></td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.sanctity"></app-tech-cell>
     </td>
     <td></td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.fervor"></app-tech-cell>
     </td>
@@ -627,8 +562,8 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
     </td>
     <td>
@@ -636,8 +571,8 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
     </td>
     <td>
@@ -645,8 +580,8 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
     </td>
     <td>
@@ -654,8 +589,8 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
     </td>
     <td>
@@ -663,20 +598,8 @@
     </td>
   </tr>
 
-</table>
-
-<!-- blacksmith table -->
-<table class="animate">
-  <!-- headers -->
   <tr>
-    <!-- <th>Dark Age</th> -->
-    <th>Feudal Age</th>
-    <th>Castle Age</th>
-    <th>Imperial Age</th>
-  </tr>
-
-  <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.blacksmith"></app-tech-cell>
     </td>
@@ -685,7 +608,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.padded_archer_armor"></app-tech-cell>
     </td>
@@ -698,7 +621,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.fletching"></app-tech-cell>
     </td>
@@ -711,7 +634,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.forging"></app-tech-cell>
     </td>
@@ -723,7 +646,7 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.scale_barding_armor"></app-tech-cell>
     </td>
@@ -735,7 +658,7 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.scale_mail_armor"></app-tech-cell>
     </td>
@@ -747,21 +670,10 @@
     </td>
   </tr>
 
-</table>
-
-<!-- university table -->
-<table class="animate">
-  <!-- headers -->
-  <tr>
-    <!-- <th>Dark Age</th> -->
-    <!-- <th>Feudal Age</th> -->
-    <th>Castle Age</th>
-    <th>Imperial Age</th>
-  </tr>
 
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.university"></app-tech-cell>
     </td>
@@ -769,8 +681,8 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.ballistics"></app-tech-cell>
     </td>
@@ -779,8 +691,8 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.masonry"></app-tech-cell>
     </td>
@@ -789,8 +701,8 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
     </td>
     <td>
@@ -800,8 +712,8 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.fortified_wall"></app-tech-cell>
     </td>
@@ -810,8 +722,8 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
     </td>
     <td>
@@ -819,8 +731,8 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.guard_tower"></app-tech-cell>
     </td>
@@ -829,8 +741,8 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.heated_shot"></app-tech-cell>
     </td>
@@ -838,8 +750,8 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.murder_holes"></app-tech-cell>
     </td>
@@ -847,8 +759,8 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.treadmill_crane"></app-tech-cell>
     </td>
@@ -856,25 +768,13 @@
     </td>
   </tr>
   <tr>
-    <!-- <td></td> -->
-    <!-- <td></td> -->
+    <td></td>
+    <td></td>
     <td>
     </td>
     <td>
       <app-tech-cell [technology]="techs.arrowslits"></app-tech-cell>
     </td>
-  </tr>
-
-</table>
-
-<!-- economy table -->
-<table class="animate">
-  <!-- headers -->
-  <tr>
-    <th>Dark Age</th>
-    <th>Feudal Age</th>
-    <th>Castle Age</th>
-    <th>Imperial Age</th>
   </tr>
 
   <tr>
@@ -999,6 +899,8 @@
       <app-tech-cell [technology]="techs.two_man_saw"></app-tech-cell>
     </td>
   </tr>
+
+
   <tr>
     <td>
       <app-tech-cell [technology]="techs.mill"></app-tech-cell>
@@ -1026,20 +928,8 @@
     </td>
   </tr>
 
-</table>
-
-<!-- market table -->
-<table class="animate">
-  <!-- headers -->
   <tr>
-    <!-- <th>Dark Age</th> -->
-    <th>Feudal Age</th>
-    <th>Castle Age</th>
-    <th>Imperial Age</th>
-  </tr>
-
-  <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.market"></app-tech-cell>
     </td>
@@ -1048,7 +938,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td>
       <app-tech-cell [technology]="techs.trade_cart"></app-tech-cell>
     </td>
@@ -1059,7 +949,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td></td>
     <td>
       <app-tech-cell [technology]="techs.coinage"></app-tech-cell>
@@ -1070,7 +960,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td></td>
     <td>
       <app-tech-cell [technology]="techs.caravan"></app-tech-cell>
@@ -1080,7 +970,7 @@
   </tr>
 
   <tr>
-    <!-- <td></td> -->
+    <td></td>
     <td></td>
     <td>
     </td>

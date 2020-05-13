@@ -1,9 +1,10 @@
 import { Technology } from 'src/app/models/technology.model';
 import { long_swordsman } from './long_swordsman';
+import { imperial_age } from './imperial_age';
 
 export const two_handed_swordsman: Technology = {
   "name": "two handed swordsman",
   "age": "imperial",
   "color": "blue",
-  "parentName": long_swordsman.name,
+  dependencies: [long_swordsman.name, imperial_age.name],
 }

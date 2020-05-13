@@ -5,5 +5,5 @@ export const champion: Technology = {
   "name": "champion",
   "age": "imperial",
   "color": "blue",
-  parentName: two_handed_swordsman.name,
+  dependencies: [two_handed_swordsman.name],
 }

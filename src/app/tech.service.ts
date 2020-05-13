@@ -30,10 +30,12 @@ export class TechService {
       this.selectedTechs.push(tech);
     }
 
-    // recursively add parents
-    if (tech.parentName != null) {
-      let parentTech: Technology = this.getTechByName(tech.parentName)
-      this.add(parentTech);
+    // recursively add prerequisites
+    if (tech.dependencies != null && tech.dependencies.length > 0) {
+      tech.dependencies.forEach((dependency) => {
+        let prerequisiteTech: Technology = this.getTechByName(dependency)
+        this.add(prerequisiteTech);
+      })
     }
 
     this.updateSubject();
@@ -47,9 +49,9 @@ export class TechService {
     this.selectedTechs.splice(index, 1);
 
     // remove children techs if they exist
-    this.selectedTechs.filter((selectedTech) => {
-      return selectedTech.parentName === techToDelete.name;
-    }).forEach(childTech => this.remove(childTech));;
+    // this.selectedTechs.filter((selectedTech) => {
+    //   return selectedTech.parentName === techToDelete.name;
+    // }).forEach(childTech => this.remove(childTech));;
 
     this.updateSubject();
   }
