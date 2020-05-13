@@ -48,10 +48,10 @@ export class TechService {
     }
     this.selectedTechs.splice(index, 1);
 
-    // remove children techs if they exist
-    // this.selectedTechs.filter((selectedTech) => {
-    //   return selectedTech.parentName === techToDelete.name;
-    // }).forEach(childTech => this.remove(childTech));;
+    // remove dependent techs if they exist
+    this.selectedTechs.filter((selectedTech) => {
+      return selectedTech.dependencies?.indexOf(techToDelete.name) > -1;
+    }).forEach(dependentTech => this.remove(dependentTech));;
 
     this.updateSubject();
   }
