@@ -1,2 +1,4 @@
 <button mat-mini-fab class="image" [style.backgroundImage]="'url(' + iconPath + ')'" (click)="buttonPressed()"></button>
-{{civ.name |titlecase}}
+<span [ngClass]="qualify ? 'qualified' : 'unqualified'">
+  {{civ.name |titlecase}}
+</span>

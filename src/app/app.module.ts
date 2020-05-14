@@ -11,8 +11,7 @@ import { environment } from '../environments/environment';
 
 import { MatTableModule } from '@angular/material/table';
 import { TechTableComponent } from './components/tech-table/tech-table.component';
-import { CorrespondingCivTableComponent } from './components/corresponding-civ-table/corresponding-civ-table.component';
-import { ExcludedCivTableComponent } from './components/excluded-civ-table/excluded-civ-table.component';
+import { CivTableComponent } from './components/civ-table/civ-table.component';
 import { MatSortModule } from '@angular/material/sort';
 import { TechCellComponent } from './components/tech-cell/tech-cell.component';
 import { CivCellComponent } from './components/civ-cell/civ-cell.component';
@@ -21,8 +20,7 @@ import { CivCellComponent } from './components/civ-cell/civ-cell.component';
   declarations: [
     AppComponent,
     TechTableComponent,
-    CorrespondingCivTableComponent,
-    ExcludedCivTableComponent,
+    CivTableComponent,
     TechCellComponent,
     CivCellComponent
   ],

@@ -7,12 +7,11 @@ import { Subscription } from 'rxjs';
 import { MatSort } from '@angular/material/sort';
 
 @Component({
-  selector: 'app-corresponding-civ-table',
-  templateUrl: './corresponding-civ-table.component.html',
-  styleUrls: ['./corresponding-civ-table.component.scss']
+  selector: 'app-civ-table',
+  templateUrl: './civ-table.component.html',
+  styleUrls: ['./civ-table.component.scss']
 })
-export class CorrespondingCivTableComponent implements AfterViewInit, OnDestroy, OnInit {
-  private subs: Subscription = new Subscription;
+export class CivTableComponent implements AfterViewInit, OnDestroy, OnInit {
   public displayedColumns = ['name'];
   public dataSource: MatTableDataSource<Civilization>;
 
@@ -21,20 +20,8 @@ export class CorrespondingCivTableComponent implements AfterViewInit, OnDestroy,
   constructor(private techService: TechService) { }
 
   ngOnInit(): void {
-    this.subs.add(
-      this.techService.selectedTechs$.subscribe(selectedTechs => {
-        let correspondingCivs = civilizations.filter(civ => {
-          return selectedTechs.every(tech => {
-            return civ[tech.name];
-          });
-        });
 
-        this.dataSource = new MatTableDataSource(correspondingCivs);
-        this.dataSource.sort = this.sort;
-      })
-
-    );
-
+    this.dataSource = new MatTableDataSource(civilizations);
   }
 
 
@@ -43,7 +30,6 @@ export class CorrespondingCivTableComponent implements AfterViewInit, OnDestroy,
   }
 
   ngOnDestroy(): void {
-    this.subs.unsubscribe();
   }
 
 }
