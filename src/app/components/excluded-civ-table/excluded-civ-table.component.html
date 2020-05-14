@@ -3,7 +3,9 @@
 
   <ng-container matColumnDef="name">
     <mat-header-cell *matHeaderCellDef> Excluded Civs: </mat-header-cell>
-    <mat-cell *matCellDef="let civ"> {{ civ.name }} </mat-cell>
+    <mat-cell *matCellDef="let civ">
+      <app-civ-cell [civ]="civ"></app-civ-cell>
+    </mat-cell>
   </ng-container>
 
   <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

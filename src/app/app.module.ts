@@ -15,6 +15,7 @@ import { CorrespondingCivTableComponent } from './components/corresponding-civ-t
 import { ExcludedCivTableComponent } from './components/excluded-civ-table/excluded-civ-table.component';
 import { MatSortModule } from '@angular/material/sort';
 import { TechCellComponent } from './components/tech-cell/tech-cell.component';
+import { CivCellComponent } from './components/civ-cell/civ-cell.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TechCellComponent } from './components/tech-cell/tech-cell.component';
     TechTableComponent,
     CorrespondingCivTableComponent,
     ExcludedCivTableComponent,
-    TechCellComponent
+    TechCellComponent,
+    CivCellComponent
   ],
   imports: [
     BrowserModule,
