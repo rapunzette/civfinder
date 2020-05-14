@@ -22,6 +22,7 @@ export const vietnamese: Civilization = {
   "crossbowman": true,
   "arbalester": true,
   "skirmisher": true,
+  "dark age": true,
   "elite skirmisher": true,
   "hand cannoneer": false,
   "cavalry archer": true,

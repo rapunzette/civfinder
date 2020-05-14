@@ -30,6 +30,7 @@ export const chinese: Civilization = {
   "parthian tactics": false,
   "stable": true,
   "scout cavalry": true,
+  "dark age": true,
   "bloodlines": true,
   "light cavalry": true,
   "knight": true,

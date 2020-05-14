@@ -33,6 +33,7 @@ export const malay: Civilization = {
   "bloodlines": false,
   "light cavalry": true,
   "knight": true,
+  "dark age": true,
   "camel rider": false,
   "battle elephant": true,
   "steppe lancer": false,

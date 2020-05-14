@@ -2,6 +2,7 @@ import { Civilization } from 'src/app/models/civilization.model';
 
 export const burmese: Civilization = {
   "name": "burmese",
+  "dark age": true,
   "barracks": true,
   "militia": true,
   "man at arms": true,

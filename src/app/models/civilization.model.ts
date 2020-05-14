@@ -1,4 +1,5 @@
 export interface Civilization {
+  "dark age": true; // the root technology is always true
   "name": string;
   "barracks": boolean;
   "militia": boolean;

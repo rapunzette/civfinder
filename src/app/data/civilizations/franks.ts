@@ -37,6 +37,7 @@ export const franks: Civilization = {
   "battle elephant": false,
   "steppe lancer": false,
   "husbandry": false,
+  "dark age": true,
   "hussar": true,
   "cavalier": true,
   "paladin": true,

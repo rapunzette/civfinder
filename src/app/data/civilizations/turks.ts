@@ -21,6 +21,7 @@ export const turks: Civilization = {
   "archer": true,
   "crossbowman": true,
   "arbalester": false,
+  "dark age": true,
   "skirmisher": true,
   "elite skirmisher": false,
   "hand cannoneer": true,

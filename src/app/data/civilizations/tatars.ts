@@ -20,6 +20,7 @@ export const tatars: Civilization = {
   "archery range": true,
   "archer": true,
   "crossbowman": true,
+  "dark age": true,
   "arbalester": false,
   "skirmisher": true,
   "elite skirmisher": true,

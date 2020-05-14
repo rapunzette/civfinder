@@ -27,6 +27,7 @@ export const koreans: Civilization = {
   "cavalry archer": true,
   "heavy cavalry archer": true,
   "thumb ring": true,
+  "dark age": true,
   "parthian tactics": false,
   "stable": true,
   "scout cavalry": true,

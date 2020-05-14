@@ -32,6 +32,7 @@ export const malians: Civilization = {
   "scout cavalry": true,
   "bloodlines": true,
   "light cavalry": true,
+  "dark age": true,
   "knight": true,
   "camel rider": true,
   "battle elephant": false,

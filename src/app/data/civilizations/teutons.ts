@@ -20,6 +20,7 @@ export const teutons: Civilization = {
   "archery range": true,
   "archer": true,
   "crossbowman": true,
+  "dark age": true,
   "arbalester": false,
   "skirmisher": true,
   "elite skirmisher": true,

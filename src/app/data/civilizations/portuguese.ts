@@ -16,6 +16,7 @@ export const portuguese: Civilization = {
   "two handed swordsman": true,
   "champion": true,
   "halberdier": true,
+  "dark age": true,
   "elite eagle warrior": false,
   "archery range": true,
   "archer": true,

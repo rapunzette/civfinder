@@ -31,6 +31,7 @@ export const cumans: Civilization = {
   "stable": true,
   "scout cavalry": true,
   "bloodlines": true,
+  "dark age": true,
   "light cavalry": true,
   "knight": true,
   "camel rider": true,

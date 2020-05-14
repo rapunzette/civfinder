@@ -26,6 +26,7 @@ export const japanese: Civilization = {
   "hand cannoneer": true,
   "cavalry archer": true,
   "heavy cavalry archer": true,
+  "dark age": true,
   "thumb ring": true,
   "parthian tactics": true,
   "stable": true,

@@ -15,6 +15,7 @@ export const persians: Civilization = {
   "arson": true,
   "two handed swordsman": false,
   "champion": true,
+  "dark age": true,
   "halberdier": true,
   "elite eagle warrior": false,
   "archery range": true,

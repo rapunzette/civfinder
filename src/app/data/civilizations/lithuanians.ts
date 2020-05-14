@@ -29,6 +29,7 @@ export const lithuanians: Civilization = {
   "thumb ring": true,
   "parthian tactics": false,
   "stable": true,
+  "dark age": true,
   "scout cavalry": true,
   "bloodlines": true,
   "light cavalry": true,

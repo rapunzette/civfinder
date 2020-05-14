@@ -2,6 +2,7 @@ import { Civilization } from 'src/app/models/civilization.model';
 
 export const aztecs: Civilization = {
   "name": "aztecs",
+  "dark age": true,
   "barracks": true,
   "militia": true,
   "man at arms": true,

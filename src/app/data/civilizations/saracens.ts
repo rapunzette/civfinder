@@ -16,6 +16,7 @@ export const saracens: Civilization = {
   "two handed swordsman": true,
   "champion": true,
   "halberdier": false,
+  "dark age": true,
   "elite eagle warrior": false,
   "archery range": true,
   "archer": true,

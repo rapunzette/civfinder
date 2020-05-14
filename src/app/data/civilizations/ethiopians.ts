@@ -33,6 +33,7 @@ export const ethiopians: Civilization = {
   "bloodlines": false,
   "light cavalry": true,
   "knight": true,
+  "dark age": true,
   "camel rider": true,
   "battle elephant": false,
   "steppe lancer": false,

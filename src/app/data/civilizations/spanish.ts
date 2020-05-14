@@ -18,6 +18,7 @@ export const spanish: Civilization = {
   "halberdier": true,
   "elite eagle warrior": false,
   "archery range": true,
+  "dark age": true,
   "archer": true,
   "crossbowman": false,
   "arbalester": false,

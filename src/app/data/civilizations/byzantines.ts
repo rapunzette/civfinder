@@ -1,6 +1,7 @@
 import { Civilization } from 'src/app/models/civilization.model';
 
 export const byzantines: Civilization = {
+  "dark age": true,
   "name": "byzantines",
   "barracks": true,
   "militia": true,

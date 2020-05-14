@@ -25,6 +25,7 @@ export const goths: Civilization = {
   "elite skirmisher": true,
   "hand cannoneer": true,
   "cavalry archer": true,
+  "dark age": true,
   "heavy cavalry archer": true,
   "thumb ring": false,
   "parthian tactics": false,

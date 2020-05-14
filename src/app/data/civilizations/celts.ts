@@ -28,6 +28,7 @@ export const celts: Civilization = {
   "heavy cavalry archer": true,
   "thumb ring": false,
   "parthian tactics": false,
+  "dark age": true,
   "stable": true,
   "scout cavalry": true,
   "bloodlines": false,

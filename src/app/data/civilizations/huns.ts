@@ -25,6 +25,7 @@ export const huns: Civilization = {
   "elite skirmisher": true,
   "hand cannoneer": false,
   "cavalry archer": true,
+  "dark age": true,
   "heavy cavalry archer": true,
   "thumb ring": true,
   "parthian tactics": true,

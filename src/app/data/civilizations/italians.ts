@@ -24,6 +24,7 @@ export const italians: Civilization = {
   "skirmisher": true,
   "elite skirmisher": true,
   "hand cannoneer": true,
+  "dark age": true,
   "cavalry archer": true,
   "heavy cavalry archer": false,
   "thumb ring": true,

@@ -17,6 +17,7 @@ export const slavs: Civilization = {
   "champion": true,
   "halberdier": true,
   "elite eagle warrior": false,
+  "dark age": true,
   "archery range": true,
   "archer": true,
   "crossbowman": true,

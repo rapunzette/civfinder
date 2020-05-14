@@ -27,6 +27,7 @@ export const khmer: Civilization = {
   "cavalry archer": true,
   "heavy cavalry archer": true,
   "thumb ring": false,
+  "dark age": true,
   "parthian tactics": true,
   "stable": true,
   "scout cavalry": true,

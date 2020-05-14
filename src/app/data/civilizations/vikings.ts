@@ -23,6 +23,7 @@ export const vikings: Civilization = {
   "arbalester": true,
   "skirmisher": true,
   "elite skirmisher": true,
+  "dark age": true,
   "hand cannoneer": false,
   "cavalry archer": true,
   "heavy cavalry archer": false,

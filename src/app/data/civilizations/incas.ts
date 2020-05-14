@@ -25,6 +25,7 @@ export const incas: Civilization = {
   "elite skirmisher": true,
   "hand cannoneer": false,
   "cavalry archer": false,
+  "dark age": true,
   "heavy cavalry archer": false,
   "thumb ring": true,
   "parthian tactics": false,
