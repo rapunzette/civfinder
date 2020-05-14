@@ -12,6 +12,8 @@ export class CivCellComponent implements OnInit {
 
   @Input() public civ: Civilization;
 
+  public iconPath: string;
+
   /**
    * Clear all selected techs then select all techs this civilization has.
    */
@@ -28,6 +30,7 @@ export class CivCellComponent implements OnInit {
   constructor(private techService: TechService) { }
 
   ngOnInit(): void {
+    this.iconPath = `assets/civs/${this.civ.name}.png`
   }
 
 }

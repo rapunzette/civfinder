@@ -33,6 +33,7 @@ import { CivCellComponent } from './components/civ-cell/civ-cell.component';
     AngularFireModule.initializeApp(environment.firebase),
     MatTableModule,
     MatSortModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

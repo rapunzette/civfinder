@@ -1,3 +1,2 @@
-<button (click)="buttonPressed()">
-  {{civ.name}}
-</button>
+<button mat-mini-fab class="image" [style.backgroundImage]="'url(' + iconPath + ')'" (click)="buttonPressed()"></button>
+{{civ.name |titlecase}}
