@@ -1,5 +1,10 @@
 <!-- <p>{{(techService.selectedTechs$|async|json)}}</p> -->
 <!-- <button (click)="techService.clear()">clear techs</button> -->
-<app-tech-table></app-tech-table>
-
-<app-civ-table></app-civ-table>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened>
+    <app-civ-table></app-civ-table>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-tech-table></app-tech-table>
+  </mat-sidenav-content>
+</mat-sidenav-container>

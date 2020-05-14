@@ -16,6 +16,8 @@ import { MatSortModule } from '@angular/material/sort';
 import { TechCellComponent } from './components/tech-cell/tech-cell.component';
 import { CivCellComponent } from './components/civ-cell/civ-cell.component';
 
+import { MatSidenavModule } from '@angular/material/sidenav';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,8 @@ import { CivCellComponent } from './components/civ-cell/civ-cell.component';
     AngularFireModule.initializeApp(environment.firebase),
     MatTableModule,
     MatSortModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
