@@ -1,3 +1,17 @@
 table, th, td {
   border: 1px solid black;
 }
+
+thead th
+{
+    position: sticky;
+    top: 0px;
+}
+
+tr {
+  background: white;
+}
+
+tr th {
+  background: white;
+}
