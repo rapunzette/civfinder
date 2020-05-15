@@ -33,16 +33,24 @@ import { bulgarians } from './bulgarians';
 import { cumans } from './cumans';
 import { lithuanians } from './lithuanians';
 import { tatars } from './tatars';
+import { indians } from './indians';
 
 export const civilizations: Civilization[] = [
   aztecs,
   berbers,
   britons,
+  bulgarians,
+  burmese,
   byzantines,
   celts,
   chinese,
+  cumans,
+  ethiopians,
   franks,
   goths,
+  huns,
+  incas,
+  indians,
   japanese,
   vikings,
   mongols,
@@ -50,23 +58,17 @@ export const civilizations: Civilization[] = [
   saracens,
   teutons,
   turks,
-  huns,
   koreans,
   mayans,
   spanish,
-  incas,
   italians,
   magyars,
   slavs,
-  ethiopians,
   malians,
   portuguese,
-  burmese,
   khmer,
   malay,
   vietnamese,
-  bulgarians,
-  cumans,
   lithuanians,
   tatars,
 ]
