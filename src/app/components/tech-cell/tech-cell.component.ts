@@ -9,6 +9,8 @@ import { TechService } from 'src/app/tech.service';
 })
 export class TechCellComponent implements OnInit {
 
+  public imagePath: string;
+
   @Input() public technology: Technology;
 
   constructor(public techService: TechService) { }
@@ -18,6 +20,7 @@ export class TechCellComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.imagePath = `assets/techs/${this.technology.name}.png`;
   }
 
 }

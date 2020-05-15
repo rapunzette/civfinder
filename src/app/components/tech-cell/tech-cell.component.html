@@ -1,4 +1,5 @@
 <button (click)="buttonPressed()">
-  {{technology.name}}
+  <img [src]="imagePath">
+  <!-- {{technology.name}} -->
   <input type="checkbox" [checked]="(techService.selectedTechs$ | async).indexOf(this.technology) >= 0">
 </button>
