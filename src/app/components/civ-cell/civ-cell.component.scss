@@ -1,16 +1,18 @@
-button {
-  &.image {
-   background-color: transparent;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
-  }
-}
-
 .qualified {
-  color: blue;
+  // color: blue;
+  opacity: 1;
 }
 
 .unqualified {
-  color: red;
+  // color: red;
+  opacity: .2;
+}
+
+.civ-avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+  background-size: cover;
 }

@@ -1,4 +1,22 @@
-<button mat-mini-fab class="image" [style.backgroundImage]="'url(' + iconPath + ')'" (click)="buttonPressed()"></button>
+<!-- <button mat-mini-fab class="image" [style.backgroundImage]="'url(' + iconPath + ')'" (click)="buttonPressed()"></button> -->
+
+<!-- <img [src]="iconPath">
 <span [ngClass]="qualify ? 'qualified' : 'unqualified'">
   {{civ.name |titlecase}}
-</span>
+</span> -->
+
+<!-- <button mat-flat-button (click)="buttonPressed()">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar [style.backgroundImage]="'url(' + iconPath + ')'" style="
+      background-size: cover;"></div>
+      <mat-card-title [ngClass]="qualify ? 'qualified' : 'unqualified'">{{civ.name | titlecase}}</mat-card-title>
+    </mat-card-header>
+  </mat-card>
+</button> -->
+<button mat-button [matTooltip]="civ.name|titlecase" matTooltipPosition="right" (click)="buttonPressed()"
+  [ngClass]="qualify ? 'qualified' : 'unqualified'">
+  <div class="civ-avatar" [style.backgroundImage]="'url(' + iconPath + ')'"></div>
+  <!-- <div [ngClass]="qualify ? 'qualified' : 'unqualified'">{{civ.name | titlecase}}</div> -->
+
+</button>

@@ -17,7 +17,7 @@ import { TechCellComponent } from './components/tech-cell/tech-cell.component';
 import { CivCellComponent } from './components/civ-cell/civ-cell.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
-
+import { MatTooltipModule } from '@angular/material/tooltip';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +34,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatTableModule,
     MatSortModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
