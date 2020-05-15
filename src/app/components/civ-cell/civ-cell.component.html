@@ -14,7 +14,7 @@
     </mat-card-header>
   </mat-card>
 </button> -->
-<button mat-button [matTooltip]="civ.name|titlecase" matTooltipPosition="right" (click)="buttonPressed()"
+<button mat-button [matTooltip]="civ.name|titlecase" (click)="buttonPressed()"
   [ngClass]="qualify ? 'qualified' : 'unqualified'">
   <div class="civ-avatar" [style.backgroundImage]="'url(' + iconPath + ')'"></div>
   <!-- <div [ngClass]="qualify ? 'qualified' : 'unqualified'">{{civ.name | titlecase}}</div> -->

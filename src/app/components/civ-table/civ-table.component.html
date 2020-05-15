@@ -1,13 +1,5 @@
-<mat-table #table [dataSource]="dataSource" matSort class="animate" matSortActive="name" matSortDirection="asc"
-  matSortDisabled>
-
-  <ng-container matColumnDef="name">
-    <mat-header-cell *matHeaderCellDef> Civs: </mat-header-cell>
-    <mat-cell *matCellDef="let civ">
-      <app-civ-cell [civ]="civ"></app-civ-cell>
-    </mat-cell>
-  </ng-container>
-
-  <!-- <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row> -->
-  <mat-row *matRowDef="let row; columns: displayedColumns;" class="animate"></mat-row>
-</mat-table>
+<mat-grid-list cols="5" rowHeight="75px">
+  <mat-grid-tile *ngFor="let civ of civilizations">
+    <app-civ-cell [civ]="civ"></app-civ-cell>
+  </mat-grid-tile>
+</mat-grid-list>

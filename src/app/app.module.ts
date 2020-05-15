@@ -9,7 +9,6 @@ import { MatButtonModule } from "@angular/material/button";
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 
-import { MatTableModule } from '@angular/material/table';
 import { TechTableComponent } from './components/tech-table/tech-table.component';
 import { CivTableComponent } from './components/civ-table/civ-table.component';
 import { MatSortModule } from '@angular/material/sort';
@@ -18,6 +17,7 @@ import { CivCellComponent } from './components/civ-cell/civ-cell.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatGridListModule } from '@angular/material/grid-list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,11 +31,11 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     BrowserAnimationsModule,
     MatButtonModule,
     AngularFireModule.initializeApp(environment.firebase),
-    MatTableModule,
     MatSortModule,
     MatButtonModule,
     MatSidenavModule,
     MatTooltipModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
