@@ -5,7 +5,7 @@
       <mat-icon matChipRemove>cancel</mat-icon>
     </mat-chip>
     <input placeholder="Technlogies..." #techInput [formControl]="techCtrl" [matAutocomplete]="auto"
-      [matChipInputFor]="chipList" (matChipInputTokenEnd)="add($event)">
+      [matChipInputFor]="chipList">
   </mat-chip-list>
   <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
     <mat-option style="height: 100px;" *ngFor="let tech of filteredTechs | async" [value]="tech">

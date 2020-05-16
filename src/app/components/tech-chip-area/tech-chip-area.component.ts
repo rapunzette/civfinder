@@ -31,24 +31,6 @@ export class TechChipAreaComponent {
       map((usrInput: string | Technology | null) => usrInput ? this._filter(usrInput) : technologies));
   }
 
-  add(event: MatChipInputEvent): void {
-    const input = event.input;
-    const value = event.value;
-
-    // Add our tech
-    if ((value || '').trim()) {
-      let techToBeAdded: Technology = this.techService.getTechByName(value.trim());
-      this.techs.push(techToBeAdded);
-    }
-
-    // // Reset the input value
-    if (input) {
-      input.value = '';
-    }
-
-    this.techCtrl.setValue(null);
-  }
-
   remove(tech: Technology): void {
     const index = this.techs.indexOf(tech);
 
