@@ -162,4 +162,8 @@ export const bulgarians: Civilization = {
   "banking": true,
   "guilds": false,
   "crop rotation": true,
+  "bombard tower research": true,
+  "fortified wall research": false,
+  "guard tower research": true,
+  "keep research": true,
 }

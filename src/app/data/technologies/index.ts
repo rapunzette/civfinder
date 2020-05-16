@@ -1,3 +1,11 @@
+import { keep_research } from './keep_research';
+export { keep_research } from './keep_research';
+import { guard_tower_research } from './guard_tower_research';
+export { guard_tower_research } from './guard_tower_research';
+import { fortified_wall_research } from './fortified_wall_research';
+export { fortified_wall_research } from './fortified_wall_research';
+import { bombard_tower_research } from './bombard_tower_research';
+export { bombard_tower_research } from './bombard_tower_research';
 import { dark_age } from './dark_age';
 import { crop_rotation } from './crop_rotation';
 import { guilds } from './guilds';
@@ -484,4 +492,8 @@ export const technologies: Technology[] = [
   guilds,
   crop_rotation,
   dark_age,
+  bombard_tower_research,
+  fortified_wall_research,
+  guard_tower_research,
+  keep_research,
 ]

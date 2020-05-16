@@ -162,4 +162,8 @@ export const malay: Civilization = {
   "banking": true,
   "guilds": true,
   "crop rotation": true,
+  "bombard tower research": true,
+  "fortified wall research": false,
+  "guard tower research": true,
+  "keep research": true,
 }

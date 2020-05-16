@@ -162,4 +162,8 @@ export const huns: Civilization = {
   "banking": true,
   "guilds": true,
   "crop rotation": false,
+  "bombard tower research": true,
+  "fortified wall research": false,
+  "guard tower research": false,
+  "keep research": false,
 }

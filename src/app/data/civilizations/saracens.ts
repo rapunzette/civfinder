@@ -162,4 +162,8 @@ export const saracens: Civilization = {
   "banking": true,
   "guilds": false,
   "crop rotation": false,
+  "bombard tower research": true,
+  "fortified wall research": true,
+  "guard tower research": true,
+  "keep research": true,
 }

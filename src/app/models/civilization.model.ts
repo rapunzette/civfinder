@@ -160,4 +160,8 @@ export interface Civilization {
   "banking": boolean;
   "guilds": boolean;
   "crop rotation": boolean;
+  "bombard tower research": boolean;
+  "fortified wall research": boolean;
+  "guard tower research": boolean;
+  "keep research": boolean;
 }

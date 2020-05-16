@@ -162,4 +162,8 @@ export const spanish: Civilization = {
   "banking": true,
   "guilds": true,
   "crop rotation": false,
+  "bombard tower research": true,
+  "fortified wall research": true,
+  "guard tower research": true,
+  "keep research": true,
 }
