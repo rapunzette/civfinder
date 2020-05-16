@@ -1,15 +1,15 @@
-<mat-form-field class="example-chip-list">
+<mat-form-field class="my-chip-list">
   <mat-chip-list #chipList aria-label="Tech selection">
-    <mat-chip *ngFor="let fruit of fruits" [selectable]="selectable" (removed)="remove(fruit)">
-      <img matChipAvatar [src]="imagePathOf(fruit)">
+    <mat-chip *ngFor="let tech of techs" [selectable]="selectable" (removed)="remove(tech)">
+      <img matChipAvatar [src]="imagePathOf(tech)">
       <mat-icon matChipRemove>cancel</mat-icon>
     </mat-chip>
-    <input placeholder="Technlogies..." #fruitInput [formControl]="fruitCtrl" [matAutocomplete]="auto"
+    <input placeholder="Technlogies..." #techInput [formControl]="techCtrl" [matAutocomplete]="auto"
       [matChipInputFor]="chipList" (matChipInputTokenEnd)="add($event)">
   </mat-chip-list>
   <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
-    <mat-option *ngFor="let fruit of filteredFruits | async" [value]="fruit">
-      <img [src]="imagePathOf(fruit)">
+    <mat-option style="height: 100px;" *ngFor="let tech of filteredTechs | async" [value]="tech">
+      <img [src]="imagePathOf(tech)">
     </mat-option>
   </mat-autocomplete>
 </mat-form-field>

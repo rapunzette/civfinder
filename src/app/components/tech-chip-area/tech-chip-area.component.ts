@@ -4,7 +4,9 @@ import { Observable } from 'rxjs';
 import { MatAutocomplete, MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 import { startWith, map } from 'rxjs/operators';
 import { MatChipInputEvent } from '@angular/material/chips';
-import { COMMA, ENTER } from '@angular/cdk/keycodes';
+import { Technology } from 'src/app/models/technology.model';
+import { technologies } from 'src/app/data/technologies';
+import { TechService } from 'src/app/tech.service';
 @Component({
   selector: 'app-tech-chip-area',
   templateUrl: './tech-chip-area.component.html',
@@ -13,60 +15,66 @@ import { COMMA, ENTER } from '@angular/cdk/keycodes';
 export class TechChipAreaComponent {
   visible = true;
   selectable = true;
-  // separatorKeysCodes: number[] = [ENTER, COMMA];
-  fruitCtrl = new FormControl();
-  filteredFruits: Observable<string[]>;
-  fruits: string[] = ['halberdier'];
-  allFruits: string[] = ['pikeman', 'champion', 'man at arms'];
+  techCtrl = new FormControl();
+  filteredTechs: Observable<Technology[]>;
+  /**
+   * The techs selected by the user
+   */
+  techs: Technology[] = [];
 
-  @ViewChild('fruitInput') fruitInput: ElementRef<HTMLInputElement>;
+  @ViewChild('techInput') techInput: ElementRef<HTMLInputElement>;
   @ViewChild('auto') matAutocomplete: MatAutocomplete;
 
-  constructor() {
-    this.filteredFruits = this.fruitCtrl.valueChanges.pipe(
+  constructor(public techService: TechService) {
+    this.filteredTechs = this.techCtrl.valueChanges.pipe(
       startWith(null),
-      map((fruit: string | null) => fruit ? this._filter(fruit) : this.allFruits.slice()));
+      map((usrInput: string | Technology | null) => usrInput ? this._filter(usrInput) : technologies));
   }
 
   add(event: MatChipInputEvent): void {
     const input = event.input;
     const value = event.value;
 
-    // Add our fruit
+    // Add our tech
     if ((value || '').trim()) {
-      this.fruits.push(value.trim());
+      let techToBeAdded: Technology = this.techService.getTechByName(value.trim());
+      this.techs.push(techToBeAdded);
     }
 
-    // Reset the input value
+    // // Reset the input value
     if (input) {
       input.value = '';
     }
 
-    this.fruitCtrl.setValue(null);
+    this.techCtrl.setValue(null);
   }
 
-  remove(fruit: string): void {
-    const index = this.fruits.indexOf(fruit);
+  remove(tech: Technology): void {
+    const index = this.techs.indexOf(tech);
 
     if (index >= 0) {
-      this.fruits.splice(index, 1);
+      this.techs.splice(index, 1);
     }
   }
 
   selected(event: MatAutocompleteSelectedEvent): void {
-    this.fruits.push(event.option.viewValue);
-    this.fruitInput.nativeElement.value = '';
-    this.fruitCtrl.setValue(null);
+    let newTech: Technology = event.option.value;
+    this.techs.push(newTech);
+    this.techInput.nativeElement.value = '';
+    this.techCtrl.setValue(null);
   }
 
-  private _filter(value: string): string[] {
-    const filterValue = value.toLowerCase();
 
-    return this.allFruits.filter(fruit => fruit.toLowerCase().indexOf(filterValue) === 0);
+  public imagePathOf(tech: Technology): string {
+    return `assets/techs/${tech.name}.png`;
   }
 
-  public imagePathOf(derp: string): string {
-    return `assets/techs/${derp}.png`
+  private _filter(userSearch: any): Technology[] {
+    // userSearch is type 'any' because it can come through as string or Technology
+    const filterValue = userSearch.name != null ? userSearch.name.toLowerCase() : userSearch.toLowerCase();
+
+    return technologies.filter(tech => tech.name.includes(filterValue));
   }
+
 
 }
