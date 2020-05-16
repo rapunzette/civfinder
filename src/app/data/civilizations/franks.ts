@@ -162,7 +162,7 @@ export const franks: Civilization = {
   "banking": true,
   "guilds": false,
   "crop rotation": true,
-  "bombard tower research": true,
+  "bombard tower research": false,
   "fortified wall research": true,
   "guard tower research": true,
   "keep research": false,

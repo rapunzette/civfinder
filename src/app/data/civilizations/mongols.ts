@@ -162,7 +162,7 @@ export const mongols: Civilization = {
   "banking": true,
   "guilds": false,
   "crop rotation": false,
-  "bombard tower research": true,
+  "bombard tower research": false,
   "fortified wall research": true,
   "guard tower research": true,
   "keep research": false,

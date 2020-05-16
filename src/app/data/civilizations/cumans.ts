@@ -162,7 +162,7 @@ export const cumans: Civilization = {
   "banking": true,
   "guilds": true,
   "crop rotation": true,
-  "bombard tower research": true,
+  "bombard tower research": false,
   "fortified wall research": false,
   "guard tower research": false,
   "keep research": false,

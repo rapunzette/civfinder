@@ -162,7 +162,7 @@ export const berbers: Civilization = {
   "banking": true,
   "guilds": true,
   "crop rotation": true,
-  "bombard tower research": true,
+  "bombard tower research": false,
   "fortified wall research": true,
   "guard tower research": true,
   "keep research": false,
