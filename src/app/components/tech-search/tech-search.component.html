@@ -1,1 +1,11 @@
-<p>tech-search works!</p>
+<input (keyup)="onkeyup($event)" placeholder="search technologies...">
+
+<p>
+  offset: {{offset|async}}
+</p>
+<p>
+  results:
+</p>
+<ul *ngFor="let tech of results | async" class="card">
+  <li>{{ tech.name }}</li>
+</ul>
