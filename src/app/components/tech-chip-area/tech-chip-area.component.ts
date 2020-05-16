@@ -54,11 +54,13 @@ export class TechChipAreaComponent {
    */
   public selected(event: MatAutocompleteSelectedEvent): void {
     let newTech: Technology = event.option.value;
-    this.techs.push(newTech);
+    // add the tech only if it hasn't already been selected
+    if (this.techs.indexOf(newTech) == -1) {
+      this.techs.push(newTech);
+      this.techService.add(newTech);
+    }
     this.techInput.nativeElement.value = '';
     this.techCtrl.setValue(null);
-
-    this.techService.add(newTech);
   }
 
 
