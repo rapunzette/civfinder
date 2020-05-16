@@ -20,6 +20,11 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { TechSearchComponent } from './components/tech-search/tech-search.component';
 import { MatInputModule } from '@angular/material/input';
+import { TechChipAreaComponent } from './components/tech-chip-area/tech-chip-area.component';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatIconModule } from '@angular/material/icon';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +32,8 @@ import { MatInputModule } from '@angular/material/input';
     CivTableComponent,
     TechCellComponent,
     CivCellComponent,
-    TechSearchComponent
+    TechSearchComponent,
+    TechChipAreaComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +46,11 @@ import { MatInputModule } from '@angular/material/input';
     MatTooltipModule,
     MatGridListModule,
     MatInputModule,
+    MatChipsModule,
+    MatIconModule,
+    MatAutocompleteModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
