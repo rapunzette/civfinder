@@ -1,11 +1,8 @@
-<input (keyup)="onkeyup($event)" placeholder="search technologies...">
+<mat-form-field>
+  <mat-label>Search technologies...</mat-label>
+  <input matInput (keyup)="onkeyup($event)" placeholder="Halberdier">
+</mat-form-field>
 
-<p>
-  offset: {{offset|async}}
-</p>
-<p>
-  results:
-</p>
 <ul *ngFor="let tech of results | async" class="card">
-  <li>{{ tech.name }}</li>
+  <app-tech-cell [technology]="tech"></app-tech-cell>
 </ul>

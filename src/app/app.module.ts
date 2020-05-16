@@ -19,6 +19,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { TechSearchComponent } from './components/tech-search/tech-search.component';
+import { MatInputModule } from '@angular/material/input';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +39,7 @@ import { TechSearchComponent } from './components/tech-search/tech-search.compon
     MatSidenavModule,
     MatTooltipModule,
     MatGridListModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
