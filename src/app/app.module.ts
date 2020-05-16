@@ -18,13 +18,15 @@ import { CivCellComponent } from './components/civ-cell/civ-cell.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { TechSearchComponent } from './components/tech-search/tech-search.component';
 @NgModule({
   declarations: [
     AppComponent,
     TechTableComponent,
     CivTableComponent,
     TechCellComponent,
-    CivCellComponent
+    CivCellComponent,
+    TechSearchComponent
   ],
   imports: [
     BrowserModule,
