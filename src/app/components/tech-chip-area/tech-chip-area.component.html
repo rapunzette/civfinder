@@ -10,8 +10,9 @@
       [matAutocomplete]="auto" [matChipInputFor]="chipList">
   </mat-chip-list>
   <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
-    <mat-option style="height: 100px;" *ngFor="let tech of filteredTechs | async" [value]="tech">
+    <mat-option *ngFor="let tech of filteredTechs | async" [value]="tech" [ngClass]="tech.color">
       <img [src]="imagePathOf(tech)">
+      {{tech.name|titlecase}}
     </mat-option>
   </mat-autocomplete>
 </mat-form-field>
