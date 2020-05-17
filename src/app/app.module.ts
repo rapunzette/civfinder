@@ -25,6 +25,9 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { NgxGraphModule } from '@swimlane/ngx-graph';
+import { TechGraphComponent } from './components/tech-graph/tech-graph.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +36,8 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
     TechCellComponent,
     CivCellComponent,
     TechSearchComponent,
-    TechChipAreaComponent
+    TechChipAreaComponent,
+    TechGraphComponent
   ],
   imports: [
     BrowserModule,
@@ -51,6 +55,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
     MatAutocompleteModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxGraphModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

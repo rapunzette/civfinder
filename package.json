@@ -24,6 +24,7 @@
     "@angular/platform-browser": "~9.1.4",
     "@angular/platform-browser-dynamic": "~9.1.4",
     "@angular/router": "~9.1.4",
+    "@swimlane/ngx-graph": "^7.0.1",
     "@types/lodash": "^4.14.150",
     "firebase": "^7.14.2",
     "lodash": "^4.17.15",
