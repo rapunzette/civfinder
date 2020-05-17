@@ -3,6 +3,7 @@ import { Node, Edge, ClusterNode, Layout } from '@swimlane/ngx-graph';
 import { Subject, Subscription } from 'rxjs';
 import * as shape from 'd3-shape';
 import { TechService } from 'src/app/tech.service';
+import { technologies } from 'src/app/data/technologies';
 
 @Component({
   selector: 'app-tech-graph',
@@ -15,66 +16,46 @@ export class TechGraphComponent implements OnInit, OnDestroy {
 
 
   // graph values
-  curve = shape.curveBundle.beta(1);
-  draggingEnabled: boolean = true;
-  panningEnabled: boolean = true;
-  zoomEnabled: boolean = true;
-  zoomSpeed: number = 0.1;
-  minZoomLevel: number = 0.1;
-  maxZoomLevel: number = 4.0;
-  panOnZoom: boolean = true;
-  autoZoom: boolean = true;
-  autoCenter: boolean = true;
-  update$: Subject<boolean> = new Subject();
-  center$: Subject<boolean> = new Subject();
-  zoomToFit$: Subject<boolean> = new Subject();
-  layout = 'dagreCluster';
-  public layoutSettings = {
-    orientation: 'TB'
-  };
+  public curve = shape.curveBundle.beta(1);
+  public draggingEnabled: boolean = true;
+  public panningEnabled: boolean = true;
+  public zoomEnabled: boolean = true;
+  public zoomSpeed: number = 0.1;
+  public minZoomLevel: number = 0.1;
+  public maxZoomLevel: number = 400.0;
+  public panOnZoom: boolean = true;
+  public autoZoom: boolean = true;
+  public autoCenter: boolean = true;
+  public update$: Subject<boolean> = new Subject();
+  public center$: Subject<boolean> = new Subject();
+  public zoomToFit$: Subject<boolean> = new Subject();
+  public layout = 'dagreCluster';
+  public layoutSettings = { orientation: 'TB' };
 
-  public nodes: Node[] = [
-    {
-      id: 'first',
-      label: 'first'
-    }, {
-      id: 'second',
-      label: 'B'
-    }, {
-      id: 'c1',
-      label: 'C1'
-    }, {
-      id: 'c2',
-      label: 'C2'
-    }
-  ];
-
-  public edges: Edge[] = [
-    {
-      source: 'first',
-      target: 'second',
-      label: 'is parent of'
-    }, {
-      source: 'first',
-      target: 'c1',
-      label: 'custom label'
-    }, {
-      source: 'first',
-      target: 'c1',
-      label: 'custom label'
-    }, {
-      source: 'first',
-      target: 'c2',
-      label: 'custom label'
-    }
-  ];
+  public nodes: Node[];
+  public edges: Edge[];
 
   public clusters: ClusterNode[] = [
     {
-      id: 'third',
-      label: 'C',
-      childNodeIds: ['c1', 'c2']
-    }
+      id: 'dark age cluster',
+      label: 'dark age cluster',
+      childNodeIds: technologies.filter(tech => tech.age === "dark").map(tech => tech.name),
+    },
+    {
+      id: 'feudal age cluster',
+      label: 'feudal age cluster',
+      childNodeIds: technologies.filter(tech => tech.age === "feudal").map(tech => tech.name),
+    },
+    {
+      id: 'castle age cluster',
+      label: 'castle age cluster',
+      childNodeIds: technologies.filter(tech => tech.age === "castle").map(tech => tech.name),
+    },
+    {
+      id: 'imperial age cluster',
+      label: 'imperial age cluster',
+      childNodeIds: technologies.filter(tech => tech.age === "imperial").map(tech => tech.name),
+    },
   ]
 
   ngOnInit(): void {
