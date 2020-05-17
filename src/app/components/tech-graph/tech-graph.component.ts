@@ -17,7 +17,7 @@ export class TechGraphComponent implements OnInit, OnDestroy {
 
   // graph values
   public curve = shape.curveBundle.beta(1);
-  public draggingEnabled: boolean = true;
+  public draggingEnabled: boolean = false;
   public panningEnabled: boolean = true;
   public zoomEnabled: boolean = true;
   public zoomSpeed: number = 0.1;
@@ -29,7 +29,8 @@ export class TechGraphComponent implements OnInit, OnDestroy {
   public update$: Subject<boolean> = new Subject();
   public center$: Subject<boolean> = new Subject();
   public zoomToFit$: Subject<boolean> = new Subject();
-  public layout = 'dagreCluster';
+  public layout = 'dagre';
+  // public layout = 'dagreCluster';
   public layoutSettings = { orientation: 'TB' };
 
   public nodes: Node[];
@@ -67,7 +68,8 @@ export class TechGraphComponent implements OnInit, OnDestroy {
         techs.forEach(tech => {
           this.nodes.push({
             id: `${tech.name}`,
-            label: `${tech.name}`
+            label: `${tech.name}`,
+            data: { color: `${tech.color}` }
           });
           if (tech.dependencies.length > 0) {
             tech.dependencies.forEach(depenency => {
