@@ -1,7 +1,9 @@
 <mat-form-field class="my-chip-list">
   <mat-chip-list #chipList aria-label="Tech selection">
-    <mat-chip *ngFor="let tech of techService.selectedTechs$ | async" (removed)="techService.deselect(tech)">
-      <img matChipAvatar [src]="imagePathOf(tech)">
+    <mat-chip *ngFor="let tech of techService.selectedTechs$ | async" (removed)="techService.deselect(tech)"
+      class="my-chip" [ngClass]="tech.color">
+      <img matChipAvatar [src]="imagePathOf(tech)" class="my-avatar">
+      {{tech.name|titlecase}}
       <mat-icon matChipRemove>cancel</mat-icon>
     </mat-chip>
     <input placeholder="Select the technologies you want in a civilization" #techInput [formControl]="techCtrl"
