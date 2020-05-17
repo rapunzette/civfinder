@@ -23,6 +23,9 @@ export class TechChipAreaComponent implements OnInit {
     this.filteredTechs = this.techCtrl.valueChanges.pipe(
       startWith(null),
       map((usrInput: string | Technology | null) => usrInput ? this._filter(usrInput) : technologies));
+
+    // just a default selection to nudge users
+    this.techService.select(halberdier);
   }
 
   /**
