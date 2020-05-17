@@ -22,7 +22,7 @@
           [attr.fill]="node.data.color" />
         <svg:text alignment-baseline="central" [attr.x]="10" [attr.y]="node.dimension.height / 2">{{node.label}}
         </svg:text> -->
-        <svg:image [attr.xlink:href]="'assets/techs/' + node.id + '.png'">
+        <svg:image [attr.xlink:href]="'assets/techs/' + node.id + '.png'" height="80" [matTooltip]="node.id|titlecase">
 
         </svg:image>
       </svg:g>
