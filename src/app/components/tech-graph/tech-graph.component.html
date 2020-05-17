@@ -18,11 +18,10 @@
 
     <ng-template #nodeTemplate let-node>
       <svg:g class="node">
-        <!-- <svg:rect [attr.width]="node.dimension.width" [attr.height]="node.dimension.height"
-          [attr.fill]="node.data.color" />
-        <svg:text alignment-baseline="central" [attr.x]="10" [attr.y]="node.dimension.height / 2">{{node.label}}
-        </svg:text> -->
-        <svg:image [attr.xlink:href]="'assets/techs/' + node.id + '.png'" height="80" [matTooltip]="node.id|titlecase">
+        <svg:rect [attr.width]="100" [attr.height]="110" [attr.fill]="node.data.customColor|techColorPipe" />
+        <!-- <svg:text alignment-baseline="central" [attr.x]="10" [attr.y]="node.dimension.height / 2">{{node.label}}</svg:text> -->
+        <svg:image [attr.xlink:href]="'assets/techs/' + node.id + '.png'" height="80" x="10" y="5"
+          [matTooltip]="node.id|titlecase">
 
         </svg:image>
       </svg:g>
