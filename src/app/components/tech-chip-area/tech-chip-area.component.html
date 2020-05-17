@@ -11,7 +11,7 @@
   </mat-chip-list>
   <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
     <mat-option *ngFor="let tech of filteredTechs | async" [value]="tech" [ngClass]="tech.color">
-      <img [src]="imagePathOf(tech)">
+      <img [src]="imagePathOf(tech)" height="80">
       {{tech.name|titlecase}}
     </mat-option>
   </mat-autocomplete>
