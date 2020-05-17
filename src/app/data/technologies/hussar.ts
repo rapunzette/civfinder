@@ -5,6 +5,6 @@ import { light_cavalry } from './light_cavalry';
 export const hussar: Technology = {
   "name": "hussar",
   "age": "imperial",
-  "color": "green",
+  "color": "blue",
   dependencies: [imperial_age.name, light_cavalry.name]
 }
