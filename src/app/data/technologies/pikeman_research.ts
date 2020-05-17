@@ -6,5 +6,5 @@ export const pikeman_research: Technology = {
   "name": "pikeman research",
   "age": "castle",
   "color": "green",
-  dependencies: [barracks.name],
+  dependencies: [barracks.name, castle_age.name],
 }
