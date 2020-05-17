@@ -1,17 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Node, Edge, ClusterNode, Layout } from '@swimlane/ngx-graph';
-import { Subject } from 'rxjs';
+import { Subject, Subscription } from 'rxjs';
 import * as shape from 'd3-shape';
+import { TechService } from 'src/app/tech.service';
 
 @Component({
   selector: 'app-tech-graph',
   templateUrl: './tech-graph.component.html',
   styleUrls: ['./tech-graph.component.scss']
 })
-export class TechGraphComponent implements OnInit {
-  private myNode: Node;
-  private myEdge: Edge;
-  constructor() { }
+export class TechGraphComponent implements OnInit, OnDestroy {
+  private subs = new Subscription();
+  constructor(private techService: TechService) { }
+
 
   // graph values
   curve = shape.curveBundle.beta(1);
@@ -35,7 +36,7 @@ export class TechGraphComponent implements OnInit {
   public nodes: Node[] = [
     {
       id: 'first',
-      label: 'A'
+      label: 'first'
     }, {
       id: 'second',
       label: 'B'
@@ -48,24 +49,20 @@ export class TechGraphComponent implements OnInit {
     }
   ];
 
-  public links: Edge[] = [
+  public edges: Edge[] = [
     {
-      id: 'a',
       source: 'first',
       target: 'second',
       label: 'is parent of'
     }, {
-      id: 'b',
       source: 'first',
       target: 'c1',
       label: 'custom label'
     }, {
-      id: 'c',
       source: 'first',
       target: 'c1',
       label: 'custom label'
     }, {
-      id: 'd',
       source: 'first',
       target: 'c2',
       label: 'custom label'
@@ -81,6 +78,31 @@ export class TechGraphComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+    this.subs.add(
+      this.techService.techGraph$.subscribe(techs => {
+        // convert techs into nodes and links
+        this.nodes = []
+        this.edges = []
+        techs.forEach(tech => {
+          this.nodes.push({
+            id: `${tech.name}`,
+            label: `${tech.name}`
+          });
+          if (tech.dependencies.length > 0) {
+            tech.dependencies.forEach(depenency => {
+              this.edges.push({
+                target: `${tech.name}`,
+                source: `${depenency}`
+              });
+            })
+
+          }
+        })
+      })
+    )
+  }
+  ngOnDestroy(): void {
+    this.subs.unsubscribe();
   }
 
 }

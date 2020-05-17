@@ -5,5 +5,5 @@ export interface Technology {
   /**
    * A list of names (strings) of the techs that need to be researched prior to this one
    */
-  dependencies?: string[];
+  dependencies: string[];
 }
