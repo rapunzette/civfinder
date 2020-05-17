@@ -164,4 +164,6 @@ export interface Civilization {
   "fortified wall research": boolean;
   "guard tower research": boolean;
   "keep research": boolean;
+  "halberdier research": boolean;
+  "pikeman research": boolean;
 }

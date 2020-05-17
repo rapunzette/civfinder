@@ -1,3 +1,7 @@
+import { pikeman_research } from './pikeman_research';
+export { pikeman_research } from './pikeman_research';
+import { halberdier_research } from './halberdier_research';
+export { halberdier_research } from './halberdier_research';
 import { keep_research } from './keep_research';
 export { keep_research } from './keep_research';
 import { guard_tower_research } from './guard_tower_research';
@@ -496,4 +500,6 @@ export const technologies: Technology[] = [
   fortified_wall_research,
   guard_tower_research,
   keep_research,
+  halberdier_research,
+  pikeman_research,
 ]

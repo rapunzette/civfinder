@@ -166,4 +166,6 @@ export const britons: Civilization = {
   "fortified wall research": true,
   "guard tower research": true,
   "keep research": true,
+  "halberdier research": true,
+  "pikeman research": true,
 }

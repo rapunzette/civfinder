@@ -1,10 +1,10 @@
 import { Technology } from 'src/app/models/technology.model';
-import { pikeman } from './pikeman';
-import { imperial_age } from './imperial_age';
+import { barracks } from './barracks';
+import { halberdier_research } from './halberdier_research';
 
 export const halberdier: Technology = {
   "name": "halberdier",
   "age": "imperial",
   "color": "blue",
-  dependencies: [pikeman.name, imperial_age.name],
+  dependencies: [halberdier_research.name, barracks.name],
 }

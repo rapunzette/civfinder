@@ -166,4 +166,6 @@ export const slavs: Civilization = {
   "fortified wall research": true,
   "guard tower research": true,
   "keep research": false,
+  "halberdier research": true,
+  "pikeman research": true,
 }

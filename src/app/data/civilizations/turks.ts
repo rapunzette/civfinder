@@ -166,4 +166,6 @@ export const turks: Civilization = {
   "fortified wall research": true,
   "guard tower research": true,
   "keep research": true,
+  "halberdier research": false,
+  "pikeman research": false,
 }

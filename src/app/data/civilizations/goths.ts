@@ -166,4 +166,6 @@ export const goths: Civilization = {
   "fortified wall research": false,
   "guard tower research": false,
   "keep research": false,
+  "halberdier research": true,
+  "pikeman research": true,
 }

@@ -4,6 +4,6 @@ import { dark_age } from './dark_age'
 export const feudal_age: Technology = {
   "name": "feudal age",
   "age": "feudal",
-  "color": "green",
+  "color": "transparent",
   dependencies: [dark_age.name]
 }

@@ -166,4 +166,6 @@ export const aztecs: Civilization = {
   "fortified wall research": true,
   "guard tower research": true,
   "keep research": false,
+  "halberdier research": false,
+  "pikeman research": true,
 }

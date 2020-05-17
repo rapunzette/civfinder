@@ -166,4 +166,6 @@ export const malians: Civilization = {
   "fortified wall research": true,
   "guard tower research": true,
   "keep research": true,
+  "halberdier research": false,
+  "pikeman research": true,
 }

@@ -166,4 +166,6 @@ export const bulgarians: Civilization = {
   "fortified wall research": false,
   "guard tower research": true,
   "keep research": true,
+  "halberdier research": true,
+  "pikeman research": true,
 }
