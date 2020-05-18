@@ -187,4 +187,5 @@ export const turks: Civilization = {
   "war galley research": true,
   "fast fire ship research": false,
   "galleon research": true,
+  "heavy demo ship research": true,
 }

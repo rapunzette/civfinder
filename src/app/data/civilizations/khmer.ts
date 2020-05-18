@@ -187,4 +187,5 @@ export const khmer: Civilization = {
   "war galley research": true,
   "fast fire ship research": true,
   "galleon research": true,
+  "heavy demo ship research": false,
 }

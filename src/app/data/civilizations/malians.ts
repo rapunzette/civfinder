@@ -187,4 +187,5 @@ export const malians: Civilization = {
   "war galley research": true,
   "fast fire ship research": true,
   "galleon research": false,
+  "heavy demo ship research": true,
 }

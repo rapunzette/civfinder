@@ -187,4 +187,5 @@ export const aztecs: Civilization = {
   "war galley research": true,
   "fast fire ship research": true,
   "galleon research": false,
+  "heavy demo ship research": false,
 }

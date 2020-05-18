@@ -1,3 +1,5 @@
+import { heavy_demo_ship_research } from './heavy_demo_ship_research';
+export { heavy_demo_ship_research } from './heavy_demo_ship_research';
 import { galleon_research } from './galleon_research';
 export { galleon_research } from './galleon_research';
 import { fast_fire_ship_research } from './fast_fire_ship_research';
@@ -559,4 +561,5 @@ export const technologies: Technology[] = [
   war_galley_research,
   fast_fire_ship_research,
   galleon_research,
+  heavy_demo_ship_research,
 ]

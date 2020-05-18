@@ -185,4 +185,5 @@ export interface Civilization {
   "war galley research": boolean;
   "fast fire ship research": boolean;
   "galleon research": boolean;
+  "heavy demo ship research": boolean;
 }
