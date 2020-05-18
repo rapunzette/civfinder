@@ -175,4 +175,6 @@ export interface Civilization {
   "cavalier research": boolean;
   "paladin research": boolean;
   "elite skirmisher research": boolean;
+  "eagle warrior research": boolean;
+  "elite eagle warrior research": boolean;
 }

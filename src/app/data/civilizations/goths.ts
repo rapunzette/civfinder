@@ -177,4 +177,6 @@ export const goths: Civilization = {
   "cavalier research": true,
   "paladin research": false,
   "elite skirmisher research": true,
+  "eagle warrior research": false,
+  "elite eagle warrior research": false,
 }

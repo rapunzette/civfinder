@@ -177,4 +177,6 @@ export const turks: Civilization = {
   "cavalier research": true,
   "paladin research": false,
   "elite skirmisher research": false,
+  "eagle warrior research": false,
+  "elite eagle warrior research": false,
 }

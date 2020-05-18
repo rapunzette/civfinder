@@ -1,3 +1,7 @@
+import { elite_eagle_warrior_research } from './elite_eagle_warrior_research';
+export { elite_eagle_warrior_research } from './elite_eagle_warrior_research';
+import { eagle_warrior_research } from './eagle_warrior_research';
+export { eagle_warrior_research } from './eagle_warrior_research';
 import { elite_skirmisher_research } from './elite_skirmisher_research';
 export { elite_skirmisher_research } from './elite_skirmisher_research';
 import { paladin_research } from './paladin_research';
@@ -529,4 +533,6 @@ export const technologies: Technology[] = [
   cavalier_research,
   paladin_research,
   elite_skirmisher_research,
+  eagle_warrior_research,
+  elite_eagle_warrior_research,
 ]

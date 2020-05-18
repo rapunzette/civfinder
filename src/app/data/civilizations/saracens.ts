@@ -177,4 +177,6 @@ export const saracens: Civilization = {
   "cavalier research": false,
   "paladin research": false,
   "elite skirmisher research": true,
+  "eagle warrior research": false,
+  "elite eagle warrior research": false,
 }
