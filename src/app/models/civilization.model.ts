@@ -180,4 +180,6 @@ export interface Civilization {
   "heavy cavalry archer research": boolean;
   "heavy camel rider research": boolean;
   "elite battle elephant research": boolean;
+  "cannon galleon research": boolean;
+  "elite cannon galleon research": boolean;
 }

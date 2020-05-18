@@ -182,4 +182,6 @@ export const vietnamese: Civilization = {
   "heavy cavalry archer research": true,
   "heavy camel rider research": false,
   "elite battle elephant research": true,
+  "cannon galleon research": true,
+  "elite cannon galleon research": true,
 }

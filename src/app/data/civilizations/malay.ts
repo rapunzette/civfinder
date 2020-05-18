@@ -182,4 +182,6 @@ export const malay: Civilization = {
   "heavy cavalry archer research": false,
   "heavy camel rider research": false,
   "elite battle elephant research": true,
+  "cannon galleon research": true,
+  "elite cannon galleon research": true,
 }

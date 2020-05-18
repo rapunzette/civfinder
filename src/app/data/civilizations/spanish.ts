@@ -182,4 +182,6 @@ export const spanish: Civilization = {
   "heavy cavalry archer research": true,
   "heavy camel rider research": false,
   "elite battle elephant research": false,
+  "cannon galleon research": true,
+  "elite cannon galleon research": true,
 }

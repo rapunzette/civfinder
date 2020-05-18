@@ -182,4 +182,6 @@ export const aztecs: Civilization = {
   "heavy cavalry archer research": false,
   "heavy camel rider research": false,
   "elite battle elephant research": false,
+  "cannon galleon research": false,
+  "elite cannon galleon research": false,
 }
