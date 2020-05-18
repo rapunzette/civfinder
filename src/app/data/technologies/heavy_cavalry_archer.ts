@@ -1,10 +1,9 @@
 import { Technology } from 'src/app/models/technology.model';
-import { cavalry_archer } from './cavalry_archer';
-import { imperial_age } from './imperial_age';
+import { heavy_cavalry_archer_research } from './heavy_cavalry_archer_research';
 
 export const heavy_cavalry_archer: Technology = {
   "name": "heavy cavalry archer",
   "age": "imperial",
   "color": "blue",
-  dependencies: [cavalry_archer.name,]
+  dependencies: [heavy_cavalry_archer_research.name,]
 }

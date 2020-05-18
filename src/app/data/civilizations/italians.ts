@@ -179,4 +179,5 @@ export const italians: Civilization = {
   "elite skirmisher research": true,
   "eagle warrior research": false,
   "elite eagle warrior research": false,
+  "heavy cavalry archer research": false,
 }
