@@ -184,4 +184,5 @@ export interface Civilization {
   "elite cannon galleon research": boolean;
   "war galley research": boolean;
   "fast fire ship research": boolean;
+  "galleon research": boolean;
 }

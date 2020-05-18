@@ -186,4 +186,5 @@ export const japanese: Civilization = {
   "elite cannon galleon research": true,
   "war galley research": true,
   "fast fire ship research": true,
+  "galleon research": true,
 }

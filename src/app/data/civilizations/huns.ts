@@ -186,4 +186,5 @@ export const huns: Civilization = {
   "elite cannon galleon research": false,
   "war galley research": true,
   "fast fire ship research": false,
+  "galleon research": true,
 }
