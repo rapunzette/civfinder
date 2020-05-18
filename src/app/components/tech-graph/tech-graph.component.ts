@@ -4,6 +4,7 @@ import { Subject, Subscription } from 'rxjs';
 import * as shape from 'd3-shape';
 import { TechService } from 'src/app/tech.service';
 import { Technology } from 'src/app/models/technology.model';
+import { imperial_age, dark_age, feudal_age, castle_age } from 'src/app/data/technologies';
 
 @Component({
   selector: 'app-tech-graph',
@@ -123,6 +124,12 @@ export class TechGraphComponent implements OnInit, OnDestroy {
     })
   }
 
+  private updateGraphLayout(tech: Technology) {
+    this.buildNode(tech);
+    this.buildEdges(tech);
+    this.updateClusters(tech);
+  }
+
   ngOnInit(): void {
     this.subs.add(
       // everytime the techGraph is updated we want to clear the state
@@ -130,13 +137,20 @@ export class TechGraphComponent implements OnInit, OnDestroy {
       this.techService.techGraph$.subscribe(techs => {
         this.clearState();
 
+        // add ages independently in order to assist graph layout
+        this.updateGraphLayout(dark_age);
+        this.updateGraphLayout(feudal_age);
+        this.updateGraphLayout(castle_age);
+        this.updateGraphLayout(imperial_age);
+
+        // the actual techs in the graph
         techs.forEach(tech => {
-          this.buildNode(tech);
-          this.buildEdges(tech);
-          this.updateClusters(tech);
+          this.updateGraphLayout(tech);
         })
+
       })
     )
+
   }
   ngOnDestroy(): void {
     this.subs.unsubscribe();

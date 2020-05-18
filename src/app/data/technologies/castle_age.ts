@@ -5,5 +5,5 @@ export const castle_age: Technology = {
   "name": "castle age",
   "age": "castle",
   "color": "transparent",
-  dependencies: []
+  dependencies: [feudal_age.name]
 }
