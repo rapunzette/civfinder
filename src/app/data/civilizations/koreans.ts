@@ -192,4 +192,5 @@ export const koreans: Civilization = {
   "hussar research": true,
   "elite steppe lancer research": false,
   "onager research": true,
+  "siege onager research": true,
 }

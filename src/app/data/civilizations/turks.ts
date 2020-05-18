@@ -192,4 +192,5 @@ export const turks: Civilization = {
   "hussar research": true,
   "elite steppe lancer research": false,
   "onager research": false,
+  "siege onager research": false,
 }

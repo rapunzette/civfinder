@@ -190,4 +190,5 @@ export interface Civilization {
   "hussar research": boolean;
   "elite steppe lancer research": boolean;
   "onager research": boolean;
+  "siege onager research": boolean;
 }

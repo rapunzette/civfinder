@@ -192,4 +192,5 @@ export const malay: Civilization = {
   "hussar research": false,
   "elite steppe lancer research": false,
   "onager research": true,
+  "siege onager research": false,
 }
