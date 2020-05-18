@@ -191,4 +191,5 @@ export const vikings: Civilization = {
   "light cavalry research": true,
   "hussar research": false,
   "elite steppe lancer research": false,
+  "onager research": true,
 }

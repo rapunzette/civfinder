@@ -1,3 +1,5 @@
+import { onager_research } from './onager_research';
+export { onager_research } from './onager_research';
 import { elite_steppe_lancer_research } from './elite_steppe_lancer_research';
 export { elite_steppe_lancer_research } from './elite_steppe_lancer_research';
 import { hussar_research } from './hussar_research';
@@ -571,4 +573,5 @@ export const technologies: Technology[] = [
   light_cavalry_research,
   hussar_research,
   elite_steppe_lancer_research,
+  onager_research,
 ]

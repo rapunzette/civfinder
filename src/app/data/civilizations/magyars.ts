@@ -191,4 +191,5 @@ export const magyars: Civilization = {
   "light cavalry research": true,
   "hussar research": true,
   "elite steppe lancer research": false,
+  "onager research": true,
 }
