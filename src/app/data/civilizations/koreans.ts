@@ -195,4 +195,5 @@ export const koreans: Civilization = {
   "siege onager research": true,
   "capped ram research": true,
   "siege ram research": false,
+  "heavy scorpion research": false,
 }

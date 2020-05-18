@@ -195,4 +195,5 @@ export const ethiopians: Civilization = {
   "siege onager research": true,
   "capped ram research": true,
   "siege ram research": true,
+  "heavy scorpion research": true,
 }

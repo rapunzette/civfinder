@@ -195,4 +195,5 @@ export const berbers: Civilization = {
   "siege onager research": false,
   "capped ram research": true,
   "siege ram research": false,
+  "heavy scorpion research": true,
 }

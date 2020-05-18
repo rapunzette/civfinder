@@ -195,4 +195,5 @@ export const vikings: Civilization = {
   "siege onager research": false,
   "capped ram research": true,
   "siege ram research": true,
+  "heavy scorpion research": true,
 }

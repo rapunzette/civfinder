@@ -1,3 +1,5 @@
+import { heavy_scorpion_research } from './heavy_scorpion_research';
+export { heavy_scorpion_research } from './heavy_scorpion_research';
 import { siege_ram_research } from './siege_ram_research';
 export { siege_ram_research } from './siege_ram_research';
 import { capped_ram_research } from './capped_ram_research';
@@ -583,4 +585,5 @@ export const technologies: Technology[] = [
   siege_onager_research,
   capped_ram_research,
   siege_ram_research,
+  heavy_scorpion_research,
 ]
