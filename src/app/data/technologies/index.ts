@@ -1,3 +1,5 @@
+import { siege_ram_research } from './siege_ram_research';
+export { siege_ram_research } from './siege_ram_research';
 import { capped_ram_research } from './capped_ram_research';
 export { capped_ram_research } from './capped_ram_research';
 import { siege_onager_research } from './siege_onager_research';
@@ -580,4 +582,5 @@ export const technologies: Technology[] = [
   onager_research,
   siege_onager_research,
   capped_ram_research,
+  siege_ram_research,
 ]

@@ -194,4 +194,5 @@ export const saracens: Civilization = {
   "onager research": true,
   "siege onager research": true,
   "capped ram research": true,
+  "siege ram research": true,
 }

@@ -192,4 +192,5 @@ export interface Civilization {
   "onager research": boolean;
   "siege onager research": boolean;
   "capped ram research": boolean;
+  "siege ram research": boolean;
 }
