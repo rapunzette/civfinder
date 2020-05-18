@@ -176,4 +176,5 @@ export const cumans: Civilization = {
   "arbalester research": false,
   "cavalier research": true,
   "paladin research": true,
+  "elite skirmisher research": true,
 }

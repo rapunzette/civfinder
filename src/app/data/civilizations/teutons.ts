@@ -176,4 +176,5 @@ export const teutons: Civilization = {
   "arbalester research": false,
   "cavalier research": true,
   "paladin research": true,
+  "elite skirmisher research": true,
 }

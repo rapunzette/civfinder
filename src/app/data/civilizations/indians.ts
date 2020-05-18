@@ -176,4 +176,5 @@ export const indians: Civilization = {
   "arbalester research": false,
   "cavalier research": false,
   "paladin research": false,
+  "elite skirmisher research": true,
 }

@@ -1,3 +1,5 @@
+import { elite_skirmisher_research } from './elite_skirmisher_research';
+export { elite_skirmisher_research } from './elite_skirmisher_research';
 import { paladin_research } from './paladin_research';
 export { paladin_research } from './paladin_research';
 import { cavalier_research } from './cavalier_research';
@@ -526,4 +528,5 @@ export const technologies: Technology[] = [
   arbalester_research,
   cavalier_research,
   paladin_research,
+  elite_skirmisher_research,
 ]

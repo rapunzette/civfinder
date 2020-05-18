@@ -176,4 +176,5 @@ export const saracens: Civilization = {
   "arbalester research": true,
   "cavalier research": false,
   "paladin research": false,
+  "elite skirmisher research": true,
 }

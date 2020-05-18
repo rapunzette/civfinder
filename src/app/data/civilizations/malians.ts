@@ -176,4 +176,5 @@ export const malians: Civilization = {
   "arbalester research": true,
   "cavalier research": true,
   "paladin research": false,
+  "elite skirmisher research": true,
 }

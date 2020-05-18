@@ -1,10 +1,9 @@
 import { Technology } from 'src/app/models/technology.model';
-import { skirmisher } from './skirmisher';
-import { castle_age } from './castle_age';
+import { elite_skirmisher_research } from './elite_skirmisher_research';
 
 export const elite_skirmisher: Technology = {
   "name": "elite skirmisher",
   "age": "castle",
   "color": "blue",
-  dependencies: [skirmisher.name,],
+  dependencies: [elite_skirmisher_research.name,],
 }
