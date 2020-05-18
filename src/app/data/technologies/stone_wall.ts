@@ -5,5 +5,5 @@ export const stone_wall: Technology = {
   "name": "stone wall",
   "age": "feudal",
   "color": "red",
-  dependencies: [feudal_age.name]
+  dependencies: []
 }

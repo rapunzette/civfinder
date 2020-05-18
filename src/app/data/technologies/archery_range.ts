@@ -6,5 +6,5 @@ export const archery_range: Technology = {
   "name": "archery range",
   "age": "feudal",
   "color": "red",
-  dependencies: [barracks.name, feudal_age.name],
+  dependencies: [barracks.name,],
 }

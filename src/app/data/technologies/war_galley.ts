@@ -1,10 +1,9 @@
 
 import { Technology } from 'src/app/models/technology.model'
-import { galley } from './galley'
-import { castle_age } from './castle_age'
+import { war_galley_research } from './war_galley_research'
 export const war_galley: Technology = {
   "name": "war galley",
   "age": "castle",
   "color": "blue",
-  dependencies: [galley.name, castle_age.name]
+  dependencies: [war_galley_research.name,]
 }

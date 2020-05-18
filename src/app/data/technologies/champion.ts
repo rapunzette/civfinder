@@ -1,9 +1,9 @@
 import { Technology } from 'src/app/models/technology.model';
-import { two_handed_swordsman } from './two_handed_swordsman';
+import { champion_research } from './champion_research';
 
 export const champion: Technology = {
   "name": "champion",
   "age": "imperial",
   "color": "blue",
-  dependencies: [two_handed_swordsman.name],
+  dependencies: [champion_research.name],
 }

@@ -6,5 +6,5 @@ export const bow_saw: Technology = {
   "name": "bow saw",
   "age": "castle",
   "color": "green",
-  dependencies: [double_bit_axe.name, castle_age.name]
+  dependencies: [double_bit_axe.name,]
 }

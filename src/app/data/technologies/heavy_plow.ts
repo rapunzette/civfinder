@@ -6,5 +6,5 @@ export const heavy_plow: Technology = {
   "name": "heavy plow",
   "age": "castle",
   "color": "green",
-  dependencies: [castle_age.name, horse_collar.name]
+  dependencies: [, horse_collar.name]
 }

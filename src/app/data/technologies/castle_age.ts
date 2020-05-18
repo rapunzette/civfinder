@@ -4,6 +4,6 @@ import { feudal_age } from './feudal_age'
 export const castle_age: Technology = {
   "name": "castle age",
   "age": "castle",
-  "color": "green",
+  "color": "transparent",
   dependencies: [feudal_age.name]
 }

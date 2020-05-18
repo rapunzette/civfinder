@@ -6,5 +6,5 @@ export const camel_rider: Technology = {
   "name": "camel rider",
   "age": "castle",
   "color": "blue",
-  dependencies: [stable.name, castle_age.name]
+  dependencies: [stable.name,]
 }

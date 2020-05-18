@@ -6,5 +6,5 @@ export const market: Technology = {
   "name": "market",
   "age": "feudal",
   "color": "red",
-  dependencies: [mill.name, feudal_age.name]
+  dependencies: [mill.name,]
 }

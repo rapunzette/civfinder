@@ -6,5 +6,5 @@ export const thumb_ring: Technology = {
   "name": "thumb ring",
   "age": "castle",
   "color": "green",
-  dependencies: [castle_age.name, archery_range.name]
+  dependencies: [, archery_range.name]
 }

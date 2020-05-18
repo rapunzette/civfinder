@@ -5,5 +5,5 @@ export const blacksmith: Technology = {
   "name": "blacksmith",
   "age": "feudal",
   "color": "red",
-  dependencies: [feudal_age.name]
+  dependencies: []
 }

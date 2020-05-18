@@ -1,10 +1,9 @@
 import { Technology } from 'src/app/models/technology.model';
-import { militia } from './militia';
-import { feudal_age } from './feudal_age';
+import { man_at_arms_research } from './man_at_arms_research';
 
 export const man_at_arms: Technology = {
   "name": "man at arms",
   "age": "feudal",
   "color": "blue",
-  dependencies: [militia.name, feudal_age.name]
+  dependencies: [man_at_arms_research.name,]
 }

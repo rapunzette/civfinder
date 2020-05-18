@@ -6,5 +6,5 @@ export const arson: Technology = {
   "name": "arson",
   "age": "castle",
   "color": "green",
-  dependencies: [barracks.name, castle_age.name],
+  dependencies: [barracks.name,],
 }

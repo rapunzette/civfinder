@@ -6,5 +6,5 @@ export const parthian_tactics: Technology = {
   "name": "parthian tactics",
   "age": "imperial",
   "color": "green",
-  dependencies: [archery_range.name, imperial_age.name]
+  dependencies: [archery_range.name,]
 }

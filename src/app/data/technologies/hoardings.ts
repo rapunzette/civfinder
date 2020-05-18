@@ -6,5 +6,5 @@ export const hoardings: Technology = {
   "name": "hoardings",
   "age": "imperial",
   "color": "green",
-  dependencies: [imperial_age.name, castle.name]
+  dependencies: [, castle.name]
 }

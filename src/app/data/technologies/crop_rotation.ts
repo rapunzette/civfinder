@@ -6,5 +6,5 @@ export const crop_rotation: Technology = {
   "name": "crop rotation",
   "age": "imperial",
   "color": "green",
-  dependencies: [heavy_plow.name, imperial_age.name]
+  dependencies: [heavy_plow.name,]
 }

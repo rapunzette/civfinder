@@ -1,10 +1,9 @@
 
 import { Technology } from 'src/app/models/technology.model'
-import { mangonel } from './mangonel'
-import { imperial_age } from './imperial_age'
+import { onager_research } from './onager_research'
 export const onager: Technology = {
   "name": "onager",
   "age": "imperial",
   "color": "blue",
-  dependencies: [mangonel.name, imperial_age.name]
+  dependencies: [onager_research.name,]
 }

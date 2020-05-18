@@ -1,15 +1,18 @@
 <mat-form-field class="my-chip-list">
   <mat-chip-list #chipList aria-label="Tech selection">
-    <mat-chip *ngFor="let tech of techService.selectedTechs$ | async" (removed)="techService.deselect(tech)">
-      <img matChipAvatar [src]="imagePathOf(tech)">
+    <mat-chip *ngFor="let tech of techService.selectedTechs$ | async" (removed)="techService.deselect(tech)"
+      class="my-chip" [ngClass]="tech.color">
+      <img matChipAvatar [src]="imagePathOf(tech)" class="my-avatar">
+      {{tech.name|titlecase}}
       <mat-icon matChipRemove>cancel</mat-icon>
     </mat-chip>
-    <input placeholder="Select the technologies you want in a civilization" #techInput [formControl]="techCtrl"
+    <input placeholder="Search for the technologies you want in a civilization" #techInput [formControl]="techCtrl"
       [matAutocomplete]="auto" [matChipInputFor]="chipList">
   </mat-chip-list>
   <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
-    <mat-option style="height: 100px;" *ngFor="let tech of filteredTechs | async" [value]="tech">
-      <img [src]="imagePathOf(tech)">
+    <mat-option *ngFor="let tech of filteredTechs | async" [value]="tech" [ngClass]="tech.color">
+      <img [src]="imagePathOf(tech)" height="80">
+      {{tech.name|titlecase}}
     </mat-option>
   </mat-autocomplete>
 </mat-form-field>

@@ -1,3 +1,63 @@
+import { heavy_scorpion_research } from './heavy_scorpion_research';
+export { heavy_scorpion_research } from './heavy_scorpion_research';
+import { siege_ram_research } from './siege_ram_research';
+export { siege_ram_research } from './siege_ram_research';
+import { capped_ram_research } from './capped_ram_research';
+export { capped_ram_research } from './capped_ram_research';
+import { siege_onager_research } from './siege_onager_research';
+export { siege_onager_research } from './siege_onager_research';
+import { onager_research } from './onager_research';
+export { onager_research } from './onager_research';
+import { elite_steppe_lancer_research } from './elite_steppe_lancer_research';
+export { elite_steppe_lancer_research } from './elite_steppe_lancer_research';
+import { hussar_research } from './hussar_research';
+export { hussar_research } from './hussar_research';
+import { light_cavalry_research } from './light_cavalry_research';
+export { light_cavalry_research } from './light_cavalry_research';
+import { heavy_demo_ship_research } from './heavy_demo_ship_research';
+export { heavy_demo_ship_research } from './heavy_demo_ship_research';
+import { galleon_research } from './galleon_research';
+export { galleon_research } from './galleon_research';
+import { fast_fire_ship_research } from './fast_fire_ship_research';
+export { fast_fire_ship_research } from './fast_fire_ship_research';
+import { war_galley_research } from './war_galley_research';
+export { war_galley_research } from './war_galley_research';
+import { elite_cannon_galleon_research } from './elite_cannon_galleon_research';
+export { elite_cannon_galleon_research } from './elite_cannon_galleon_research';
+import { cannon_galleon_research } from './cannon_galleon_research';
+export { cannon_galleon_research } from './cannon_galleon_research';
+import { elite_battle_elephant_research } from './elite_battle_elephant_research';
+export { elite_battle_elephant_research } from './elite_battle_elephant_research';
+import { heavy_camel_rider_research } from './heavy_camel_rider_research';
+export { heavy_camel_rider_research } from './heavy_camel_rider_research';
+import { heavy_cavalry_archer_research } from './heavy_cavalry_archer_research';
+export { heavy_cavalry_archer_research } from './heavy_cavalry_archer_research';
+import { elite_eagle_warrior_research } from './elite_eagle_warrior_research';
+export { elite_eagle_warrior_research } from './elite_eagle_warrior_research';
+import { eagle_warrior_research } from './eagle_warrior_research';
+export { eagle_warrior_research } from './eagle_warrior_research';
+import { elite_skirmisher_research } from './elite_skirmisher_research';
+export { elite_skirmisher_research } from './elite_skirmisher_research';
+import { paladin_research } from './paladin_research';
+export { paladin_research } from './paladin_research';
+import { cavalier_research } from './cavalier_research';
+export { cavalier_research } from './cavalier_research';
+import { arbalester_research } from './arbalester_research';
+export { arbalester_research } from './arbalester_research';
+import { crossbowman_research } from './crossbowman_research';
+export { crossbowman_research } from './crossbowman_research';
+import { two_handed_swordsman_research } from './two_handed_swordsman_research';
+export { two_handed_swordsman_research } from './two_handed_swordsman_research';
+import { long_swordsman_research } from './long_swordsman_research';
+export { long_swordsman_research } from './long_swordsman_research';
+import { man_at_arms_research } from './man_at_arms_research';
+export { man_at_arms_research } from './man_at_arms_research';
+import { champion_research } from './champion_research';
+export { champion_research } from './champion_research';
+import { pikeman_research } from './pikeman_research';
+export { pikeman_research } from './pikeman_research';
+import { halberdier_research } from './halberdier_research';
+export { halberdier_research } from './halberdier_research';
 import { keep_research } from './keep_research';
 export { keep_research } from './keep_research';
 import { guard_tower_research } from './guard_tower_research';
@@ -496,4 +556,34 @@ export const technologies: Technology[] = [
   fortified_wall_research,
   guard_tower_research,
   keep_research,
+  halberdier_research,
+  pikeman_research,
+  champion_research,
+  man_at_arms_research,
+  long_swordsman_research,
+  two_handed_swordsman_research,
+  crossbowman_research,
+  arbalester_research,
+  cavalier_research,
+  paladin_research,
+  elite_skirmisher_research,
+  eagle_warrior_research,
+  elite_eagle_warrior_research,
+  heavy_cavalry_archer_research,
+  heavy_camel_rider_research,
+  elite_battle_elephant_research,
+  cannon_galleon_research,
+  elite_cannon_galleon_research,
+  war_galley_research,
+  fast_fire_ship_research,
+  galleon_research,
+  heavy_demo_ship_research,
+  light_cavalry_research,
+  hussar_research,
+  elite_steppe_lancer_research,
+  onager_research,
+  siege_onager_research,
+  capped_ram_research,
+  siege_ram_research,
+  heavy_scorpion_research,
 ]

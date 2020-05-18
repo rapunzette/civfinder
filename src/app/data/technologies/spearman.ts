@@ -6,5 +6,5 @@ export const spearman: Technology = {
   "name": "spearman",
   "age": "feudal",
   "color": "blue",
-  dependencies: [barracks.name, feudal_age.name],
+  dependencies: [barracks.name,],
 }

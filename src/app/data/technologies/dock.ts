@@ -5,5 +5,5 @@ export const dock: Technology = {
   "name": "dock",
   "age": "dark",
   "color": "red",
-  dependencies: [dark_age.name]
+  dependencies: []
 }

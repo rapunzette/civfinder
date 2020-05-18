@@ -26,7 +26,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { NgxGraphModule } from '@swimlane/ngx-graph';
-import { TechGraphComponent } from './components/tech-graph/tech-graph.component'
+import { TechGraphComponent } from './components/tech-graph/tech-graph.component';
+import { TechColorPipePipe } from './tech-color-pipe.pipe'
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { TechGraphComponent } from './components/tech-graph/tech-graph.component
     CivCellComponent,
     TechSearchComponent,
     TechChipAreaComponent,
-    TechGraphComponent
+    TechGraphComponent,
+    TechColorPipePipe
   ],
   imports: [
     BrowserModule,

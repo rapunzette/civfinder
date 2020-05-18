@@ -5,5 +5,5 @@ export const watch_tower: Technology = {
   "name": "watch tower",
   "age": "feudal",
   "color": "red",
-  dependencies: [feudal_age.name]
+  dependencies: []
 }

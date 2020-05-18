@@ -6,5 +6,5 @@ export const fish_trap: Technology = {
   "name": "fish trap",
   "age": "feudal",
   "color": "red",
-  dependencies: [fishing_ship.name, feudal_age.name]
+  dependencies: [fishing_ship.name,]
 }

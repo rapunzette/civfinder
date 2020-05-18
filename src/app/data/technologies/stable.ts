@@ -6,5 +6,5 @@ export const stable: Technology = {
   "name": "stable",
   "age": "feudal",
   "color": "red",
-  dependencies: [barracks.name, feudal_age.name]
+  dependencies: [barracks.name,]
 }

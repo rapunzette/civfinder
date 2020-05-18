@@ -1,10 +1,9 @@
 import { Technology } from 'src/app/models/technology.model';
-import { steppe_lancer } from './steppe_lancer';
-import { imperial_age } from './imperial_age';
+import { elite_steppe_lancer_research } from './elite_steppe_lancer_research';
 
 export const elite_steppe_lancer: Technology = {
   "name": "elite steppe lancer",
   "age": "imperial",
   "color": "blue",
-  dependencies: [steppe_lancer.name, imperial_age.name]
+  dependencies: [elite_steppe_lancer_research.name,]
 }

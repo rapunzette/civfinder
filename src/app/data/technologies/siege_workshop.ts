@@ -6,5 +6,5 @@ export const siege_workshop: Technology = {
   "name": "siege workshop",
   "age": "castle",
   "color": "red",
-  dependencies: [castle_age.name, blacksmith.name]
+  dependencies: [, blacksmith.name]
 }

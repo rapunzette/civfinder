@@ -6,5 +6,5 @@ export const trade_cog: Technology = {
   "name": "trade cog",
   "age": "feudal",
   "color": "blue",
-  dependencies: [dock.name, feudal_age.name]
+  dependencies: [dock.name,]
 }

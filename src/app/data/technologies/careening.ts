@@ -6,5 +6,5 @@ export const careening: Technology = {
   "name": "careening",
   "age": "castle",
   "color": "green",
-  dependencies: [dock.name, castle_age.name]
+  dependencies: [dock.name,]
 }

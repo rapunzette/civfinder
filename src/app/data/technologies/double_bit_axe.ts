@@ -6,5 +6,5 @@ export const double_bit_axe: Technology = {
   "name": "double bit axe",
   "age": "feudal",
   "color": "green",
-  dependencies: [lumber_camp.name, feudal_age.name]
+  dependencies: [lumber_camp.name,]
 }

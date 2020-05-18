@@ -1,10 +1,9 @@
 import { Technology } from 'src/app/models/technology.model';
-import { imperial_age } from './imperial_age';
-import { battle_elephant } from './battle_elephant';
+import { elite_battle_elephant_research } from './elite_battle_elephant_research';
 
 export const elite_battle_elephant: Technology = {
   "name": "elite battle elephant",
   "age": "imperial",
   "color": "blue",
-  dependencies: [imperial_age.name, battle_elephant.name]
+  dependencies: [elite_battle_elephant_research.name]
 }

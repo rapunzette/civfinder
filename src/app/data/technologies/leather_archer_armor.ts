@@ -6,5 +6,5 @@ export const leather_archer_armor: Technology = {
   "name": "leather archer armor",
   "age": "castle",
   "color": "green",
-  dependencies: [castle_age.name, padded_archer_armor.name]
+  dependencies: [, padded_archer_armor.name]
 }

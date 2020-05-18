@@ -1,10 +1,10 @@
 import { Technology } from 'src/app/models/technology.model';
-import { spearman } from './spearman';
-import { castle_age } from './castle_age';
+import { pikeman_research } from './pikeman_research';
+import { barracks } from './barracks';
 
 export const pikeman: Technology = {
   "name": "pikeman",
   "age": "castle",
   "color": "blue",
-  dependencies: [spearman.name, castle_age.name],
+  dependencies: [pikeman_research.name, barracks.name],
 }

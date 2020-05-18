@@ -1,10 +1,9 @@
 import { Technology } from 'src/app/models/technology.model';
-import { man_at_arms } from './man_at_arms';
-import { castle_age } from './castle_age';
+import { long_swordsman_research } from './long_swordsman_research';
 
 export const long_swordsman: Technology = {
   "name": "long swordsman",
   "age": "castle",
   "color": "blue",
-  "dependencies": [man_at_arms.name, castle_age.name],
+  "dependencies": [long_swordsman_research.name,],
 }

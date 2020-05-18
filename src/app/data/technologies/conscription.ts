@@ -6,5 +6,5 @@ export const conscription: Technology = {
   "name": "conscription",
   "age": "imperial",
   "color": "green",
-  dependencies: [imperial_age.name, castle.name]
+  dependencies: [, castle.name]
 }

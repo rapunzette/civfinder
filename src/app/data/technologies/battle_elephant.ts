@@ -6,5 +6,5 @@ export const battle_elephant: Technology = {
   "name": "battle elephant",
   "age": "castle",
   "color": "blue",
-  dependencies: [stable.name, castle_age.name]
+  dependencies: [stable.name,]
 }

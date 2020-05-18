@@ -6,5 +6,5 @@ export const architecture: Technology = {
   "name": "architecture",
   "age": "imperial",
   "color": "green",
-  dependencies: [masonry.name, imperial_age.name]
+  dependencies: [masonry.name,]
 }
