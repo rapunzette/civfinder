@@ -1,3 +1,5 @@
+import { elite_steppe_lancer_research } from './elite_steppe_lancer_research';
+export { elite_steppe_lancer_research } from './elite_steppe_lancer_research';
 import { hussar_research } from './hussar_research';
 export { hussar_research } from './hussar_research';
 import { light_cavalry_research } from './light_cavalry_research';
@@ -568,4 +570,5 @@ export const technologies: Technology[] = [
   heavy_demo_ship_research,
   light_cavalry_research,
   hussar_research,
+  elite_steppe_lancer_research,
 ]

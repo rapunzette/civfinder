@@ -190,4 +190,5 @@ export const aztecs: Civilization = {
   "heavy demo ship research": false,
   "light cavalry research": false,
   "hussar research": false,
+  "elite steppe lancer research": false,
 }

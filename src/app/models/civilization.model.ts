@@ -188,4 +188,5 @@ export interface Civilization {
   "heavy demo ship research": boolean;
   "light cavalry research": boolean;
   "hussar research": boolean;
+  "elite steppe lancer research": boolean;
 }

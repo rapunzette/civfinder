@@ -190,4 +190,5 @@ export const mayans: Civilization = {
   "heavy demo ship research": true,
   "light cavalry research": false,
   "hussar research": false,
+  "elite steppe lancer research": false,
 }

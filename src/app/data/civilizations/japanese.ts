@@ -190,4 +190,5 @@ export const japanese: Civilization = {
   "heavy demo ship research": false,
   "light cavalry research": true,
   "hussar research": false,
+  "elite steppe lancer research": false,
 }

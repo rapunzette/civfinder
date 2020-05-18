@@ -190,4 +190,5 @@ export const chinese: Civilization = {
   "heavy demo ship research": true,
   "light cavalry research": true,
   "hussar research": false,
+  "elite steppe lancer research": false,
 }

@@ -190,4 +190,5 @@ export const ethiopians: Civilization = {
   "heavy demo ship research": false,
   "light cavalry research": true,
   "hussar research": true,
+  "elite steppe lancer research": false,
 }
