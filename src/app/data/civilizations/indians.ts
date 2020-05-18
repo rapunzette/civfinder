@@ -174,4 +174,6 @@ export const indians: Civilization = {
   "two handed swordsman research": true,
   "crossbowman research": true,
   "arbalester research": false,
+  "cavalier research": false,
+  "paladin research": false,
 }

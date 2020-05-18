@@ -174,4 +174,6 @@ export const bulgarians: Civilization = {
   "two handed swordsman research": true,
   "crossbowman research": false,
   "arbalester research": false,
+  "cavalier research": true,
+  "paladin research": false,
 }

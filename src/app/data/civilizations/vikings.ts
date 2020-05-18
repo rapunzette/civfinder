@@ -174,4 +174,6 @@ export const vikings: Civilization = {
   "two handed swordsman research": true,
   "crossbowman research": true,
   "arbalester research": true,
+  "cavalier research": true,
+  "paladin research": false,
 }
