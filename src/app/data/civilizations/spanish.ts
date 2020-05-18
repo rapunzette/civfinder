@@ -172,4 +172,6 @@ export const spanish: Civilization = {
   "man at arms research": true,
   "long swordsman research": true,
   "two handed swordsman research": true,
+  "crossbowman research": false,
+  "arbalester research": false,
 }

@@ -172,4 +172,6 @@ export const malay: Civilization = {
   "man at arms research": true,
   "long swordsman research": true,
   "two handed swordsman research": true,
+  "crossbowman research": true,
+  "arbalester research": true,
 }

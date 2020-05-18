@@ -1,10 +1,9 @@
 import { Technology } from 'src/app/models/technology.model';
-import { archer } from './archer';
-import { castle_age } from './castle_age';
+import { crossbowman_research } from './crossbowman_research';
 
 export const crossbowman: Technology = {
   "name": "crossbowman",
   "age": "castle",
   "color": "blue",
-  dependencies: [archer.name,],
+  dependencies: [crossbowman_research.name,],
 }

@@ -170,4 +170,6 @@ export interface Civilization {
   "man at arms research": boolean;
   "long swordsman research": boolean;
   "two handed swordsman research": boolean;
+  "crossbowman research": boolean;
+  "arbalester research": boolean;
 }

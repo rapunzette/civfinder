@@ -1,3 +1,7 @@
+import { arbalester_research } from './arbalester_research';
+export { arbalester_research } from './arbalester_research';
+import { crossbowman_research } from './crossbowman_research';
+export { crossbowman_research } from './crossbowman_research';
 import { two_handed_swordsman_research } from './two_handed_swordsman_research';
 export { two_handed_swordsman_research } from './two_handed_swordsman_research';
 import { long_swordsman_research } from './long_swordsman_research';
@@ -514,4 +518,6 @@ export const technologies: Technology[] = [
   man_at_arms_research,
   long_swordsman_research,
   two_handed_swordsman_research,
+  crossbowman_research,
+  arbalester_research,
 ]
