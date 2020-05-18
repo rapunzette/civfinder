@@ -184,4 +184,5 @@ export const burmese: Civilization = {
   "elite battle elephant research": true,
   "cannon galleon research": true,
   "elite cannon galleon research": true,
+  "war galley research": true,
 }

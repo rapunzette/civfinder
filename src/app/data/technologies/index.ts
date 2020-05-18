@@ -1,3 +1,5 @@
+import { war_galley_research } from './war_galley_research';
+export { war_galley_research } from './war_galley_research';
 import { elite_cannon_galleon_research } from './elite_cannon_galleon_research';
 export { elite_cannon_galleon_research } from './elite_cannon_galleon_research';
 import { cannon_galleon_research } from './cannon_galleon_research';
@@ -550,4 +552,5 @@ export const technologies: Technology[] = [
   elite_battle_elephant_research,
   cannon_galleon_research,
   elite_cannon_galleon_research,
+  war_galley_research,
 ]

@@ -184,4 +184,5 @@ export const chinese: Civilization = {
   "elite battle elephant research": false,
   "cannon galleon research": true,
   "elite cannon galleon research": false,
+  "war galley research": true,
 }

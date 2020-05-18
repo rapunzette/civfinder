@@ -184,4 +184,5 @@ export const italians: Civilization = {
   "elite battle elephant research": false,
   "cannon galleon research": true,
   "elite cannon galleon research": true,
+  "war galley research": true,
 }

@@ -184,4 +184,5 @@ export const cumans: Civilization = {
   "elite battle elephant research": false,
   "cannon galleon research": false,
   "elite cannon galleon research": false,
+  "war galley research": true,
 }
