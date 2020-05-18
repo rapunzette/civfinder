@@ -6,5 +6,5 @@ export const fire_ship: Technology = {
   "name": "fire ship",
   "age": "castle",
   "color": "blue",
-  dependencies: [fire_galley.name, castle_age.name]
+  dependencies: [fire_galley.name,]
 }

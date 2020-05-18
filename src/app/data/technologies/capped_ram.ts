@@ -6,5 +6,5 @@ export const capped_ram: Technology = {
   "name": "capped ram",
   "age": "imperial",
   "color": "blue",
-  dependencies: [battering_ram.name, imperial_age.name]
+  dependencies: [battering_ram.name,]
 }

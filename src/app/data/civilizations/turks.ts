@@ -168,4 +168,8 @@ export const turks: Civilization = {
   "keep research": true,
   "halberdier research": false,
   "pikeman research": false,
+  "champion research": true,
+  "man at arms research": true,
+  "long swordsman research": true,
+  "two handed swordsman research": true,
 }

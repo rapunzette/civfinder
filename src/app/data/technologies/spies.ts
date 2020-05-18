@@ -6,5 +6,5 @@ export const spies: Technology = {
   "name": "spies",
   "age": "imperial",
   "color": "green",
-  dependencies: [imperial_age.name, castle.name]
+  dependencies: [, castle.name]
 }

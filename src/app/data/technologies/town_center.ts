@@ -5,5 +5,5 @@ export const town_center: Technology = {
   "name": "town center",
   "age": "dark",
   "color": "red",
-  dependencies: [dark_age.name]
+  dependencies: []
 }

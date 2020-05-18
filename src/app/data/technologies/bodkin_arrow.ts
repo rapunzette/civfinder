@@ -6,5 +6,5 @@ export const bodkin_arrow: Technology = {
   "name": "bodkin arrow",
   "age": "castle",
   "color": "green",
-  dependencies: [castle_age.name, fletching.name]
+  dependencies: [, fletching.name]
 }

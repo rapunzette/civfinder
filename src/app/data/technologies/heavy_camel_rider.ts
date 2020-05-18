@@ -6,5 +6,5 @@ export const heavy_camel_rider: Technology = {
   "name": "heavy camel rider",
   "age": "imperial",
   "color": "blue",
-  dependencies: [imperial_age.name, camel_rider.name]
+  dependencies: [, camel_rider.name]
 }

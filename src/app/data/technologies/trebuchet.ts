@@ -6,5 +6,5 @@ export const trebuchet: Technology = {
   "name": "trebuchet",
   "age": "imperial",
   "color": "blue",
-  dependencies: [castle.name, imperial_age.name]
+  dependencies: [castle.name,]
 }

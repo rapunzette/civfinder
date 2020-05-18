@@ -6,5 +6,5 @@ export const keep_research: Technology = {
   "name": "keep research",
   "age": "imperial",
   "color": "green",
-  dependencies: [guard_tower_research.name, imperial_age.name],
+  dependencies: [guard_tower_research.name,],
 }

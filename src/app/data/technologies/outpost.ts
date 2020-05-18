@@ -5,5 +5,5 @@ export const outpost: Technology = {
   "name": "outpost",
   "age": "dark",
   "color": "red",
-  dependencies: [dark_age.name]
+  dependencies: []
 }

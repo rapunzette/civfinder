@@ -6,5 +6,5 @@ export const iron_casting: Technology = {
   "name": "iron casting",
   "age": "castle",
   "color": "green",
-  dependencies: [forging.name, castle_age.name]
+  dependencies: [forging.name,]
 }

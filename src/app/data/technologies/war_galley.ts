@@ -6,5 +6,5 @@ export const war_galley: Technology = {
   "name": "war galley",
   "age": "castle",
   "color": "blue",
-  dependencies: [galley.name, castle_age.name]
+  dependencies: [galley.name,]
 }

@@ -6,5 +6,5 @@ export const shipwright: Technology = {
   "name": "shipwright",
   "age": "imperial",
   "color": "green",
-  dependencies: [dock.name, imperial_age.name]
+  dependencies: [dock.name,]
 }

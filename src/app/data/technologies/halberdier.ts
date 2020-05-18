@@ -6,5 +6,5 @@ export const halberdier: Technology = {
   "name": "halberdier",
   "age": "imperial",
   "color": "blue",
-  dependencies: [halberdier_research.name, barracks.name],
+  dependencies: [halberdier_research.name],
 }

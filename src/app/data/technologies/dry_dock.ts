@@ -6,5 +6,5 @@ export const dry_dock: Technology = {
   "name": "dry dock",
   "age": "imperial",
   "color": "green",
-  dependencies: [careening.name, imperial_age.name]
+  dependencies: [careening.name,]
 }

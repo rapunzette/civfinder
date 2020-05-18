@@ -5,5 +5,5 @@ export const palisade_gate: Technology = {
   "name": "palisade gate",
   "age": "dark",
   "color": "red",
-  dependencies: [dark_age.name]
+  dependencies: []
 }

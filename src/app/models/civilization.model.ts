@@ -166,4 +166,8 @@ export interface Civilization {
   "keep research": boolean;
   "halberdier research": boolean;
   "pikeman research": boolean;
+  "champion research": boolean;
+  "man at arms research": boolean;
+  "long swordsman research": boolean;
+  "two handed swordsman research": boolean;
 }

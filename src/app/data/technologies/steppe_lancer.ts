@@ -6,5 +6,5 @@ export const steppe_lancer: Technology = {
   "name": "steppe lancer",
   "age": "castle",
   "color": "blue",
-  dependencies: [stable.name, castle_age.name]
+  dependencies: [stable.name,]
 }

@@ -6,5 +6,5 @@ export const chain_mail_armor: Technology = {
   "name": "chain mail armor",
   "age": "castle",
   "color": "green",
-  dependencies: [castle_age.name, scale_mail_armor.name]
+  dependencies: [, scale_mail_armor.name]
 }

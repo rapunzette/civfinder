@@ -6,5 +6,5 @@ export const demolition_ship: Technology = {
   "name": "demolition ship",
   "age": "castle",
   "color": "blue",
-  dependencies: [castle_age.name, demolition_raft.name]
+  dependencies: [, demolition_raft.name]
 }

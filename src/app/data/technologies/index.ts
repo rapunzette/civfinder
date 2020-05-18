@@ -1,3 +1,11 @@
+import { two_handed_swordsman_research } from './two_handed_swordsman_research';
+export { two_handed_swordsman_research } from './two_handed_swordsman_research';
+import { long_swordsman_research } from './long_swordsman_research';
+export { long_swordsman_research } from './long_swordsman_research';
+import { man_at_arms_research } from './man_at_arms_research';
+export { man_at_arms_research } from './man_at_arms_research';
+import { champion_research } from './champion_research';
+export { champion_research } from './champion_research';
 import { pikeman_research } from './pikeman_research';
 export { pikeman_research } from './pikeman_research';
 import { halberdier_research } from './halberdier_research';
@@ -502,4 +510,8 @@ export const technologies: Technology[] = [
   keep_research,
   halberdier_research,
   pikeman_research,
+  champion_research,
+  man_at_arms_research,
+  long_swordsman_research,
+  two_handed_swordsman_research,
 ]

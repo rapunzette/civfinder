@@ -6,5 +6,5 @@ export const banking: Technology = {
   "name": "banking",
   "age": "imperial",
   "color": "green",
-  dependencies: [coinage.name, imperial_age.name]
+  dependencies: [coinage.name,]
 }

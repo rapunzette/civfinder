@@ -6,5 +6,5 @@ export const stone_mining: Technology = {
   "name": "stone mining",
   "age": "feudal",
   "color": "green",
-  dependencies: [mining_camp.name, feudal_age.name],
+  dependencies: [mining_camp.name,],
 }

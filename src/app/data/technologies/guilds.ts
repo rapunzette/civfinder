@@ -6,5 +6,5 @@ export const guilds: Technology = {
   "name": "guilds",
   "age": "imperial",
   "color": "green",
-  dependencies: [market.name, imperial_age.name]
+  dependencies: [market.name,]
 }

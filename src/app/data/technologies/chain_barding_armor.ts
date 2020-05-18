@@ -6,5 +6,5 @@ export const chain_barding_armor: Technology = {
   "name": "chain barding armor",
   "age": "castle",
   "color": "green",
-  dependencies: [castle_age.name, scale_barding_armor.name]
+  dependencies: [, scale_barding_armor.name]
 }

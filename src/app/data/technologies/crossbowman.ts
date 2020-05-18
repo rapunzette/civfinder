@@ -6,5 +6,5 @@ export const crossbowman: Technology = {
   "name": "crossbowman",
   "age": "castle",
   "color": "blue",
-  dependencies: [archer.name, castle_age.name],
+  dependencies: [archer.name,],
 }

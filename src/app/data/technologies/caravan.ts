@@ -6,5 +6,5 @@ export const caravan: Technology = {
   "name": "caravan",
   "age": "castle",
   "color": "green",
-  dependencies: [market.name, castle_age.name]
+  dependencies: [market.name,]
 }

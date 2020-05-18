@@ -5,5 +5,5 @@ export const university: Technology = {
   "name": "university",
   "age": "castle",
   "color": "red",
-  dependencies: [castle_age.name]
+  dependencies: []
 }

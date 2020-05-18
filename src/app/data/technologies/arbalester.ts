@@ -6,5 +6,5 @@ export const arbalester: Technology = {
   "name": "arbalester",
   "age": "imperial",
   "color": "blue",
-  dependencies: [crossbowman.name, imperial_age.name],
+  dependencies: [crossbowman.name,],
 }

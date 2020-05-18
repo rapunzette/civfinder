@@ -6,5 +6,5 @@ export const light_cavalry: Technology = {
   "name": "light cavalry",
   "age": "castle",
   "color": "blue",
-  dependencies: [castle_age.name, scout_cavalry.name]
+  dependencies: [, scout_cavalry.name]
 }

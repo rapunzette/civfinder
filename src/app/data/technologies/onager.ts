@@ -6,5 +6,5 @@ export const onager: Technology = {
   "name": "onager",
   "age": "imperial",
   "color": "blue",
-  dependencies: [mangonel.name, imperial_age.name]
+  dependencies: [mangonel.name,]
 }

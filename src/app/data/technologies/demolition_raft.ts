@@ -6,5 +6,5 @@ export const demolition_raft: Technology = {
   "name": "demolition raft",
   "age": "feudal",
   "color": "blue",
-  dependencies: [dock.name, feudal_age.name]
+  dependencies: [dock.name,]
 }

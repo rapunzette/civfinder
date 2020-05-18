@@ -6,5 +6,5 @@ export const heavy_demo_ship: Technology = {
   "name": "heavy demo ship",
   "age": "imperial",
   "color": "blue",
-  dependencies: [demolition_ship.name, imperial_age.name]
+  dependencies: [demolition_ship.name,]
 }

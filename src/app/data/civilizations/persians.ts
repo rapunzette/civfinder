@@ -168,4 +168,8 @@ export const persians: Civilization = {
   "keep research": false,
   "halberdier research": true,
   "pikeman research": true,
+  "champion research": false,
+  "man at arms research": true,
+  "long swordsman research": true,
+  "two handed swordsman research": false,
 }

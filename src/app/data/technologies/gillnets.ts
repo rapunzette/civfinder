@@ -6,5 +6,5 @@ export const gillnets: Technology = {
   "name": "gillnets",
   "age": "castle",
   "color": "green",
-  dependencies: [dock.name, castle_age.name]
+  dependencies: [dock.name,]
 }

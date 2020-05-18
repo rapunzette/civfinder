@@ -6,5 +6,5 @@ export const knight: Technology = {
   "name": "knight",
   "age": "castle",
   "color": "blue",
-  dependencies: [stable.name, castle_age.name]
+  dependencies: [stable.name,]
 }

@@ -6,5 +6,5 @@ export const two_man_saw: Technology = {
   "name": "two man saw",
   "age": "imperial",
   "color": "green",
-  dependencies: [imperial_age.name, bow_saw.name]
+  dependencies: [, bow_saw.name]
 }

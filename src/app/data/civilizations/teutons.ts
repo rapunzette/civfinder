@@ -168,4 +168,8 @@ export const teutons: Civilization = {
   "keep research": true,
   "halberdier research": true,
   "pikeman research": true,
+  "champion research": true,
+  "man at arms research": true,
+  "long swordsman research": true,
+  "two handed swordsman research": true,
 }

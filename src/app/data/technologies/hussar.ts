@@ -6,5 +6,5 @@ export const hussar: Technology = {
   "name": "hussar",
   "age": "imperial",
   "color": "blue",
-  dependencies: [imperial_age.name, light_cavalry.name]
+  dependencies: [, light_cavalry.name]
 }

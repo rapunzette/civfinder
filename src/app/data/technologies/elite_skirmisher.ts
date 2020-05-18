@@ -6,5 +6,5 @@ export const elite_skirmisher: Technology = {
   "name": "elite skirmisher",
   "age": "castle",
   "color": "blue",
-  dependencies: [skirmisher.name, castle_age.name],
+  dependencies: [skirmisher.name,],
 }

@@ -6,5 +6,5 @@ export const fire_galley: Technology = {
   "name": "fire galley",
   "age": "feudal",
   "color": "blue",
-  dependencies: [dock.name, feudal_age.name]
+  dependencies: [dock.name,]
 }

@@ -168,4 +168,8 @@ export const berbers: Civilization = {
   "keep research": false,
   "halberdier research": false,
   "pikeman research": true,
+  "champion research": true,
+  "man at arms research": true,
+  "long swordsman research": true,
+  "two handed swordsman research": true,
 }

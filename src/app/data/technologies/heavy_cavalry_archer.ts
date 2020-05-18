@@ -6,5 +6,5 @@ export const heavy_cavalry_archer: Technology = {
   "name": "heavy cavalry archer",
   "age": "imperial",
   "color": "blue",
-  dependencies: [cavalry_archer.name, imperial_age.name]
+  dependencies: [cavalry_archer.name,]
 }
