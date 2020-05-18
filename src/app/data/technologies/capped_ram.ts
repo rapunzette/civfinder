@@ -1,10 +1,9 @@
 
 import { Technology } from 'src/app/models/technology.model'
-import { battering_ram } from './battering_ram'
-import { imperial_age } from './imperial_age'
+import { capped_ram_research } from './capped_ram_research'
 export const capped_ram: Technology = {
   "name": "capped ram",
   "age": "imperial",
   "color": "blue",
-  dependencies: [battering_ram.name,]
+  dependencies: [capped_ram_research.name,]
 }

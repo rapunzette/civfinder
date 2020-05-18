@@ -193,4 +193,5 @@ export const cumans: Civilization = {
   "elite steppe lancer research": true,
   "onager research": true,
   "siege onager research": true,
+  "capped ram research": true,
 }

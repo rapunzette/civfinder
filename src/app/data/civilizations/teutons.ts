@@ -193,4 +193,5 @@ export const teutons: Civilization = {
   "elite steppe lancer research": false,
   "onager research": true,
   "siege onager research": true,
+  "capped ram research": true,
 }

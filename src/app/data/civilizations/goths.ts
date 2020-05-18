@@ -193,4 +193,5 @@ export const goths: Civilization = {
   "elite steppe lancer research": false,
   "onager research": true,
   "siege onager research": false,
+  "capped ram research": true,
 }

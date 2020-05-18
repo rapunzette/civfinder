@@ -193,4 +193,5 @@ export const tatars: Civilization = {
   "elite steppe lancer research": true,
   "onager research": true,
   "siege onager research": false,
+  "capped ram research": true,
 }
