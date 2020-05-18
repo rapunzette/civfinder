@@ -50,21 +50,25 @@ export class TechGraphComponent implements OnInit, OnDestroy {
     id: 'dark age cluster',
     label: 'dark age cluster',
     childNodeIds: [],
+    data: { logo: "assets/techs/dark age.png" }
   }
   private feudalAgeCluster: ClusterNode = {
     id: 'feudal age cluster',
     label: 'feudal age cluster',
     childNodeIds: [],
+    data: { logo: "assets/techs/feudal age.png" }
   }
   private castleAgeCluster: ClusterNode = {
     id: 'castle age cluster',
     label: 'castle age cluster',
     childNodeIds: [],
+    data: { logo: "assets/techs/castle age.png" }
   }
   private imperialAgeCluster: ClusterNode = {
     id: 'imperial age cluster',
     label: 'imperial age cluster',
     childNodeIds: [],
+    data: { logo: "assets/techs/imperial age.png" }
   }
   public clusters: ClusterNode[] = [
     this.darkAgeCluster,
