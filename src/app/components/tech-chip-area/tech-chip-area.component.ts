@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { MatAutocomplete, MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 import { startWith, map } from 'rxjs/operators';
 import { Technology } from 'src/app/models/technology.model';
-import { technologies, halberdier } from 'src/app/data/technologies';
+import { technologies, halberdier, arbalester } from 'src/app/data/technologies';
 import { TechService } from 'src/app/tech.service';
 @Component({
   selector: 'app-tech-chip-area',
@@ -26,6 +26,7 @@ export class TechChipAreaComponent implements OnInit {
 
     // just a default selection to nudge users
     this.techService.select(halberdier);
+    this.techService.select(arbalester);
   }
 
   /**
