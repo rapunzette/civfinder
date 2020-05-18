@@ -185,4 +185,5 @@ export const ethiopians: Civilization = {
   "cannon galleon research": true,
   "elite cannon galleon research": false,
   "war galley research": true,
+  "fast fire ship research": false,
 }

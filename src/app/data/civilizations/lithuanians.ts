@@ -185,4 +185,5 @@ export const lithuanians: Civilization = {
   "cannon galleon research": true,
   "elite cannon galleon research": true,
   "war galley research": true,
+  "fast fire ship research": true,
 }
