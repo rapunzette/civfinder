@@ -181,4 +181,5 @@ export const chinese: Civilization = {
   "elite eagle warrior research": false,
   "heavy cavalry archer research": true,
   "heavy camel rider research": true,
+  "elite battle elephant research": false,
 }

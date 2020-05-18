@@ -181,4 +181,5 @@ export const incas: Civilization = {
   "elite eagle warrior research": true,
   "heavy cavalry archer research": false,
   "heavy camel rider research": false,
+  "elite battle elephant research": false,
 }

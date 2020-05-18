@@ -181,4 +181,5 @@ export const vikings: Civilization = {
   "elite eagle warrior research": false,
   "heavy cavalry archer research": false,
   "heavy camel rider research": false,
+  "elite battle elephant research": false,
 }
