@@ -186,4 +186,6 @@ export interface Civilization {
   "fast fire ship research": boolean;
   "galleon research": boolean;
   "heavy demo ship research": boolean;
+  "light cavalry research": boolean;
+  "hussar research": boolean;
 }

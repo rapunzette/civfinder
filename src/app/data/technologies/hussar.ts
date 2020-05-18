@@ -1,10 +1,9 @@
 import { Technology } from 'src/app/models/technology.model';
-import { imperial_age } from './imperial_age';
-import { light_cavalry } from './light_cavalry';
+import { hussar_research } from './hussar_research';
 
 export const hussar: Technology = {
   "name": "hussar",
   "age": "imperial",
   "color": "blue",
-  dependencies: [, light_cavalry.name]
+  dependencies: [hussar_research.name]
 }

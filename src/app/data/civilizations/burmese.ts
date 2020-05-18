@@ -188,4 +188,6 @@ export const burmese: Civilization = {
   "fast fire ship research": false,
   "galleon research": true,
   "heavy demo ship research": false,
+  "light cavalry research": true,
+  "hussar research": true,
 }

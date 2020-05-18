@@ -188,4 +188,6 @@ export const mongols: Civilization = {
   "fast fire ship research": true,
   "galleon research": true,
   "heavy demo ship research": true,
+  "light cavalry research": true,
+  "hussar research": true,
 }

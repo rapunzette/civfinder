@@ -38,7 +38,7 @@ export const franks: Civilization = {
   "steppe lancer": false,
   "husbandry": false,
   "dark age": true,
-  "hussar": true,
+  "hussar": false,
   "cavalier": true,
   "paladin": true,
   "heavy camel rider": false,
@@ -188,4 +188,6 @@ export const franks: Civilization = {
   "fast fire ship research": true,
   "galleon research": true,
   "heavy demo ship research": true,
+  "light cavalry research": true,
+  "hussar research": false,
 }

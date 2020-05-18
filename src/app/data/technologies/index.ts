@@ -1,3 +1,7 @@
+import { hussar_research } from './hussar_research';
+export { hussar_research } from './hussar_research';
+import { light_cavalry_research } from './light_cavalry_research';
+export { light_cavalry_research } from './light_cavalry_research';
 import { heavy_demo_ship_research } from './heavy_demo_ship_research';
 export { heavy_demo_ship_research } from './heavy_demo_ship_research';
 import { galleon_research } from './galleon_research';
@@ -562,4 +566,6 @@ export const technologies: Technology[] = [
   fast_fire_ship_research,
   galleon_research,
   heavy_demo_ship_research,
+  light_cavalry_research,
+  hussar_research,
 ]

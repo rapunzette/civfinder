@@ -188,4 +188,6 @@ export const malay: Civilization = {
   "fast fire ship research": true,
   "galleon research": true,
   "heavy demo ship research": false,
+  "light cavalry research": true,
+  "hussar research": false,
 }

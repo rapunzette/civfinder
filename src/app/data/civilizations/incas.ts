@@ -188,4 +188,6 @@ export const incas: Civilization = {
   "fast fire ship research": true,
   "galleon research": true,
   "heavy demo ship research": false,
+  "light cavalry research": false,
+  "hussar research": false,
 }
