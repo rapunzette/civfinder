@@ -180,4 +180,5 @@ export const mayans: Civilization = {
   "eagle warrior research": true,
   "elite eagle warrior research": true,
   "heavy cavalry archer research": true,
+  "heavy camel rider research": false,
 }

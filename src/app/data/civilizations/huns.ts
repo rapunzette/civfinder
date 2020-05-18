@@ -180,4 +180,5 @@ export const huns: Civilization = {
   "eagle warrior research": false,
   "elite eagle warrior research": false,
   "heavy cavalry archer research": true,
+  "heavy camel rider research": false,
 }

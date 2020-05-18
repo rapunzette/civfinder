@@ -1,3 +1,5 @@
+import { heavy_camel_rider_research } from './heavy_camel_rider_research';
+export { heavy_camel_rider_research } from './heavy_camel_rider_research';
 import { heavy_cavalry_archer_research } from './heavy_cavalry_archer_research';
 export { heavy_cavalry_archer_research } from './heavy_cavalry_archer_research';
 import { elite_eagle_warrior_research } from './elite_eagle_warrior_research';
@@ -538,4 +540,5 @@ export const technologies: Technology[] = [
   eagle_warrior_research,
   elite_eagle_warrior_research,
   heavy_cavalry_archer_research,
+  heavy_camel_rider_research,
 ]

@@ -1,10 +1,9 @@
 import { Technology } from 'src/app/models/technology.model';
-import { imperial_age } from './imperial_age';
-import { camel_rider } from './camel_rider';
+import { heavy_camel_rider_research } from './heavy_camel_rider_research';
 
 export const heavy_camel_rider: Technology = {
   "name": "heavy camel rider",
   "age": "imperial",
   "color": "blue",
-  dependencies: [, camel_rider.name]
+  dependencies: [heavy_camel_rider_research.name]
 }
