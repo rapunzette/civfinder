@@ -6,16 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatButtonModule } from "@angular/material/button";
 
-import { TechTableComponent } from './components/tech-table/tech-table.component';
 import { CivTableComponent } from './components/civ-table/civ-table.component';
 import { MatSortModule } from '@angular/material/sort';
-import { TechCellComponent } from './components/tech-cell/tech-cell.component';
 import { CivCellComponent } from './components/civ-cell/civ-cell.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { TechSearchComponent } from './components/tech-search/tech-search.component';
 import { MatInputModule } from '@angular/material/input';
 import { TechChipAreaComponent } from './components/tech-chip-area/tech-chip-area.component';
 import { MatChipsModule } from '@angular/material/chips';
@@ -29,11 +26,8 @@ import { TechColorPipePipe } from './tech-color-pipe.pipe'
 @NgModule({
   declarations: [
     AppComponent,
-    TechTableComponent,
     CivTableComponent,
-    TechCellComponent,
     CivCellComponent,
-    TechSearchComponent,
     TechChipAreaComponent,
     TechGraphComponent,
     TechColorPipePipe
