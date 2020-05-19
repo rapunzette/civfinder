@@ -8,12 +8,16 @@ import { switchMap } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class TechService {
+  /**
+   * The list of all technologies required to support the selected technologies (including the selected techs)
+   * 
+   * This is built via a subscription to the selected techs, therefore it should not be modified or accessed directly
+   */
   private techGraph: Technology[] = [];
   /**
    * The techs the user has selected plus their dependencies
    */
   public techGraph$: Observable<Technology[]>
-  // public techGraph$ = this.techGraphSubject.asObservable();
 
   private selectedTechs: Technology[] = [];
   private selectedTechsSubject = new BehaviorSubject(this.selectedTechs);
@@ -24,8 +28,9 @@ export class TechService {
 
 
   public clear() {
-    this.techGraph.splice(0);
+    this.selectedTechs.splice(0);
 
+    this.updateSelectedSubject();
   }
 
 
@@ -122,10 +127,9 @@ export class TechService {
 
 
   private buildGraph() {
-    this.techGraph = [];
+    this.techGraph.splice(0);
     this.selectedTechs.forEach((tech) => this.add(tech))
 
-    return this.techGraph;
   }
 
 
