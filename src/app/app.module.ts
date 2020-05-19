@@ -6,9 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatButtonModule } from "@angular/material/button";
 
-import { AngularFireModule } from '@angular/fire';
-import { environment } from '../environments/environment';
-
 import { TechTableComponent } from './components/tech-table/tech-table.component';
 import { CivTableComponent } from './components/civ-table/civ-table.component';
 import { MatSortModule } from '@angular/material/sort';
@@ -45,7 +42,6 @@ import { TechColorPipePipe } from './tech-color-pipe.pipe'
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    AngularFireModule.initializeApp(environment.firebase),
     MatSortModule,
     MatButtonModule,
     MatSidenavModule,
