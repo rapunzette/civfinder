@@ -21,7 +21,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { NgxGraphModule } from '@swimlane/ngx-graph';
 import { TechGraphComponent } from './components/tech-graph/tech-graph.component';
-import { TechColorPipe } from './pipes/tech-color.pipe'
+import { TechColorPipe } from './pipes/tech-color.pipe';
+import { FooterComponent } from './components/footer/footer.component'
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faGithub, } from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,8 @@ import { TechColorPipe } from './pipes/tech-color.pipe'
     CivCellComponent,
     TechChipAreaComponent,
     TechGraphComponent,
-    TechColorPipe
+    TechColorPipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -48,8 +52,13 @@ import { TechColorPipe } from './pipes/tech-color.pipe'
     FormsModule,
     ReactiveFormsModule,
     NgxGraphModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private library: FaIconLibrary) {
+    library.addIcons(faGithub);
+  }
+}
