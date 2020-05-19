@@ -1,4 +1,4 @@
-.example-container {
+.container {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -7,11 +7,18 @@
   background: #eee;
 }
 
+.wood-background {
+  background-image: url("/assets/backgrounds/wood.png");
+}
+.paper-background {
+  background-image: url("/assets/backgrounds/paper.png");
+}
+
 mat-sidenav {
   width: 200px;
 }
 app-footer {
   position: absolute;
   bottom: 15px;
-  right: 15%;
+  left: 10%;
 }
