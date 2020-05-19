@@ -1,23 +1,12 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, of } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 import { Technology } from '../models/technology.model';
-import { technologies } from '../data/technologies';
-import { switchMap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SelectedTechService {
-  /**
-   * The list of all technologies required to support the selected technologies (including the selected techs)
-   * 
-   * This is built via a subscription to the selected techs, therefore it should not be modified or accessed directly
-   */
-  private techGraph: Technology[] = [];
-  /**
-   * The techs the user has selected plus their dependencies
-   */
-  public techGraph$: Observable<Technology[]>
+
 
   private selectedTechs: Technology[] = [];
   private selectedTechsSubject = new BehaviorSubject(this.selectedTechs);
@@ -34,10 +23,6 @@ export class SelectedTechService {
   }
 
 
-  public getTechByName(name: string): Technology {
-    return technologies.find((tech) => tech.name === name);
-  }
-
   /**
    * The user action of selecting a desired technology
    * 
@@ -47,8 +32,6 @@ export class SelectedTechService {
     if (this.selectedTechs.indexOf(tech) < 0) {
       this.selectedTechs.push(tech);
 
-      // add tech and its dependencies to the graph
-      this.add(tech);
 
       //update accordingly
       this.updateSelectedSubject();
@@ -56,27 +39,7 @@ export class SelectedTechService {
 
   }
 
-  /**
-   * Adds a technology and its dependecies to the graph
-   * @param tech 
-   */
-  public add(tech: Technology) {
-    // ensure it is not already added
-    let i: number = this.techGraph.indexOf(tech)
-    if (i < 0) {
-      this.techGraph.push(tech);
-    }
 
-    // recursively add prerequisites
-    if (tech.dependencies != null && tech.dependencies.length > 0) {
-      tech.dependencies.forEach((dependency) => {
-        let prerequisiteTech: Technology = this.getTechByName(dependency)
-        this.add(prerequisiteTech);
-      })
-    }
-
-    // this.updateGraphSubject();
-  }
 
 
   /**
@@ -95,50 +58,10 @@ export class SelectedTechService {
 
   }
 
-  public remove(techToDelete: Technology) {
-    let graphIndex = this.techGraph.indexOf(techToDelete)
-    if (graphIndex < 0) {
-      return;
-    }
-    this.techGraph.splice(graphIndex, 1);
-
-
-    // remove dependent techs if they exist
-    this.techGraph.filter((selectedTech) => {
-      return selectedTech.dependencies?.indexOf(techToDelete.name) > -1;
-    }).forEach(dependentTech => this.remove(dependentTech));;
-
-  }
-
-  public toggle(tech: Technology) {
-    // add or remove depending if the tech is already selected
-    let i: number = this.techGraph.indexOf(tech)
-    if (i >= 0) {
-      this.remove(tech);
-    } else {
-      this.add(tech);
-    }
-  }
 
   private updateSelectedSubject() {
     this.selectedTechsSubject.next(this.selectedTechs)
 
   }
-
-
-  private buildGraph() {
-    this.techGraph.splice(0);
-    this.selectedTechs.forEach((tech) => this.add(tech))
-
-  }
-
-
-  constructor() {
-    this.techGraph$ = this.selectedTechs$.pipe(
-      switchMap((nowSelectedTechs) => {
-        this.buildGraph();
-        return of(this.techGraph);
-      })
-    )
-  }
+  constructor() { }
 }

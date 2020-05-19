@@ -18,19 +18,6 @@ export class CivCellComponent implements OnInit, OnDestroy {
 
   public qualify: boolean = true;
 
-  /**
-   * Clear all selected techs then select all techs this civilization has.
-   */
-  public buttonPressed() {
-    this.techService.clear();
-    for (var property in this.civ) {
-      if (this.civ[property] === true) {
-        let techToAdd: Technology = this.techService.getTechByName(property)
-        this.techService.add(techToAdd);
-      }
-    }
-  }
-
   constructor(private techService: SelectedTechService) { }
 
   ngOnInit(): void {

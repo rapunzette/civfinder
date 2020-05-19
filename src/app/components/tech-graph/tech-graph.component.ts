@@ -2,9 +2,9 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Node, Edge, ClusterNode, Layout } from '@swimlane/ngx-graph';
 import { Subject, Subscription } from 'rxjs';
 import * as shape from 'd3-shape';
-import { SelectedTechService } from 'src/app/services/selected-tech.service';
 import { Technology } from 'src/app/models/technology.model';
 import { imperial_age, dark_age, feudal_age, castle_age } from 'src/app/data/technologies';
+import { GraphService } from 'src/app/services/graph.service';
 
 @Component({
   selector: 'app-tech-graph',
@@ -13,7 +13,7 @@ import { imperial_age, dark_age, feudal_age, castle_age } from 'src/app/data/tec
 })
 export class TechGraphComponent implements OnInit, OnDestroy {
   private subs = new Subscription();
-  constructor(private techService: SelectedTechService) { }
+  constructor(private graphService: GraphService) { }
 
 
   // graph values
@@ -134,7 +134,7 @@ export class TechGraphComponent implements OnInit, OnDestroy {
     this.subs.add(
       // everytime the techGraph is updated we want to clear the state
       // then build nodes, edges, and clusters
-      this.techService.techGraph$.subscribe(techs => {
+      this.graphService.techGraph$.subscribe(techs => {
         this.clearState();
 
         // add ages independently in order to assist graph layout
