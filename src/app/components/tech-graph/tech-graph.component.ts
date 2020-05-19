@@ -2,9 +2,9 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Node, Edge, ClusterNode, Layout } from '@swimlane/ngx-graph';
 import { Subject, Subscription } from 'rxjs';
 import * as shape from 'd3-shape';
-import { TechService } from 'src/app/tech.service';
 import { Technology } from 'src/app/models/technology.model';
 import { imperial_age, dark_age, feudal_age, castle_age } from 'src/app/data/technologies';
+import { GraphService } from 'src/app/services/graph.service';
 
 @Component({
   selector: 'app-tech-graph',
@@ -13,7 +13,7 @@ import { imperial_age, dark_age, feudal_age, castle_age } from 'src/app/data/tec
 })
 export class TechGraphComponent implements OnInit, OnDestroy {
   private subs = new Subscription();
-  constructor(private techService: TechService) { }
+  constructor(private graphService: GraphService) { }
 
 
   // graph values
@@ -51,25 +51,25 @@ export class TechGraphComponent implements OnInit, OnDestroy {
     id: 'dark age cluster',
     label: 'dark age cluster',
     childNodeIds: [],
-    data: { logo: "assets/techs/dark age.png" }
+    data: { logo: "assets/techs/dark age.png", customColor: "#F8B45E" }
   }
   private feudalAgeCluster: ClusterNode = {
     id: 'feudal age cluster',
     label: 'feudal age cluster',
     childNodeIds: [],
-    data: { logo: "assets/techs/feudal age.png" }
+    data: { logo: "assets/techs/feudal age.png", customColor: "#861003" }
   }
   private castleAgeCluster: ClusterNode = {
     id: 'castle age cluster',
     label: 'castle age cluster',
     childNodeIds: [],
-    data: { logo: "assets/techs/castle age.png" }
+    data: { logo: "assets/techs/castle age.png", customColor: "#231532" }
   }
   private imperialAgeCluster: ClusterNode = {
     id: 'imperial age cluster',
     label: 'imperial age cluster',
     childNodeIds: [],
-    data: { logo: "assets/techs/imperial age.png" }
+    data: { logo: "assets/techs/imperial age.png", customColor: "#2B4A23" }
   }
   public clusters: ClusterNode[] = [
     this.darkAgeCluster,
@@ -134,7 +134,7 @@ export class TechGraphComponent implements OnInit, OnDestroy {
     this.subs.add(
       // everytime the techGraph is updated we want to clear the state
       // then build nodes, edges, and clusters
-      this.techService.techGraph$.subscribe(techs => {
+      this.graphService.techGraph$.subscribe(techs => {
         this.clearState();
 
         // add ages independently in order to assist graph layout

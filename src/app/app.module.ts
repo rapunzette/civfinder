@@ -6,19 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatButtonModule } from "@angular/material/button";
 
-import { AngularFireModule } from '@angular/fire';
-import { environment } from '../environments/environment';
-
-import { TechTableComponent } from './components/tech-table/tech-table.component';
 import { CivTableComponent } from './components/civ-table/civ-table.component';
 import { MatSortModule } from '@angular/material/sort';
-import { TechCellComponent } from './components/tech-cell/tech-cell.component';
 import { CivCellComponent } from './components/civ-cell/civ-cell.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { TechSearchComponent } from './components/tech-search/tech-search.component';
 import { MatInputModule } from '@angular/material/input';
 import { TechChipAreaComponent } from './components/tech-chip-area/tech-chip-area.component';
 import { MatChipsModule } from '@angular/material/chips';
@@ -27,25 +21,25 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { NgxGraphModule } from '@swimlane/ngx-graph';
 import { TechGraphComponent } from './components/tech-graph/tech-graph.component';
-import { TechColorPipePipe } from './tech-color-pipe.pipe'
+import { TechColorPipe } from './pipes/tech-color.pipe';
+import { FooterComponent } from './components/footer/footer.component'
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faGithub, } from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TechTableComponent,
     CivTableComponent,
-    TechCellComponent,
     CivCellComponent,
-    TechSearchComponent,
     TechChipAreaComponent,
     TechGraphComponent,
-    TechColorPipePipe
+    TechColorPipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    AngularFireModule.initializeApp(environment.firebase),
     MatSortModule,
     MatButtonModule,
     MatSidenavModule,
@@ -58,8 +52,13 @@ import { TechColorPipePipe } from './tech-color-pipe.pipe'
     FormsModule,
     ReactiveFormsModule,
     NgxGraphModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private library: FaIconLibrary) {
+    library.addIcons(faGithub);
+  }
+}

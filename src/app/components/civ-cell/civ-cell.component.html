@@ -1,4 +1,3 @@
-<!-- <button mat-button [matTooltip]="civ.name|titlecase" (click)="buttonPressed()" -->
 <button mat-button [matTooltip]="civ.name|titlecase" [ngClass]="qualify ? 'qualified' : 'unqualified'">
   <div class="civ-avatar" [style.backgroundImage]="'url(' + iconPath + ')'"></div>
 

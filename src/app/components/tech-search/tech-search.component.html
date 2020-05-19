@@ -1,8 +1,0 @@
-<mat-form-field class="search">
-  <mat-label>Search technologies...</mat-label>
-  <input matInput (keyup)="onkeyup($event)" placeholder="Halberdier">
-</mat-form-field>
-
-<ul *ngFor="let tech of results | async" class="card">
-  <app-tech-cell [technology]="tech"></app-tech-cell>
-</ul>

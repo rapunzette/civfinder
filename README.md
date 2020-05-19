@@ -1,29 +1,16 @@
-# Civfinder
+# Age of Empires II [Civfinder](https://civfinder.web.app/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+A web app that determines which of the 35 Age of Empires II civilizations correspond to desired technologies. It also draws a technology dependency graph.
 
-## Development server
+## Creating and running a local development environment
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is a 100% frontend [Angular](https://angular.io/) web app; so no database/backend setup is required. Here are a set of commands you can use to get up and running quickly:
 
-## Code scaffolding
+```
+git clone https://github.com/evheath/civfinder.git
+cd civfinder
+npm install
+npm start
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-004178
+Then simply navigate to https://localhost:4200 to see your changes live!

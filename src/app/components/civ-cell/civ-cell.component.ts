@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { Civilization } from 'src/app/models/civilization.model';
-import { TechService } from 'src/app/tech.service';
+import { SelectedTechService } from 'src/app/services/selected-tech.service';
 import { Technology } from 'src/app/models/technology.model';
 import { Subscription } from 'rxjs';
 
@@ -18,20 +18,7 @@ export class CivCellComponent implements OnInit, OnDestroy {
 
   public qualify: boolean = true;
 
-  /**
-   * Clear all selected techs then select all techs this civilization has.
-   */
-  public buttonPressed() {
-    this.techService.clear();
-    for (var property in this.civ) {
-      if (this.civ[property] === true) {
-        let techToAdd: Technology = this.techService.getTechByName(property)
-        this.techService.add(techToAdd);
-      }
-    }
-  }
-
-  constructor(private techService: TechService) { }
+  constructor(private techService: SelectedTechService) { }
 
   ngOnInit(): void {
     this.iconPath = `assets/civs/${this.civ.name}.png`;
