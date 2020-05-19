@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TechService } from './tech.service';
+import { SelectedTechService } from './services/selected-tech.service';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,7 @@ import { TechService } from './tech.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(public techService: TechService) { }
+  constructor(public techService: SelectedTechService) { }
 
 
 }

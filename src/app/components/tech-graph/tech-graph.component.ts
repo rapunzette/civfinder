@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Node, Edge, ClusterNode, Layout } from '@swimlane/ngx-graph';
 import { Subject, Subscription } from 'rxjs';
 import * as shape from 'd3-shape';
-import { TechService } from 'src/app/tech.service';
+import { SelectedTechService } from 'src/app/services/selected-tech.service';
 import { Technology } from 'src/app/models/technology.model';
 import { imperial_age, dark_age, feudal_age, castle_age } from 'src/app/data/technologies';
 
@@ -13,7 +13,7 @@ import { imperial_age, dark_age, feudal_age, castle_age } from 'src/app/data/tec
 })
 export class TechGraphComponent implements OnInit, OnDestroy {
   private subs = new Subscription();
-  constructor(private techService: TechService) { }
+  constructor(private techService: SelectedTechService) { }
 
 
   // graph values

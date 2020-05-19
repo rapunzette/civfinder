@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { Civilization } from 'src/app/models/civilization.model';
-import { TechService } from 'src/app/tech.service';
+import { SelectedTechService } from 'src/app/services/selected-tech.service';
 import { Technology } from 'src/app/models/technology.model';
 import { Subscription } from 'rxjs';
 
@@ -31,7 +31,7 @@ export class CivCellComponent implements OnInit, OnDestroy {
     }
   }
 
-  constructor(private techService: TechService) { }
+  constructor(private techService: SelectedTechService) { }
 
   ngOnInit(): void {
     this.iconPath = `assets/civs/${this.civ.name}.png`;

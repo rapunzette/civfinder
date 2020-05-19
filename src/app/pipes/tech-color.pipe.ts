@@ -3,7 +3,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
   name: 'techColorPipe'
 })
-export class TechColorPipePipe implements PipeTransform {
+export class TechColorPipe implements PipeTransform {
 
   public transform(colorString: string): string {
     if (colorString === "blue") {

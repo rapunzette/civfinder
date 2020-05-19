@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, of } from 'rxjs';
-import { Technology } from './models/technology.model';
-import { technologies } from './data/technologies';
+import { Technology } from '../models/technology.model';
+import { technologies } from '../data/technologies';
 import { switchMap } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
-export class TechService {
+export class SelectedTechService {
   /**
    * The list of all technologies required to support the selected technologies (including the selected techs)
    * 

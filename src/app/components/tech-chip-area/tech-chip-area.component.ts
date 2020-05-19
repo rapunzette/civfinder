@@ -5,7 +5,7 @@ import { MatAutocomplete, MatAutocompleteSelectedEvent } from '@angular/material
 import { startWith, map } from 'rxjs/operators';
 import { Technology } from 'src/app/models/technology.model';
 import { technologies } from 'src/app/data/technologies';
-import { TechService } from 'src/app/tech.service';
+import { SelectedTechService } from 'src/app/services/selected-tech.service';
 import { shuffle } from 'lodash'
 @Component({
   selector: 'app-tech-chip-area',
@@ -18,7 +18,7 @@ export class TechChipAreaComponent implements OnInit {
   @ViewChild('techInput') techInput: ElementRef<HTMLInputElement>;
   @ViewChild('auto') matAutocomplete: MatAutocomplete;
 
-  constructor(public techService: TechService) { }
+  constructor(public techService: SelectedTechService) { }
 
   ngOnInit(): void {
     this.filteredTechs = this.techCtrl.valueChanges.pipe(

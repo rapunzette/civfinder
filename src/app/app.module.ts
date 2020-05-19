@@ -21,7 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { NgxGraphModule } from '@swimlane/ngx-graph';
 import { TechGraphComponent } from './components/tech-graph/tech-graph.component';
-import { TechColorPipePipe } from './tech-color-pipe.pipe'
+import { TechColorPipe } from './pipes/tech-color.pipe'
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import { TechColorPipePipe } from './tech-color-pipe.pipe'
     CivCellComponent,
     TechChipAreaComponent,
     TechGraphComponent,
-    TechColorPipePipe
+    TechColorPipe
   ],
   imports: [
     BrowserModule,
