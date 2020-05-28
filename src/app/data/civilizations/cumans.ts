@@ -7,7 +7,7 @@ export const cumans: Civilization = {
   "man at arms": true,
   "spearman": true,
   "eagle scout": false,
-  "supplies": true,
+  "supplies": false,
   "long swordsman": true,
   "pikeman": true,
   "eagle warrior": false,
