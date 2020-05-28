@@ -7,7 +7,7 @@ export const mayans: Civilization = {
   "man at arms": true,
   "spearman": true,
   "eagle scout": true,
-  "supplies": true,
+  "supplies": false,
   "long swordsman": true,
   "pikeman": true,
   "eagle warrior": true,
