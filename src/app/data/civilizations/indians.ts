@@ -67,7 +67,7 @@ export const indians: Civilization = {
   "blast furnace": true,
   "scale barding armor": true,
   "chain barding armor": true,
-  "plate barding armor": true,
+  "plate barding armor": false,
   "scale mail armor": true,
   "chain mail armor": true,
   "plate mail armor": false,
