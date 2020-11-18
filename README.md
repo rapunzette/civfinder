@@ -13,4 +13,4 @@ npm install
 npm start
 ```
 
-Then simply navigate to https://localhost:4200 to see your changes live!
+Then simply navigate to http://localhost:4200 to see your changes live!
