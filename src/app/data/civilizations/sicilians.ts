@@ -24,7 +24,7 @@ export const sicilians: Civilization = {
   "arbalester": true,
   "skirmisher": true,
   "elite skirmisher": true,
-  "hand cannoneer": true,
+  "hand cannoneer": false,
   "cavalry archer": true,
   "heavy cavalry archer": false,
   "thumb ring": false,

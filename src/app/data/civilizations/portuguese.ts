@@ -90,7 +90,7 @@ export const portuguese: Civilization = {
   "heavy demo ship": true,
   "galleon": true,
   "dry dock": true,
-  "shipwright": true,
+  "shipwright": false,
   "university": true,
   "masonry": true,
   "fortified wall": true,

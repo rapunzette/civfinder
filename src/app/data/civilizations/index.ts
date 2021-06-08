@@ -34,12 +34,15 @@ import { cumans } from './cumans';
 import { lithuanians } from './lithuanians';
 import { tatars } from './tatars';
 import { indians } from './indians';
+import { sicilians } from './sicilians';
+import { burgundians } from './burgundians';
 
 export const civilizations: Civilization[] = [
   aztecs,
   berbers,
   britons,
   bulgarians,
+  burgundians,
   burmese,
   byzantines,
   celts,
@@ -64,6 +67,7 @@ export const civilizations: Civilization[] = [
   persians,
   portuguese,
   saracens,
+  sicilians,
   slavs,
   spanish,
   tatars,
