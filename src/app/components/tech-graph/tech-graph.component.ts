@@ -29,7 +29,7 @@ export class TechGraphComponent implements OnInit, OnDestroy {
   // public curve = shape.curveStepBefore;
 
   public draggingEnabled: boolean = false;
-  public panningEnabled: boolean = true;
+  public panningEnabled: boolean = false;
   public zoomEnabled: boolean = true;
   public zoomSpeed: number = 0.1;
   public minZoomLevel: number = 0.1;
