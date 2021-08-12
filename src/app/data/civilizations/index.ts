@@ -36,10 +36,13 @@ import { tatars } from './tatars';
 import { indians } from './indians';
 import { sicilians } from './sicilians';
 import { burgundians } from './burgundians';
+import { poles } from './poles';
+import { bohemians } from './bohemians';
 
 export const civilizations: Civilization[] = [
   aztecs,
   berbers,
+  bohemians,
   britons,
   bulgarians,
   burgundians,
@@ -65,6 +68,7 @@ export const civilizations: Civilization[] = [
   mayans,
   mongols,
   persians,
+  poles,
   portuguese,
   saracens,
   sicilians,
