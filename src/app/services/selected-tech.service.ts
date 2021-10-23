@@ -8,7 +8,7 @@ import { Technology } from '../models/technology.model';
 export class SelectedTechService {
 
 
-  private selectedTechs: Technology[] = [];
+  public selectedTechs: Technology[] = [];
   private selectedTechsSubject = new BehaviorSubject(this.selectedTechs);
   /**
    * The techs the user has selected 

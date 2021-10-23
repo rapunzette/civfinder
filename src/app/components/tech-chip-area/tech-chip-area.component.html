@@ -16,7 +16,9 @@
     </mat-option>
   </mat-autocomplete>
 </mat-form-field>
+<button mat-icon-button matTooltip="Toggle Strict Mode" (click)="handleStrict()">
+  <mat-icon>{{strict ?"check_box" : "check_box_outline_blank"}}</mat-icon>
+</button>
 <button mat-icon-button matTooltip="Clear all" (click)="techService.clear()">
   <mat-icon>clear</mat-icon>
-  <!-- Clear -->
 </button>

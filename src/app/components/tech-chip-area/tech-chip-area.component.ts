@@ -7,18 +7,23 @@ import { Technology } from 'src/app/models/technology.model';
 import { technologies } from 'src/app/data/technologies';
 import { SelectedTechService } from 'src/app/services/selected-tech.service';
 import { shuffle } from 'lodash'
+import { CivilizationService } from 'src/app/services/civilization.service';
 @Component({
   selector: 'app-tech-chip-area',
   templateUrl: './tech-chip-area.component.html',
   styleUrls: ['./tech-chip-area.component.scss']
 })
 export class TechChipAreaComponent implements OnInit {
+  public strict: boolean = true;
   techCtrl = new FormControl();
   filteredTechs: Observable<Technology[]>;
   @ViewChild('techInput') techInput: ElementRef<HTMLInputElement>;
   @ViewChild('auto') matAutocomplete: MatAutocomplete;
 
-  constructor(public techService: SelectedTechService) { }
+  constructor(
+    public techService: SelectedTechService,
+    private civService: CivilizationService,
+  ) { }
 
   ngOnInit(): void {
     this.filteredTechs = this.techCtrl.valueChanges.pipe(
@@ -47,6 +52,11 @@ export class TechChipAreaComponent implements OnInit {
     this.techService.select(newTech);
     this.techInput.nativeElement.value = '';
     this.techCtrl.setValue(null);
+  }
+
+  public handleStrict() {
+    this.strict = !this.strict
+    this.civService.toggleStrict();
   }
 
 
