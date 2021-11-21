@@ -27,7 +27,7 @@ export const vikings: Civilization = {
   "hand cannoneer": false,
   "cavalry archer": true,
   "heavy cavalry archer": false,
-  "thumb ring": true,
+  "thumb ring": false,
   "parthian tactics": false,
   "stable": true,
   "scout cavalry": true,
