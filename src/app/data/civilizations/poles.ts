@@ -143,7 +143,7 @@ export const poles: Civilization = {
   "treadmill crane": true,
   "architecture": false,
   "chemistry": true,
-  "siege engineers": false,
+  "siege engineers": true,
   "arrowslits": true,
   "bombard tower research": true,
   "guard tower research": true,
