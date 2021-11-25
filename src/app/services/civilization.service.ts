@@ -21,6 +21,10 @@ export class CivilizationService {
 
   public toggleStrict() {
 
+    this.civMap.get("aztecs")["halberdier"] = !(this.civMap.get("aztecs")["halberdier"])
+    this.civMap.get("aztecs")["halberdier research"] = !(this.civMap.get("aztecs")["halberdier research"])
+    this.civMap.get("vikings")["halberdier"] = !(this.civMap.get("vikings")["halberdier"])
+    this.civMap.get("vikings")["halberdier research"] = !(this.civMap.get("vikings")["halberdier research"])
     this.civMap.get("celts").squires = !(this.civMap.get("celts").squires)
     this.civMap.get("franks").bloodlines = !this.civMap.get("franks").bloodlines
     this.civMap.get("saracens").guilds = !this.civMap.get("saracens").guilds
