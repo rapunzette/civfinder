@@ -39,6 +39,7 @@ import { burgundians } from './burgundians';
 import { poles } from './poles';
 import { bohemians } from './bohemians';
 import { bengalis } from './bengalis';
+import { dravidians } from './dravidians';
 
 export const civilizations: Civilization[] = [
   aztecs,
@@ -53,6 +54,7 @@ export const civilizations: Civilization[] = [
   celts,
   chinese,
   cumans,
+  dravidians,
   ethiopians,
   franks,
   goths,

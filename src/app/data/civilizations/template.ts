@@ -17,9 +17,9 @@ export const template: Civilization = {
   "cavalry archer": true,
   "heavy cavalry archer research": true,
   "heavy cavalry archer": true,
-  "elephant archer": false,
-  "elite elephant archer research": false,
-  "elite elephant archer": false,
+  "elephant archer": true,
+  "elite elephant archer research": true,
+  "elite elephant archer": true,
   "thumb ring": true,
   "parthian tactics": true,
 
