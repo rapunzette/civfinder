@@ -179,7 +179,7 @@ export const mayans: Civilization = {
   "elite skirmisher research": true,
   "eagle warrior research": true,
   "elite eagle warrior research": true,
-  "heavy cavalry archer research": true,
+  "heavy cavalry archer research": false,
   "heavy camel rider research": false,
   "elite battle elephant research": false,
   "cannon galleon research": false,
@@ -196,4 +196,10 @@ export const mayans: Civilization = {
   "capped ram research": true,
   "siege ram research": true,
   "heavy scorpion research": true,
+  'elephant archer': false,
+  'elite elephant archer research': false,
+  'elite elephant archer': false,
+  'armored elephant': false,
+  'siege elephant research': false,
+  'siege elephant': false
 }

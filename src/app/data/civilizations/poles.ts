@@ -224,4 +224,10 @@ export const poles: Civilization = {
   "dark age": true,
   "house": true,
   "wonder": true,
+  'elephant archer': false,
+  'elite elephant archer research': false,
+  'elite elephant archer': false,
+  'armored elephant': false,
+  'siege elephant research': false,
+  'siege elephant': false
 }

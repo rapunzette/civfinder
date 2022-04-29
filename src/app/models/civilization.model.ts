@@ -194,4 +194,10 @@ export interface Civilization {
   "capped ram research": boolean;
   "siege ram research": boolean;
   "heavy scorpion research": boolean;
+  "elephant archer": boolean;
+  "elite elephant archer research": boolean;
+  "elite elephant archer": boolean;
+  "armored elephant": boolean;
+  "siege elephant research": boolean;
+  "siege elephant": boolean;
 }
