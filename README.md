@@ -20,8 +20,10 @@ Then simply navigate to http://localhost:4200 to see your changes live!
 
 -Create civ singleton in app/data/civilizations (copy template.ts)
 -Import/Export the singleton in the civilizations array in app/data/civilizations/index.ts (note order matters)
+-Add png image for the civ's banner to app/assets/civs
 
 ## Creating new tech
 
 -Create tech singleton in app/data/technologies
 -Import/export the singleton in the techs array in app/data/technologies/index.ts
+-Add jpg image for the unit/tech to app/assets/techs

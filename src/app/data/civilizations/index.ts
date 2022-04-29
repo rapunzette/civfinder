@@ -38,9 +38,11 @@ import { sicilians } from './sicilians';
 import { burgundians } from './burgundians';
 import { poles } from './poles';
 import { bohemians } from './bohemians';
+import { bengalis } from './bengalis';
 
 export const civilizations: Civilization[] = [
   aztecs,
+  bengalis,
   berbers,
   bohemians,
   britons,
