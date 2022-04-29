@@ -40,6 +40,7 @@ import { poles } from './poles';
 import { bohemians } from './bohemians';
 import { bengalis } from './bengalis';
 import { dravidians } from './dravidians';
+import { gurjaras } from './gurjaras';
 
 export const civilizations: Civilization[] = [
   aztecs,
@@ -58,6 +59,7 @@ export const civilizations: Civilization[] = [
   ethiopians,
   franks,
   goths,
+  gurjaras,
   hindustanis,
   huns,
   incas,
