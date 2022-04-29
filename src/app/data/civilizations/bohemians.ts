@@ -65,7 +65,7 @@ export const bohemians: Civilization = {
   "paladin research": false,
   "heavy camel rider research": false,
   "elite battle elephant research": false,
-  "light cavalry research": false,
+  "light cavalry research": true,
   "hussar research": false,
   "elite steppe lancer research": false,
 

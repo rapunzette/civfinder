@@ -17,9 +17,9 @@ export const dravidians: Civilization = {
   "cavalry archer": false,
   "heavy cavalry archer research": false,
   "heavy cavalry archer": false,
-  "elephant archer": false,
-  "elite elephant archer research": false,
-  "elite elephant archer": false,
+  "elephant archer": true,
+  "elite elephant archer research": true,
+  "elite elephant archer": true,
   "thumb ring": true,
   "parthian tactics": false,
 

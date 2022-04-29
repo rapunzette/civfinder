@@ -179,7 +179,7 @@ export const sicilians: Civilization = {
   "elite skirmisher research": true,
   "eagle warrior research": false,
   "elite eagle warrior research": false,
-  "heavy cavalry archer research": true,
+  "heavy cavalry archer research": false,
   "heavy camel rider research": false,
   "elite battle elephant research": false,
   "cannon galleon research": true,
