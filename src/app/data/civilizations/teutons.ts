@@ -196,4 +196,10 @@ export const teutons: Civilization = {
   "capped ram research": true,
   "siege ram research": false,
   "heavy scorpion research": true,
+  'elephant archer': false,
+  'elite elephant archer research': false,
+  'elite elephant archer': false,
+  'armored elephant': false,
+  'siege elephant research': false,
+  'siege elephant': false
 }

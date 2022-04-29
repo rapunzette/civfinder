@@ -229,6 +229,12 @@ import { paladin } from './paladin';
 import { heavy_camel_rider } from './heavy_camel_rider';
 import { elite_battle_elephant } from './elite_battle_elephant';
 import { elite_steppe_lancer } from './elite_steppe_lancer';
+import { elephant_archer } from './elephant_archer';
+import { elite_elephant_archer_research } from './elite_elephant_archer_research';
+import { elite_elephant_archer } from './elite_elephant_archer';
+import { siege_elephant } from './siege_elephant';
+import { siege_elephant_research } from './siege_elephant_research';
+import { armored_elephant } from './armored_elephant';
 
 export { crop_rotation } from './crop_rotation';
 export { dark_age } from './dark_age';
@@ -392,6 +398,12 @@ export { elite_battle_elephant } from './elite_battle_elephant';
 export { elite_steppe_lancer } from './elite_steppe_lancer'
 
 export const technologies: Technology[] = [
+  siege_elephant,
+  siege_elephant_research,
+  armored_elephant,
+  elite_elephant_archer_research,
+  elite_elephant_archer,
+  elephant_archer,
   barracks,
   militia,
   man_at_arms,

@@ -33,7 +33,7 @@ import { bulgarians } from './bulgarians';
 import { cumans } from './cumans';
 import { lithuanians } from './lithuanians';
 import { tatars } from './tatars';
-import { indians } from './indians';
+import { hindustanis } from './hindustanis';
 import { sicilians } from './sicilians';
 import { burgundians } from './burgundians';
 import { poles } from './poles';
@@ -54,9 +54,9 @@ export const civilizations: Civilization[] = [
   ethiopians,
   franks,
   goths,
+  hindustanis,
   huns,
   incas,
-  indians,
   italians,
   japanese,
   khmer,

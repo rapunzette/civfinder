@@ -14,3 +14,14 @@ npm start
 ```
 
 Then simply navigate to http://localhost:4200 to see your changes live!
+
+
+## Creating new civ
+
+-Create civ singleton in app/data/civilizations (copy template.ts)
+-Import/Export the singleton in the civilizations array in app/data/civilizations/index.ts (note order matters)
+
+## Creating new tech
+
+-Create tech singleton in app/data/technologies
+-Import/export the singleton in the techs array in app/data/technologies/index.ts

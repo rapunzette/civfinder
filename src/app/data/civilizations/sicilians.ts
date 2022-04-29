@@ -196,4 +196,10 @@ export const sicilians: Civilization = {
   "capped ram research": true,
   "siege ram research": true,
   "heavy scorpion research": true,
+  'elephant archer': false,
+  'elite elephant archer research': false,
+  'elite elephant archer': false,
+  'armored elephant': false,
+  'siege elephant research': false,
+  'siege elephant': false
 }
