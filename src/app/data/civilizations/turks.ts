@@ -1,6 +1,55 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Cost } from 'src/app/models/cost.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+function calculateCost(techs: Technology[]): string {
 
+  const cost: Cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!turks[tech.name]) {
+      console.log(`turks doesn't have ${tech.name}`);
+      return;
+    }
+    //  Chemistry free
+    if (tech.name === "chemistry") {
+      return;
+    }
+
+    // researching gunpowder technologies costs -50%
+    if (
+      tech.name === "bombard tower research"
+    ) {
+      cost.wood += Math.ceil(tech.cost.wood * 0.5);
+      cost.food += Math.ceil(tech.cost.food * 0.5);
+      cost.gold += Math.ceil(tech.cost.gold * 0.5);
+      cost.stone += Math.ceil(tech.cost.stone * 0.5);
+      return;
+    }
+
+    // Light Cavalry and Hussar upgrades free
+    if (tech.name === "light cavalry research" || tech.name === "hussar research") {
+      return;
+    }
+
+
+
+
+    // generic cost calculation
+    cost.wood += tech.cost.wood;
+    cost.food += tech.cost.food;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+  return formatCost(cost);
+}
 export const turks: Civilization = {
+  calculateCost,
   "name": "turks",
   "barracks": true,
   "militia": true,
