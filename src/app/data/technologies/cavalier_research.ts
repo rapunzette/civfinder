@@ -4,8 +4,8 @@ import { stable } from './stable'
 export const cavalier_research: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
-    "food": 0,
+    "gold": 300,
+    "food": 300,
     "stone": 0
   },
   "name": "cavalier research",

@@ -5,8 +5,8 @@ import { market } from './market'
 export const coinage: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
-    "food": 0,
+    "gold": 100,
+    "food": 200,
     "stone": 0
   },
   "name": "coinage",

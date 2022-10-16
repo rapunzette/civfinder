@@ -6,8 +6,8 @@ import { castle } from './castle'
 export const conscription: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
-    "food": 0,
+    "gold": 150,
+    "food": 150,
     "stone": 0
   },
   "name": "conscription",

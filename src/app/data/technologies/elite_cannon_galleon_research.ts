@@ -3,8 +3,8 @@ import { Technology } from 'src/app/models/technology.model'
 import { chemistry } from './chemistry'
 export const elite_cannon_galleon_research: Technology = {
   cost: {
-    "wood": 0,
-    "gold": 0,
+    "wood": 525,
+    "gold": 500,
     "food": 0,
     "stone": 0
   },

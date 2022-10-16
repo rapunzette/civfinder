@@ -5,7 +5,7 @@ export const feudal_age: Technology = {
   cost: {
     "wood": 0,
     "gold": 0,
-    "food": 0,
+    "food": 500,
     "stone": 0
   },
   "name": "feudal age",

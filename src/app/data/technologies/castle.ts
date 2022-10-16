@@ -6,7 +6,7 @@ export const castle: Technology = {
     "wood": 0,
     "gold": 0,
     "food": 0,
-    "stone": 0
+    "stone": 650
   },
   "name": "castle",
   "age": "castle",

@@ -6,8 +6,8 @@ import { university } from './university'
 export const chemistry: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
-    "food": 0,
+    "gold": 200,
+    "food": 300,
     "stone": 0
   },
   "name": "chemistry",

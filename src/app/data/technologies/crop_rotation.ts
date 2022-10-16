@@ -5,9 +5,9 @@ import { heavy_plow } from './heavy_plow'
 
 export const crop_rotation: Technology = {
   cost: {
-    "wood": 0,
+    "wood": 250,
     "gold": 0,
-    "food": 0,
+    "food": 250,
     "stone": 0
   },
   "name": "crop rotation",
