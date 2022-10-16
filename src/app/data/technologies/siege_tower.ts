@@ -3,8 +3,8 @@ import { Technology } from 'src/app/models/technology.model'
 import { siege_workshop } from './siege_workshop'
 export const siege_tower: Technology = {
   cost: {
-    "wood": 0,
-    "gold": 0,
+    "wood": 200,
+    "gold": 160,
     "food": 0,
     "stone": 0
   },

@@ -5,9 +5,9 @@ import { university } from './university'
 
 export const siege_engineers: Technology = {
   cost: {
-    "wood": 0,
+    "wood": 600,
     "gold": 0,
-    "food": 0,
+    "food": 500,
     "stone": 0
   },
   dependencies: [university.name,],

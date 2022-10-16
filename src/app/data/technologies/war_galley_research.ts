@@ -4,8 +4,8 @@ import { dock } from './dock'
 export const war_galley_research: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
-    "food": 0,
+    "gold": 100,
+    "food": 230,
     "stone": 0
   },
   "name": "war galley research",

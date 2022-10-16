@@ -5,7 +5,7 @@ export const siege_ram_research: Technology = {
   cost: {
     "wood": 0,
     "gold": 0,
-    "food": 0,
+    "food": 1000,
     "stone": 0
   },
   "name": "siege ram research",

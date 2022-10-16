@@ -4,7 +4,7 @@ import { monastery } from './monastery'
 export const redemption: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
+    "gold": 475,
     "food": 0,
     "stone": 0
   },

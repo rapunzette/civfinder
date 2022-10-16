@@ -4,9 +4,9 @@ import { archery_range } from './archery_range';
 
 export const thumb_ring: Technology = {
   cost: {
-    "wood": 0,
+    "wood": 250,
     "gold": 0,
-    "food": 0,
+    "food": 300,
     "stone": 0
   },
   "name": "thumb ring",

@@ -6,7 +6,7 @@ export const town_watch: Technology = {
   cost: {
     "wood": 0,
     "gold": 0,
-    "food": 0,
+    "food": 75,
     "stone": 0
   },
   dependencies: [town_center.name,],

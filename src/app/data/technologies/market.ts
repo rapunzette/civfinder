@@ -4,7 +4,7 @@ import { feudal_age } from './feudal_age'
 import { mill } from './mill'
 export const market: Technology = {
   cost: {
-    "wood": 0,
+    "wood": 175,
     "gold": 0,
     "food": 0,
     "stone": 0

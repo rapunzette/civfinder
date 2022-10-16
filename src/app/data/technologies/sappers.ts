@@ -6,8 +6,8 @@ import { castle } from './castle'
 export const sappers: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
-    "food": 0,
+    "gold": 200,
+    "food": 400,
     "stone": 0
   },
   "name": "sappers",

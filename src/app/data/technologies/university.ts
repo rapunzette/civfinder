@@ -3,7 +3,7 @@ import { Technology } from 'src/app/models/technology.model'
 
 export const university: Technology = {
   cost: {
-    "wood": 0,
+    "wood": 200,
     "gold": 0,
     "food": 0,
     "stone": 0

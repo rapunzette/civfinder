@@ -5,8 +5,8 @@ import { town_watch } from './town_watch'
 export const town_patrol: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
-    "food": 0,
+    "gold": 100,
+    "food": 300,
     "stone": 0
   },
   dependencies: [town_watch.name,],

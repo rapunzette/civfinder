@@ -5,7 +5,7 @@ export const padded_archer_armor: Technology = {
   cost: {
     "wood": 0,
     "gold": 0,
-    "food": 0,
+    "food": 100,
     "stone": 0
   },
   dependencies: [blacksmith.name],

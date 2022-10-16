@@ -6,8 +6,8 @@ import { dock } from './dock'
 export const shipwright: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
-    "food": 0,
+    "gold": 300,
+    "food": 1000,
     "stone": 0
   },
   "name": "shipwright",

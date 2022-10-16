@@ -6,7 +6,7 @@ export const stone_wall: Technology = {
     "wood": 0,
     "gold": 0,
     "food": 0,
-    "stone": 0
+    "stone": 5
   },
   "name": "stone wall",
   "age": "feudal",

@@ -5,8 +5,8 @@ import { barracks } from './barracks'
 export const pikeman_research: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
-    "food": 0,
+    "gold": 90,
+    "food": 215,
     "stone": 0
   },
   "name": "pikeman research",

@@ -6,7 +6,7 @@ export const squires: Technology = {
   cost: {
     "wood": 0,
     "gold": 0,
-    "food": 0,
+    "food": 100,
     "stone": 0
   },
   "name": "squires",
