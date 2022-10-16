@@ -2,6 +2,7 @@
 import { Technology } from 'src/app/models/technology.model'
 import { heavy_demo_ship_research } from './heavy_demo_ship_research'
 export const heavy_demo_ship: Technology = {
+  cost: { "wood": 100, "gold": 100, "food": 100, "stone": 100 },
   "name": "heavy demo ship",
   "age": "imperial",
   "color": "blue",

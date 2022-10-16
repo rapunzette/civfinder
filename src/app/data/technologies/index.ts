@@ -1,4 +1,5 @@
 import { heavy_scorpion_research } from './heavy_scorpion_research';
+import { imperial_age } from './imperial_age'
 export { heavy_scorpion_research } from './heavy_scorpion_research';
 import { siege_ram_research } from './siege_ram_research';
 export { siege_ram_research } from './siege_ram_research';
@@ -88,7 +89,8 @@ import { stone_mining } from './stone_mining';
 import { gold_mining } from './gold_mining';
 import { mining_camp } from './mining_camp';
 import { wonder } from './wonder';
-import { imperial_age } from './imperial_age';
+
+;
 import { castle_age } from './castle_age';
 import { feudal_age } from './feudal_age';
 import { hand_cart } from './hand_cart';
