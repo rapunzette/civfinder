@@ -4,7 +4,6 @@ import { Technology } from "../models/technology.model";
 import { formatCost } from "./cost";
 
 export function genericCostCalc(techs: Technology[], civ: Civilization): string {
-  console.log({ techs, civ });
 
   const cost: Cost = {
     wood: 0,
@@ -14,8 +13,6 @@ export function genericCostCalc(techs: Technology[], civ: Civilization): string 
   };
   techs.forEach(tech => {
     if (!civ[tech.name]) {
-      console.log(`Civ ${civ.name} does not have tech ${tech.name}`);
-
       // if the civ doesn't have the tech, move to next tech
       return;
     }
