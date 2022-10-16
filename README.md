@@ -1,6 +1,6 @@
 # Age of Empires II [Civfinder](https://civfinder.web.app/)
 
-A web app that determines which of the 35 Age of Empires II civilizations correspond to desired technologies. It also draws a technology dependency graph.
+A web app that determines which of the 42 Age of Empires II civilizations correspond to desired technologies. It also draws a technology dependency graph.
 
 ## Creating and running a local development environment
 
