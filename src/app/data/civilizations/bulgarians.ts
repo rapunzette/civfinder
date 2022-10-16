@@ -18,6 +18,16 @@ function calculateCost(techs: Technology[]): string {
       console.log(`bulgarians doesn't have ${tech.name}`);
       return;
     }
+
+    // Town Centers cost -50% stone
+    if (tech.name === "town center") {
+      cost.wood += tech.cost.wood;
+      cost.food += tech.cost.food;
+      cost.gold += tech.cost.gold;
+      cost.stone += Math.ceil(tech.cost.stone * 0.5);
+      return;
+    }
+
     // Militia-line upgrades free
     if (tech.name === "man at arms research" || tech.name === "long swordsman research" || tech.name === "two handed swordsman research") {
       return;
