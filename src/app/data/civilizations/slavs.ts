@@ -1,6 +1,37 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Cost } from 'src/app/models/cost.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+export function calculateCost(techs: Technology[]): string {
 
+  const cost: Cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!slavs[tech.name]) {
+      console.log(`slavs doesn't have ${tech.name}`);
+      return;
+    }
+    // Supplies free
+    if (tech.name === "supplies") {
+      return;
+    }
+
+
+    // generic cost calculation
+    cost.wood += tech.cost.wood;
+    cost.food += tech.cost.food;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+  return formatCost(cost);
+}
 export const slavs: Civilization = {
+  calculateCost,
   "name": "slavs",
   "barracks": true,
   "militia": true,
