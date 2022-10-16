@@ -1,6 +1,9 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { genericCostCalc } from 'src/app/utils/genericCostCalc';
 
 export const hindustanis: Civilization = {
+
+  calculateCost: (techs) => genericCostCalc(techs, hindustanis),
   "name": "hindustanis",
 
   // Archery range
