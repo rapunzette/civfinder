@@ -14,6 +14,8 @@ export function genericCostCalc(techs: Technology[], civ: Civilization): string 
   techs.forEach(tech => {
     if (!civ[tech.name]) {
       // if the civ doesn't have the tech, move to next tech
+      console.log(`${civ.name} doesn't have ${tech.name}`);
+
       return;
     }
     cost.wood += tech.cost.wood;

@@ -1,6 +1,61 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+
+function calculateCost(techs: Technology[]): string {
+  const cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
+
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!chinese[tech.name]) {
+      console.log(`chinese doesn't have ${tech.name}`);
+      return;
+    }
+
+    // Technologies cost -10% Feudal
+    if (tech.age === "feudal") {
+      cost.food += Math.ceil(tech.cost.food * 0.9);
+      cost.wood += Math.ceil(tech.cost.wood * 0.9);
+      cost.gold += Math.ceil(tech.cost.gold * 0.9);
+      cost.stone += Math.ceil(tech.cost.stone * 0.9);
+      return;
+    }
+
+    // Technologies cost -15% Castle
+    if (tech.age === "castle") {
+      cost.food += Math.ceil(tech.cost.food * 0.85);
+      cost.wood += Math.ceil(tech.cost.wood * 0.85);
+      cost.gold += Math.ceil(tech.cost.gold * 0.85);
+      cost.stone += Math.ceil(tech.cost.stone * 0.85);
+      return;
+    }
+
+    // Technologies cost -20% Imperial
+    if (tech.age === "imperial") {
+      cost.food += Math.ceil(tech.cost.food * 0.8);
+      cost.wood += Math.ceil(tech.cost.wood * 0.8);
+      cost.gold += Math.ceil(tech.cost.gold * 0.8);
+      cost.stone += Math.ceil(tech.cost.stone * 0.8);
+      return;
+    }
+
+    // generic cost
+    cost.food += tech.cost.food;
+    cost.wood += tech.cost.wood;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+
+  return formatCost(cost);
+}
 
 export const chinese: Civilization = {
+  calculateCost,
   "name": "chinese",
   "barracks": true,
   "militia": true,
