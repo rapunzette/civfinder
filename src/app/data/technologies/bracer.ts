@@ -4,7 +4,12 @@ import { Technology } from 'src/app/models/technology.model'
 
 import { bodkin_arrow } from './bodkin_arrow'
 export const bracer: Technology = {
-  cost: { "wood": 100, "gold": 100, "food": 100, "stone": 100 },
+  cost: {
+    "wood": 0,
+    "gold": 0,
+    "food": 0,
+    "stone": 0
+  },
   dependencies: [, bodkin_arrow.name],
   "name": "bracer",
   "age": "imperial",

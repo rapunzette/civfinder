@@ -4,7 +4,12 @@ import { careening } from './careening'
 
 
 export const dry_dock: Technology = {
-  cost: { "wood": 100, "gold": 100, "food": 100, "stone": 100 },
+  cost: {
+    "wood": 0,
+    "gold": 0,
+    "food": 0,
+    "stone": 0
+  },
   "name": "dry dock",
   "age": "imperial",
   "color": "green",
