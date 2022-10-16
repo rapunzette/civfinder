@@ -4,9 +4,9 @@ import { gold_mining } from './gold_mining'
 
 export const gold_shaft_mining: Technology = {
   cost: {
-    "wood": 0,
+    "wood": 150,
     "gold": 0,
-    "food": 0,
+    "food": 200,
     "stone": 0
   },
   "name": "gold shaft mining",

@@ -4,9 +4,9 @@ import { dock } from './dock'
 
 export const gillnets: Technology = {
   cost: {
-    "wood": 0,
+    "wood": 200,
     "gold": 0,
-    "food": 0,
+    "food": 150,
     "stone": 0
   },
   "name": "gillnets",

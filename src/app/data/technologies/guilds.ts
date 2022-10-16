@@ -6,8 +6,8 @@ import { market } from './market'
 export const guilds: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
-    "food": 0,
+    "gold": 200,
+    "food": 300,
     "stone": 0
   },
   "name": "guilds",

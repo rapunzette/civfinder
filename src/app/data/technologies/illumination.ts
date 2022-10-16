@@ -6,7 +6,7 @@ import { monastery } from './monastery'
 export const illumination: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
+    "gold": 120,
     "food": 0,
     "stone": 0
   },

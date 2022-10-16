@@ -4,7 +4,7 @@ import { monastery } from './monastery'
 export const herbal_medicine: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
+    "gold": 200,
     "food": 0,
     "stone": 0
   },

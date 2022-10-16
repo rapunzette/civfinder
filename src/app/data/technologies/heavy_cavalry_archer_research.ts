@@ -4,8 +4,8 @@ import { archery_range } from './archery_range'
 export const heavy_cavalry_archer_research: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
-    "food": 0,
+    "gold": 500,
+    "food": 900,
     "stone": 0
   },
   "name": "heavy cavalry archer research",

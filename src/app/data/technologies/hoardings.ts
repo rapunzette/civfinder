@@ -5,9 +5,9 @@ import { Technology } from 'src/app/models/technology.model'
 import { castle } from './castle'
 export const hoardings: Technology = {
   cost: {
-    "wood": 0,
+    "wood": 400,
     "gold": 0,
-    "food": 0,
+    "food": 400,
     "stone": 0
   },
   "name": "hoardings",

@@ -6,7 +6,7 @@ export const gate: Technology = {
     "wood": 0,
     "gold": 0,
     "food": 0,
-    "stone": 0
+    "stone": 30
   },
   "name": "gate",
   "age": "feudal",

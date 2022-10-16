@@ -4,8 +4,8 @@ import { university } from './university'
 export const heated_shot: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
-    "food": 0,
+    "gold": 100,
+    "food": 350,
     "stone": 0
   },
   dependencies: [university.name,],
