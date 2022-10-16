@@ -143,10 +143,23 @@ export class TechGraphComponent implements OnInit, OnDestroy {
         this.updateGraphLayout(castle_age);
         this.updateGraphLayout(imperial_age);
 
+        // const totalCost = techs.map(tech => tech.cost).reduce((acc, cost) => { return acc + cost.wood + cost.food + cost.gold + cost.stone }, 0);
+        let woodCost = 0;
+        let foodCost = 0;
+        let goldCost = 0;
+        let stoneCost = 0;
         // the actual techs in the graph
         techs.forEach(tech => {
           this.updateGraphLayout(tech);
+          // console.log(`${tech.name}: ${tech.cost.wood}w ${tech.cost.gold}g ${tech.cost.food}f ${tech.cost.stone}s`);
+          woodCost += tech.cost.wood;
+          foodCost += tech.cost.food;
+          goldCost += tech.cost.gold;
+          stoneCost += tech.cost.stone;
         })
+        const totalCost = woodCost + foodCost + goldCost + stoneCost;
+        console.log({ totalCost, woodCost, foodCost, goldCost, stoneCost });
+
 
       })
     )
