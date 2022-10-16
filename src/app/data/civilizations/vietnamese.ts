@@ -1,6 +1,65 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Cost } from 'src/app/models/cost.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+function calculateCost(techs: Technology[]): string {
 
+  const cost: Cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!vietnamese[tech.name]) {
+      console.log(`vietnamese doesn't have ${tech.name}`);
+      return;
+    }
+    //  Conscription free
+    if (tech.name === "conscription") {
+      return;
+    }
+
+    // Economic upgrades cost no wood
+    if (
+      tech.name === "wheelbarrow"
+      || tech.name === "hand cart"
+      || tech.name === "coinage"
+      || tech.name === "banking"
+      || tech.name === "caravan"
+      || tech.name === "guilds"
+      || tech.name === "double bit axe"
+      || tech.name === "bow saw"
+      || tech.name === "two man saw"
+      || tech.name === "horse collar"
+      || tech.name === "heavy plow"
+      || tech.name === "crop rotation"
+      || tech.name === "gold mining"
+      || tech.name === "gold shaft mining"
+      || tech.name === "stone mining"
+      || tech.name === "stone shaft mining"
+
+    ) {
+      cost.food += tech.cost.food;
+      cost.gold += tech.cost.gold;
+      cost.stone += tech.cost.stone;
+      return;
+    }
+
+
+
+
+    // generic cost calculation
+    cost.wood += tech.cost.wood;
+    cost.food += tech.cost.food;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+  return formatCost(cost);
+}
 export const vietnamese: Civilization = {
+  calculateCost,
   "name": "vietnamese",
   "barracks": true,
   "militia": true,
