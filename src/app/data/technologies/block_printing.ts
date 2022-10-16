@@ -6,7 +6,7 @@ import { monastery } from './monastery'
 export const block_printing: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
+    "gold": 200,
     "food": 0,
     "stone": 0
   },

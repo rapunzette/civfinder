@@ -1,12 +1,11 @@
 import { Technology } from 'src/app/models/technology.model';
 import { barracks } from './barracks';
-import { castle_age } from './castle_age';
 
 export const arson: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
-    "food": 0,
+    "gold": 50,
+    "food": 150,
     "stone": 0
   },
   "name": "arson",

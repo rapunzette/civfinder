@@ -4,9 +4,9 @@ import { bombard_tower_research } from './bombard_tower_research'
 export const bombard_tower: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
+    "gold": 100,
     "food": 0,
-    "stone": 0
+    "stone": 125
   },
   "name": "bombard tower",
   "age": "imperial",

@@ -5,9 +5,9 @@ import { university } from './university'
 
 export const arrowslits: Technology = {
   cost: {
-    "wood": 0,
+    "wood": 250,
     "gold": 0,
-    "food": 0,
+    "food": 250,
     "stone": 0
   },
   dependencies: [university.name,],

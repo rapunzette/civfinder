@@ -3,7 +3,7 @@ import { dark_age } from './dark_age';
 
 export const barracks: Technology = {
   cost: {
-    "wood": 0,
+    "wood": 175,
     "gold": 0,
     "food": 0,
     "stone": 0

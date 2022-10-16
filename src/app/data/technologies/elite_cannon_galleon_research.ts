@@ -1,6 +1,6 @@
 
 import { Technology } from 'src/app/models/technology.model'
-import { cannon_galleon_research } from './cannon_galleon_research'
+import { chemistry } from './chemistry'
 export const elite_cannon_galleon_research: Technology = {
   cost: {
     "wood": 0,
@@ -11,5 +11,5 @@ export const elite_cannon_galleon_research: Technology = {
   "name": "elite cannon galleon research",
   "age": "imperial",
   "color": "green",
-  dependencies: [cannon_galleon_research.name],
+  dependencies: [chemistry.name],
 }

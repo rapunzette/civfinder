@@ -25,8 +25,6 @@ import { war_galley_research } from './war_galley_research';
 export { war_galley_research } from './war_galley_research';
 import { elite_cannon_galleon_research } from './elite_cannon_galleon_research';
 export { elite_cannon_galleon_research } from './elite_cannon_galleon_research';
-import { cannon_galleon_research } from './cannon_galleon_research';
-export { cannon_galleon_research } from './cannon_galleon_research';
 import { elite_battle_elephant_research } from './elite_battle_elephant_research';
 export { elite_battle_elephant_research } from './elite_battle_elephant_research';
 import { heavy_camel_rider_research } from './heavy_camel_rider_research';
@@ -586,7 +584,6 @@ export const technologies: Technology[] = [
   heavy_cavalry_archer_research,
   heavy_camel_rider_research,
   elite_battle_elephant_research,
-  cannon_galleon_research,
   elite_cannon_galleon_research,
   war_galley_research,
   fast_fire_ship_research,

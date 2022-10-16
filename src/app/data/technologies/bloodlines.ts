@@ -4,8 +4,8 @@ import { stable } from './stable';
 export const bloodlines: Technology = {
   cost: {
     "wood": 0,
-    "gold": 0,
-    "food": 0,
+    "gold": 100,
+    "food": 150,
     "stone": 0
   },
   "name": "bloodlines",
