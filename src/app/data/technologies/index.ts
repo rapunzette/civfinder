@@ -89,7 +89,7 @@ import { mining_camp } from './mining_camp';
 import { wonder } from './wonder';
 
 ;
-import { castle_age } from './castle_age';
+;
 import { feudal_age } from './feudal_age';
 import { hand_cart } from './hand_cart';
 import { town_patrol } from './town_patrol';
@@ -235,6 +235,7 @@ import { elite_elephant_archer } from './elite_elephant_archer';
 import { siege_elephant } from './siege_elephant';
 import { siege_elephant_research } from './siege_elephant_research';
 import { armored_elephant } from './armored_elephant';
+import { castle_age } from './castle_age';
 
 export { crop_rotation } from './crop_rotation';
 export { dark_age } from './dark_age';

@@ -1,6 +1,6 @@
 
 import { Technology } from 'src/app/models/technology.model'
-import { castle_age } from './castle_age'
+
 import { scale_mail_armor } from './scale_mail_armor'
 export const chain_mail_armor: Technology = {
   cost: {

@@ -1,7 +1,7 @@
 
 import { Technology } from 'src/app/models/technology.model'
 import { town_watch } from './town_watch'
-import { castle_age } from './castle_age'
+
 export const town_patrol: Technology = {
   cost: {
     "wood": 0,

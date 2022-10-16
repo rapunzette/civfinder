@@ -1,5 +1,5 @@
 import { Technology } from 'src/app/models/technology.model';
-import { castle_age } from './castle_age';
+;
 import { stable } from './stable';
 
 export const steppe_lancer: Technology = {

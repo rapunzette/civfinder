@@ -1,6 +1,6 @@
 
 import { Technology } from 'src/app/models/technology.model'
-import { chemistry } from '.'
+import { chemistry } from './chemistry'
 export const cannon_galleon: Technology = {
   cost: {
     "wood": 0,

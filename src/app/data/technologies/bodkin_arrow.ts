@@ -1,6 +1,6 @@
 
 import { Technology } from 'src/app/models/technology.model'
-import { castle_age } from './castle_age'
+
 import { fletching } from './fletching'
 export const bodkin_arrow: Technology = {
   cost: {

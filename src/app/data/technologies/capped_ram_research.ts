@@ -5,7 +5,7 @@ export const capped_ram_research: Technology = {
   cost: {
     "wood": 0,
     "gold": 0,
-    "food": 0,
+    "food": 300,
     "stone": 0
   },
   "name": "capped ram research",
