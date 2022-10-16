@@ -1,6 +1,41 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+function calculateCost(techs: Technology[]): string {
+  const cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
 
+  techs.forEach(tech => {
+    // replacing hussar with winged hussar
+    if (tech.name === "hussar research") {
+      cost.food += 600;
+      cost.gold += 800;
+      return;
+    }
+
+    // if the civ doesn't have the tech, move to next tech
+    if (!poles[tech.name]) {
+      console.log(`poles doesn't have ${tech.name}`);
+      return;
+    }
+
+
+
+    // generic cost 
+    cost.food += tech.cost.food;
+    cost.wood += tech.cost.wood;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+
+  return formatCost(cost);
+}
 export const poles: Civilization = {
+  calculateCost,
   "name": "poles",
 
   // Archery range
