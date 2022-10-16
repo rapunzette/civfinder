@@ -1,6 +1,51 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+import { cumans } from './cumans';
+function calculateCost(techs: Technology[]): string {
+  const cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
 
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!cumans[tech.name]) {
+      console.log(`cumans doesn't have ${tech.name}`);
+      return;
+    }
+
+    // Barracks technologies cost -50%
+    if (tech.name === "man at arms research"
+      || tech.name === "long swordsman research"
+      || tech.name === "two handed swordsman research"
+      || tech.name === "champion research"
+      || tech.name === "squires"
+      || tech.name === "arson"
+      || tech.name === "pikeman research"
+      || tech.name === "halberdier research"
+      || tech.name === "supplies"
+    ) {
+      cost.food += Math.ceil(tech.cost.food * 0.5);
+      cost.wood += Math.ceil(tech.cost.wood * 0.5);
+      cost.gold += Math.ceil(tech.cost.gold * 0.5);
+      cost.stone += Math.ceil(tech.cost.stone * 0.5);
+      return;
+    }
+
+    // generic cost
+    cost.food += tech.cost.food;
+    cost.wood += tech.cost.wood;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+
+  return formatCost(cost);
+}
 export const dravidians: Civilization = {
+  calculateCost,
   "name": "dravidians",
 
   // Archery range

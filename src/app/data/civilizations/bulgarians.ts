@@ -19,7 +19,7 @@ function calculateCost(techs: Technology[]): string {
       return;
     }
     // Militia-line upgrades free
-    if (tech.name === "man at arms" || tech.name === "long swordsman" || tech.name === "two handed swordsman") {
+    if (tech.name === "man at arms research" || tech.name === "long swordsman research" || tech.name === "two handed swordsman research") {
       return;
     }
     // Blacksmith and Siege Workshop technologies cost -50% food
