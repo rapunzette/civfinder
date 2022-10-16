@@ -2,7 +2,7 @@ import { Civilization } from 'src/app/models/civilization.model';
 import { Cost } from 'src/app/models/cost.model';
 import { Technology } from 'src/app/models/technology.model';
 import { formatCost } from 'src/app/utils/cost';
-export function calculateCost(techs: Technology[]): string {
+function calculateCost(techs: Technology[]): string {
 
   const cost: Cost = {
     wood: 0,

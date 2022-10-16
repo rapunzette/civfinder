@@ -1,6 +1,54 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Cost } from 'src/app/models/cost.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+function calculateCost(techs: Technology[]): string {
 
+  const cost: Cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!spanish[tech.name]) {
+      console.log(`spanish doesn't have ${tech.name}`);
+      return;
+    }
+    // Blacksmith upgrades don't cost gold
+    if (tech.name === "forging"
+      || tech.name === "iron casting"
+      || tech.name === "blast furnace"
+      || tech.name === "scale mail armor"
+      || tech.name === "chain mail armor"
+      || tech.name === "plate mail armor"
+      || tech.name === "fletching"
+      || tech.name === "bodkin arrow"
+      || tech.name === "bracer"
+      || tech.name === "padded archer armor"
+      || tech.name === "leather archer armor"
+      || tech.name === "ring archer armor"
+      || tech.name === "scale barding armor"
+      || tech.name === "chain barding armor"
+      || tech.name === "plate barding armor") {
+      cost.food += tech.cost.food;
+      cost.wood += tech.cost.wood;
+      cost.stone += tech.cost.stone;
+      return;
+    }
+
+
+    // generic cost calculation
+    cost.wood += tech.cost.wood;
+    cost.food += tech.cost.food;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+  return formatCost(cost);
+}
 export const spanish: Civilization = {
+  calculateCost,
   "name": "spanish",
   "barracks": true,
   "militia": true,
