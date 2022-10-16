@@ -1,6 +1,39 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+
+function calculateCost(techs: Technology[]): string {
+  const cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
+
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!ethiopians[tech.name]) {
+      console.log(`ethiopians doesn't have ${tech.name}`);
+      return;
+    }
+
+    //  Pikeman upgrade free
+    if (tech.name === "pikeman research") {
+      return;
+    }
+
+    // generic cost
+    cost.food += tech.cost.food;
+    cost.wood += tech.cost.wood;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+
+  return formatCost(cost);
+}
 
 export const ethiopians: Civilization = {
+  calculateCost,
   "name": "ethiopians",
   "barracks": true,
   "militia": true,

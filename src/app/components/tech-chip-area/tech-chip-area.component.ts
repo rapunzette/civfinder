@@ -32,13 +32,16 @@ export class TechChipAreaComponent implements OnInit {
 
     // just a default selection to nudge users
     // selects one blue, one green, and one red tech
-    let allTechs = shuffle(technologies);
-    let blueTech: Technology = allTechs.find(tech => tech.color === "blue");
-    let redTech: Technology = allTechs.find(tech => tech.color === "red" && tech.age != "dark");
-    let greenTech: Technology = allTechs.find(tech => tech.color === "green");
-    this.techService.select(blueTech);
-    this.techService.select(redTech);
-    this.techService.select(greenTech);
+    // let allTechs = shuffle(technologies);
+    // let blueTech: Technology = allTechs.find(tech => tech.color === "blue");
+    // let redTech: Technology = allTechs.find(tech => tech.color === "red" && tech.age != "dark");
+    // let greenTech: Technology = allTechs.find(tech => tech.color === "green");
+    // this.techService.select(blueTech);
+    // this.techService.select(redTech);
+    // this.techService.select(greenTech);
+
+
+    // technologies.forEach(tech => this.techService.select(tech));
 
   }
 
