@@ -1,6 +1,66 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Cost } from 'src/app/models/cost.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
 
+
+function calculateCost(techs: Technology[]): string {
+
+  const cost: Cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!bulgarians[tech.name]) {
+      console.log(`bulgarians doesn't have ${tech.name}`);
+      return;
+    }
+    // Militia-line upgrades free
+    if (tech.name === "man at arms" || tech.name === "long swordsman" || tech.name === "two handed swordsman") {
+      return;
+    }
+    // Blacksmith and Siege Workshop technologies cost -50% food
+    if (tech.name === "forging"
+      || tech.name === "iron casting"
+      || tech.name === "blast furnace"
+      || tech.name === "scale mail armor"
+      || tech.name === "chain mail armor"
+      || tech.name === "plate mail armor"
+      || tech.name === "fletching"
+      || tech.name === "bodkin arrow"
+      || tech.name === "bracer"
+      || tech.name === "padded archer armor"
+      || tech.name === "leather archer armor"
+      || tech.name === "ring archer armor"
+      || tech.name === "scale barding armor"
+      || tech.name === "chain barding armor"
+      || tech.name === "plate barding armor"
+      || tech.name === "capped ram research"
+      || tech.name === "siege ram research"
+      || tech.name === "onager research"
+      || tech.name === "siege onager research"
+      || tech.name === "heavy scorpion research"
+    ) {
+      cost.food += Math.ceil(tech.cost.food * 0.5);
+      cost.wood += tech.cost.wood;
+      cost.gold += tech.cost.gold;
+      cost.stone += tech.cost.stone;
+      return;
+    }
+
+    // generic cost calculation
+    cost.wood += tech.cost.wood;
+    cost.food += tech.cost.food;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+  return formatCost(cost);
+}
 export const bulgarians: Civilization = {
+  calculateCost,
   "name": "bulgarians",
   "dark age": true,
   "barracks": true,
