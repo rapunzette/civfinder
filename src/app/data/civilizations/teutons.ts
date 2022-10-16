@@ -1,6 +1,44 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Cost } from 'src/app/models/cost.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+function calculateCost(techs: Technology[]): string {
 
+  const cost: Cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!teutons[tech.name]) {
+      console.log(`teutons doesn't have ${tech.name}`);
+      return;
+    }
+    // Murder Holes, Herbal Medicine free free
+    if (tech.name === "murder holes"
+      || tech.name === "herbal medicine"
+    ) {
+      return;
+    }
+
+    // Farms cost -40%
+    if (tech.name === "farm") {
+      cost.wood += Math.ceil(tech.cost.wood * .6);
+    }
+
+
+    // generic cost calculation
+    cost.wood += tech.cost.wood;
+    cost.food += tech.cost.food;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+  return formatCost(cost);
+}
 export const teutons: Civilization = {
+  calculateCost,
   "name": "teutons",
   "barracks": true,
   "militia": true,
