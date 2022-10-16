@@ -1,26 +1,9 @@
 import { Civilization } from 'src/app/models/civilization.model';
-import { Cost } from 'src/app/models/cost.model';
 import { Technology } from 'src/app/models/technology.model';
-import { formatCost } from 'src/app/utils/cost';
-
-function calculateCost(techs: Technology[]): string {
-  const cost: Cost = {
-    wood: 0,
-    food: 0,
-    gold: 0,
-    stone: 0
-  };
-  techs.forEach(tech => {
-    cost.wood += tech.cost.wood;
-    cost.food += tech.cost.food;
-    cost.gold += tech.cost.gold;
-    cost.stone += tech.cost.stone;
-  });
-  return formatCost(cost);
-}
+import { genericCostCalc } from 'src/app/utils/genericCostCalc';
 
 export const aztecs: Civilization = {
-  calculateCost,
+  calculateCost: (techs: Technology[]) => genericCostCalc(techs, aztecs),
   "name": "aztecs",
   "dark age": true,
   "barracks": true,

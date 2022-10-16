@@ -1,6 +1,9 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Technology } from 'src/app/models/technology.model';
+import { genericCostCalc } from 'src/app/utils/genericCostCalc';
 
 export const berbers: Civilization = {
+  calculateCost: (techs: Technology[]) => genericCostCalc(techs, berbers),
   "name": "berbers",
   "dark age": true,
   "barracks": true,
