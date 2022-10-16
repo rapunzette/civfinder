@@ -1,6 +1,50 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+function calculateCost(techs: Technology[]): string {
+  const cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
 
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!franks[tech.name]) {
+      console.log(`franks doesn't have ${tech.name}`);
+      return;
+    }
+
+    //  Castles cost -25%
+    if (tech.name === "castle") {
+      cost.food += Math.ceil(tech.cost.food * 0.75);
+      cost.wood += Math.ceil(tech.cost.wood * 0.75);
+      cost.gold += Math.ceil(tech.cost.gold * 0.75);
+      cost.stone += Math.ceil(tech.cost.stone * 0.75);
+      return;
+    }
+
+    // Mill technologies free
+    if (
+      tech.name === "horse collar"
+      || tech.name === "heavy plow"
+      || tech.name === "crop rotation"
+    ) {
+      return;
+    }
+
+    // generic cost
+    cost.food += tech.cost.food;
+    cost.wood += tech.cost.wood;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+
+  return formatCost(cost);
+}
 export const franks: Civilization = {
+  calculateCost,
   "name": "franks",
   "barracks": true,
   "militia": true,

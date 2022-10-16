@@ -1,6 +1,37 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Cost } from 'src/app/models/cost.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+function calculateCost(techs: Technology[]): string {
 
+  const cost: Cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!tatars[tech.name]) {
+      console.log(`tatars doesn't have ${tech.name}`);
+      return;
+    }
+    // Thumb Ring, Parthian Tactics free
+    if (tech.name === "thumb ring" || tech.name === "parthian tactics") {
+      return;
+    }
+
+
+    // generic cost calculation
+    cost.wood += tech.cost.wood;
+    cost.food += tech.cost.food;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+  return formatCost(cost);
+}
 export const tatars: Civilization = {
+  calculateCost,
   "name": "tatars",
   "barracks": true,
   "militia": true,

@@ -1,6 +1,44 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+function calculateCost(techs: Technology[]): string {
+  const cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
 
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!japanese[tech.name]) {
+      console.log(`japanese doesn't have ${tech.name}`);
+      return;
+    }
+
+    // Mill, Lumber/Mining Camps cost -50%
+    if (tech.name === "mill"
+    || tech.name === "lumber camp"
+    || tech.name === "mining camp"
+    ) {
+      cost.food += Math.ceil(tech.cost.food * 0.5);
+      cost.wood += Math.ceil(tech.cost.wood * 0.5);
+      cost.gold += Math.ceil(tech.cost.gold * 0.5);
+      cost.stone += Math.ceil(tech.cost.stone * 0.5);
+      return;
+    }
+
+    // generic cost 
+    cost.food += tech.cost.food;
+    cost.wood += tech.cost.wood;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+
+  return formatCost(cost);
+}
 export const japanese: Civilization = {
+  calculateCost,
   "name": "japanese",
   "barracks": true,
   "militia": true,

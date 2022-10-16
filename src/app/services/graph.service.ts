@@ -14,7 +14,10 @@ export class GraphService {
    * 
    * This is built via a subscription to the selected techs, therefore it should not be modified or accessed directly
    */
-  private techGraph: Technology[] = [];
+  private _techGraph: Technology[] = [];
+  public get techGraph(): Technology[] {
+    return this._techGraph;
+  }
   /**
    * The techs the user has selected plus their dependencies
    */

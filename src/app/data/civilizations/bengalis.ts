@@ -1,6 +1,8 @@
 import { Civilization } from 'src/app/models/civilization.model';
-
+import { Technology } from 'src/app/models/technology.model';
+import { genericCostCalc } from 'src/app/utils/genericCostCalc';
 export const bengalis: Civilization = {
+  calculateCost: (techs: Technology[]) => genericCostCalc(techs, bengalis),
   "name": "bengalis",
 
   // Archery range

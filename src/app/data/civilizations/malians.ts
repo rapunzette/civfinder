@@ -1,6 +1,62 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+function calculateCost(techs: Technology[]): string {
+  const cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
 
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!malians[tech.name]) {
+      console.log(`malians doesn't have ${tech.name}`);
+      return;
+    }
+
+    // Buildings cost -15% wood
+    if (tech.name === "barracks"
+      || tech.name === "archery range"
+      || tech.name === "stable"
+      || tech.name === "blacksmith"
+      || tech.name === "siege workshop"
+      || tech.name === "dock"
+      || tech.name === "university"
+      || tech.name === "outpost"
+      || tech.name === "watch tower"
+      || tech.name === "guard tower"
+      || tech.name === "keep"
+      || tech.name === "palisade gate"
+      || tech.name === "palisade wall"
+      || tech.name === "monastery"
+      || tech.name === "house"
+      || tech.name === "mill"
+      || tech.name === "lumber camp"
+      || tech.name === "mining camp"
+      || tech.name === "town center"
+      || tech.name === "market"
+    ) {
+      cost.wood += Math.ceil(tech.cost.wood * 0.85);
+      cost.food += tech.cost.food;
+      cost.gold += tech.cost.gold;
+      cost.stone += tech.cost.stone;
+      return;
+    }
+
+
+    // generic cost 
+    cost.food += tech.cost.food;
+    cost.wood += tech.cost.wood;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+
+  return formatCost(cost);
+}
 export const malians: Civilization = {
+  calculateCost,
   "name": "malians",
   "barracks": true,
   "militia": true,

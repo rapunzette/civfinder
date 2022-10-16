@@ -1,6 +1,49 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+function calculateCost(techs: Technology[]): string {
+  const cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
 
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!koreans[tech.name]) {
+      console.log(`koreans doesn't have ${tech.name}`);
+      return;
+    }
+
+    // Tower upgrades free (Bombard Tower requires Chemistry)
+    if (tech.name === "keep research"
+      || tech.name === "bombard tower research"
+      || tech.name === "guard tower research"
+    ) {
+      return;
+    }
+
+    // Archer armor upgrades free
+    if (
+      tech.name === "padded archer armor"
+      || tech.name === "leather archer armor"
+      || tech.name === "ring archer armor"
+    ) {
+      return;
+    }
+
+    // generic cost 
+    cost.food += tech.cost.food;
+    cost.wood += tech.cost.wood;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+
+  return formatCost(cost);
+}
 export const koreans: Civilization = {
+  calculateCost,
   "name": "koreans",
   "barracks": true,
   "militia": true,

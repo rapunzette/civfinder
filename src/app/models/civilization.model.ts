@@ -1,4 +1,7 @@
+import { Technology } from "./technology.model";
+
 export interface Civilization {
+  calculateCost: (techs: Technology[]) => string;
   "dark age": true; // the root technology is always true
   "name": string;
   "barracks": boolean;

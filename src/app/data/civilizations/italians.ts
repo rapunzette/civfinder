@@ -1,6 +1,71 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+function calculateCost(techs: Technology[]): string {
+  const cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
 
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!italians[tech.name]) {
+      console.log(`italians doesn't have ${tech.name}`);
+      return;
+    }
+
+    // Advancing to the next age costs -15%
+    if (tech.name === "feudal age" || tech.name === "castle age" || tech.name === "imperial age") {
+      cost.food += Math.ceil(tech.cost.food * 0.85);
+      cost.wood += Math.ceil(tech.cost.wood * 0.85);
+      cost.gold += Math.ceil(tech.cost.gold * 0.85);
+      cost.stone += Math.ceil(tech.cost.stone * 0.85);
+      return;
+    }
+
+    // Dock and University technologies cost -33%
+    if (
+      tech.name === "masonry"
+      || tech.name === "architecture"
+      || tech.name === "fortified wall research"
+      || tech.name === "ballistics"
+      || tech.name === "heated shot"
+      || tech.name === "guard tower research"
+      || tech.name === "keep research"
+      || tech.name === "bombard tower research"
+      || tech.name === "arrowslits"
+      || tech.name === "murder holes"
+      || tech.name === "treadmill crane"
+      || tech.name === "chemistry"
+      || tech.name === "careening"
+      || tech.name === "dry dock"
+      || tech.name === "shipwright"
+      || tech.name === "elite cannon galleon research"
+      || tech.name === "war galley research"
+      || tech.name === "fast fire ship research"
+      || tech.name === "galleon research"
+      || tech.name === "gillnets"
+    ) {
+      cost.food += Math.ceil(tech.cost.food * 0.67);
+      cost.wood += Math.ceil(tech.cost.wood * 0.67);
+      cost.gold += Math.ceil(tech.cost.gold * 0.67);
+      cost.stone += Math.ceil(tech.cost.stone * 0.67);
+      return;
+    }
+
+    // generic cost 
+    cost.food += tech.cost.food;
+    cost.wood += tech.cost.wood;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+
+  return formatCost(cost);
+}
 export const italians: Civilization = {
+  calculateCost,
   "name": "italians",
   "barracks": true,
   "militia": true,

@@ -40,6 +40,9 @@ export class TechChipAreaComponent implements OnInit {
     this.techService.select(redTech);
     this.techService.select(greenTech);
 
+
+    // technologies.forEach(tech => this.techService.select(tech));
+
   }
 
   /**

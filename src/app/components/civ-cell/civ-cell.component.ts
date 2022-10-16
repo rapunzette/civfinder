@@ -3,6 +3,7 @@ import { Civilization } from 'src/app/models/civilization.model';
 import { SelectedTechService } from 'src/app/services/selected-tech.service';
 import { Subscription } from 'rxjs';
 import { CivilizationService } from 'src/app/services/civilization.service';
+import { GraphService } from 'src/app/services/graph.service';
 
 @Component({
   selector: 'app-civ-cell',
@@ -15,7 +16,8 @@ export class CivCellComponent implements OnInit, OnDestroy {
 
   constructor(
     private techService: SelectedTechService,
-    private civService: CivilizationService
+    private civService: CivilizationService,
+    private graphService: GraphService
   ) { }
 
   @Input('civ') set civReceived(_civ: Civilization) {
@@ -25,6 +27,13 @@ export class CivCellComponent implements OnInit, OnDestroy {
   public iconPath: string;
 
   public qualify: boolean = true;
+
+  public logCost() {
+    // the calculation requires all techs in the dependency graph, not just the selected ones
+    console.log(`${this.civ.name} ${this.civ.calculateCost(this.graphService.techGraph)}`);
+
+
+  }
 
 
   ngOnInit(): void {

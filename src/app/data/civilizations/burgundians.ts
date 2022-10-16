@@ -1,6 +1,81 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Cost } from 'src/app/models/cost.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+
+function calculateCost(techs: Technology[]): string {
+
+  let cost: Cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
+
+  techs.forEach(tech => {
+
+    // if the civ doesn't have the tech, move to next tech
+    if (!burgundians[tech.name]) {
+      console.log(`burgundians doesn't have ${tech.name}`);
+      return;
+    }
+
+    // Economic upgrades cost -40% food
+    if (tech.name === "wheelbarrow"
+      || tech.name === "hand cart"
+      || tech.name === "coinage"
+      || tech.name === "banking"
+      || tech.name === "caravan"
+      || tech.name === "guilds"
+      || tech.name === "horse collar"
+      || tech.name === "heavy plow"
+      || tech.name === "crop rotation"
+      || tech.name === "double bit axe"
+      || tech.name === "bow saw"
+      || tech.name === "two man saw"
+      || tech.name === "gold mining"
+      || tech.name === "gold shaft mining"
+      || tech.name === "stone mining"
+      || tech.name === "stone shaft mining"
+    ) {
+      cost.food += Math.ceil(tech.cost.food * 0.6);
+      cost.wood += tech.cost.wood;
+      cost.gold += tech.cost.gold;
+      cost.stone += tech.cost.stone;
+      return;
+    }
+
+    // Stable technologies cost -50%
+    if (tech.name === "husbandry"
+      || tech.name === "light cavalry research"
+      || tech.name === "cavalier research"
+      || tech.name === "hussar research"
+      || tech.name === "paladin research"
+    ) {
+      cost.food += Math.ceil(tech.cost.food * 0.5);
+      cost.wood += Math.ceil(tech.cost.wood * 0.5);
+      cost.gold += Math.ceil(tech.cost.gold * 0.5);
+      cost.stone += Math.ceil(tech.cost.stone * 0.5);
+
+      return;
+    }
+
+
+    // generic cost calculation
+    cost.wood += tech.cost.wood;
+    cost.food += tech.cost.food;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+
+
+  });
+
+
+  return formatCost(cost);
+}
 
 export const burgundians: Civilization = {
+  calculateCost,
   "name": "burgundians",
   "dark age": true,
   "barracks": true,

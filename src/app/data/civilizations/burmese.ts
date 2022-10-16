@@ -1,6 +1,61 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Technology } from 'src/app/models/technology.model';
+import { formatCost } from 'src/app/utils/cost';
+
+function calculateCost(techs: Technology[]): string {
+  const cost = {
+    wood: 0,
+    food: 0,
+    gold: 0,
+    stone: 0
+  };
+
+  techs.forEach(tech => {
+    // if the civ doesn't have the tech, move to next tech
+    if (!burmese[tech.name]) {
+      console.log(`burmese doesn't have ${tech.name}`);
+      return;
+    }
+
+    // Lumber Camp technologies free
+    if (tech.name === "double bit axe"
+      || tech.name === "bow saw"
+      || tech.name === "two man saw"
+    ) {
+      return;
+    }
+
+    //  Monastery technologies cost -50%
+    if (tech.name === "redemption"
+      || tech.name === "atonement"
+      || tech.name === "herbal medicine"
+      || tech.name === "heresy"
+      || tech.name === "sanctity"
+      || tech.name === "faith"
+      || tech.name === "fervor"
+      || tech.name === "illumination"
+      || tech.name === "block printing"
+      || tech.name === "theocracy"
+    ) {
+      cost.food += Math.ceil(tech.cost.food * 0.5);
+      cost.wood += Math.ceil(tech.cost.wood * 0.5);
+      cost.gold += Math.ceil(tech.cost.gold * 0.5);
+      cost.stone += Math.ceil(tech.cost.stone * 0.5);
+      return;
+    }
+
+    // generic cost 
+    cost.food += tech.cost.food;
+    cost.wood += tech.cost.wood;
+    cost.gold += tech.cost.gold;
+    cost.stone += tech.cost.stone;
+  });
+
+  return formatCost(cost);
+}
 
 export const burmese: Civilization = {
+  calculateCost,
   "name": "burmese",
   "dark age": true,
   "barracks": true,

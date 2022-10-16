@@ -1,4 +1,5 @@
 import { heavy_scorpion_research } from './heavy_scorpion_research';
+import { imperial_age } from './imperial_age'
 export { heavy_scorpion_research } from './heavy_scorpion_research';
 import { siege_ram_research } from './siege_ram_research';
 export { siege_ram_research } from './siege_ram_research';
@@ -24,8 +25,6 @@ import { war_galley_research } from './war_galley_research';
 export { war_galley_research } from './war_galley_research';
 import { elite_cannon_galleon_research } from './elite_cannon_galleon_research';
 export { elite_cannon_galleon_research } from './elite_cannon_galleon_research';
-import { cannon_galleon_research } from './cannon_galleon_research';
-export { cannon_galleon_research } from './cannon_galleon_research';
 import { elite_battle_elephant_research } from './elite_battle_elephant_research';
 export { elite_battle_elephant_research } from './elite_battle_elephant_research';
 import { heavy_camel_rider_research } from './heavy_camel_rider_research';
@@ -88,8 +87,9 @@ import { stone_mining } from './stone_mining';
 import { gold_mining } from './gold_mining';
 import { mining_camp } from './mining_camp';
 import { wonder } from './wonder';
-import { imperial_age } from './imperial_age';
-import { castle_age } from './castle_age';
+
+;
+;
 import { feudal_age } from './feudal_age';
 import { hand_cart } from './hand_cart';
 import { town_patrol } from './town_patrol';
@@ -235,6 +235,7 @@ import { elite_elephant_archer } from './elite_elephant_archer';
 import { siege_elephant } from './siege_elephant';
 import { siege_elephant_research } from './siege_elephant_research';
 import { armored_elephant } from './armored_elephant';
+import { castle_age } from './castle_age';
 
 export { crop_rotation } from './crop_rotation';
 export { dark_age } from './dark_age';
@@ -584,7 +585,6 @@ export const technologies: Technology[] = [
   heavy_cavalry_archer_research,
   heavy_camel_rider_research,
   elite_battle_elephant_research,
-  cannon_galleon_research,
   elite_cannon_galleon_research,
   war_galley_research,
   fast_fire_ship_research,

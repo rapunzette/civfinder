@@ -1,6 +1,8 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { genericCostCalc } from 'src/app/utils/genericCostCalc';
 
 export const goths: Civilization = {
+  calculateCost: (techs) => genericCostCalc(techs, goths),
   "name": "goths",
   "barracks": true,
   "militia": true,
