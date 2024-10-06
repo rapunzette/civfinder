@@ -1,4 +1,5 @@
 import { Civilization } from 'src/app/models/civilization.model';
+import { Technology } from 'src/app/models/technology.model';
 
 export const template: Civilization = {
   "name": "template",
@@ -17,9 +18,9 @@ export const template: Civilization = {
   "cavalry archer": true,
   "heavy cavalry archer research": true,
   "heavy cavalry archer": true,
-  "elephant archer": true,
-  "elite elephant archer research": true,
-  "elite elephant archer": true,
+  "elephant archer": false,
+  "elite elephant archer research": false,
+  "elite elephant archer": false,
   "thumb ring": true,
   "parthian tactics": true,
 
@@ -39,14 +40,15 @@ export const template: Civilization = {
   "pikeman": true,
   "halberdier research": true,
   "halberdier": true,
-  "eagle scout": true,
-  "eagle warrior research": true,
-  "eagle warrior": true,
-  "elite eagle warrior research": true,
-  "elite eagle warrior": true,
+  "eagle scout": false,
+  "eagle warrior research": false,
+  "eagle warrior": false,
+  "elite eagle warrior research": false,
+  "elite eagle warrior": false,
   "squires": true,
   "arson": true,
   "supplies": true,
+  "gambesons": true,
 
   // Stable
   "stable": true,
@@ -55,20 +57,20 @@ export const template: Civilization = {
   "light cavalry": true,
   "hussar research": true,
   "hussar": true,
-  "camel rider": true,
-  "heavy camel rider research": true,
-  "heavy camel rider": true,
+  "camel rider": false,
+  "heavy camel rider research": false,
+  "heavy camel rider": false,
   "knight": true,
   "cavalier research": true,
   "cavalier": true,
   "paladin research": true,
   "paladin": true,
-  "battle elephant": true,
-  "elite battle elephant research": true,
-  "elite battle elephant": true,
-  "steppe lancer": true,
-  "elite steppe lancer research": true,
-  "elite steppe lancer": true,
+  "battle elephant": false,
+  "elite battle elephant research": false,
+  "elite battle elephant": false,
+  "steppe lancer": false,
+  "elite steppe lancer research": false,
+  "elite steppe lancer": false,
   "husbandry": true,
   "bloodlines": true,
 
@@ -79,9 +81,9 @@ export const template: Civilization = {
   "capped ram": true,
   "siege ram research": true,
   "siege ram": true,
-  "armored elephant": true,
-  "siege elephant research": true,
-  "siege elephant": true,
+  "armored elephant": false,
+  "siege elephant research": false,
+  "siege elephant": false,
   "mangonel": true,
   "onager research": true,
   "onager": true,
@@ -134,6 +136,7 @@ export const template: Civilization = {
   "war galley": true,
   "galleon research": true,
   "galleon": true,
+  "dromon": false,
   "careening": true,
   "dry dock": true,
   "shipwright": true,
@@ -178,6 +181,7 @@ export const template: Civilization = {
 
   // Monastery
   "monastery": true,
+  "fortified church": false,
   "monk": true,
   "redemption": true,
   "atonement": true,
@@ -185,6 +189,7 @@ export const template: Civilization = {
   "heresy": true,
   "sanctity": true,
   "fervor": true,
+  "devotion": true,
   "faith": true,
   "illumination": true,
   "block printing": true,
@@ -203,6 +208,7 @@ export const template: Civilization = {
   "imperial age": true,
 
   // Economy
+  "mule cart": false,
   "mining camp": true,
   "gold mining": true,
   "stone mining": true,
@@ -230,4 +236,7 @@ export const template: Civilization = {
   "dark age": true,
   "house": true,
   "wonder": true,
+  calculateCost: function (techs: Technology[]): string {
+    throw new Error('Function not implemented.');
+  }
 }

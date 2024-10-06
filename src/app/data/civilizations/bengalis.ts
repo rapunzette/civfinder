@@ -4,7 +4,7 @@ import { genericCostCalc } from 'src/app/utils/genericCostCalc';
 export const bengalis: Civilization = {
   calculateCost: (techs: Technology[]) => genericCostCalc(techs, bengalis),
   "name": "bengalis",
-
+  
   // Archery range
   "archery range": true,
   "archer": true,
@@ -23,7 +23,7 @@ export const bengalis: Civilization = {
   "elite elephant archer research": true,
   "elite elephant archer": true,
   "thumb ring": false,
-  "parthian tactics": true,
+  "parthian tactics": false,
 
   // Barracks
   "barracks": true,
@@ -48,7 +48,8 @@ export const bengalis: Civilization = {
   "elite eagle warrior": false,
   "squires": true,
   "arson": true,
-  "supplies": false,
+  "supplies": true,
+  "gambesons": true,
 
   // Stable
   "stable": true,
@@ -75,7 +76,7 @@ export const bengalis: Civilization = {
   "bloodlines": true,
 
   // Siege Workshop
-  "siege workshop": false,
+  "siege workshop": true,
   "battering ram": false,
   "capped ram research": false,
   "capped ram": false,
@@ -136,6 +137,7 @@ export const bengalis: Civilization = {
   "war galley": true,
   "galleon research": true,
   "galleon": true,
+  "dromon": false,
   "careening": true,
   "dry dock": true,
   "shipwright": true,
@@ -180,6 +182,7 @@ export const bengalis: Civilization = {
 
   // Monastery
   "monastery": true,
+  "fortified church": false,
   "monk": true,
   "redemption": true,
   "atonement": true,
@@ -187,6 +190,7 @@ export const bengalis: Civilization = {
   "heresy": false,
   "sanctity": true,
   "fervor": true,
+  "devotion": true,
   "faith": true,
   "illumination": true,
   "block printing": true,
@@ -205,6 +209,7 @@ export const bengalis: Civilization = {
   "imperial age": true,
 
   // Economy
+  "mule cart": false,
   "mining camp": true,
   "gold mining": true,
   "stone mining": true,

@@ -41,8 +41,12 @@ import { bohemians } from './bohemians';
 import { bengalis } from './bengalis';
 import { dravidians } from './dravidians';
 import { gurjaras } from './gurjaras';
+import { armenians } from './armenians';
+import { georgians } from './georgians';
+import { romans } from './romans';
 
 export const civilizations: Civilization[] = [
+  armenians,
   aztecs,
   bengalis,
   berbers,
@@ -58,6 +62,7 @@ export const civilizations: Civilization[] = [
   dravidians,
   ethiopians,
   franks,
+  georgians,
   goths,
   gurjaras,
   hindustanis,
@@ -76,6 +81,7 @@ export const civilizations: Civilization[] = [
   persians,
   poles,
   portuguese,
+  romans,
   saracens,
   sicilians,
   slavs,

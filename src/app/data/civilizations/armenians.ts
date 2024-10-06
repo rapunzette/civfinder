@@ -2,75 +2,59 @@ import { Civilization } from 'src/app/models/civilization.model';
 import { Cost } from 'src/app/models/cost.model';
 import { Technology } from 'src/app/models/technology.model';
 import { formatCost } from 'src/app/utils/cost';
+
 function calculateCost(techs: Technology[]): string {
 
-  const cost: Cost = {
-    wood: 0,
-    food: 0,
-    gold: 0,
-    stone: 0
-  };
-  techs.forEach(tech => {
-    // if the civ doesn't have the tech, move to next tech
-    if (!turks[tech.name]) {
-      console.log(`turks doesn't have ${tech.name}`);
-      return;
-    }
-    //  Chemistry free
-    if (tech.name === "chemistry") {
-      return;
-    }
+    const cost: Cost = {
+      wood: 0,
+      food: 0,
+      gold: 0,
+      stone: 0
+    };
+    techs.forEach(tech => {
+      // if the civ doesn't have the tech, move to next tech
+      if (!armenians[tech.name]) {
+        console.log(`armenians doesn't have ${tech.name}`);
+        return;
+      }
+      // Mule Carts cost -25%
+      if (tech.name === "mule_cart") {
+        cost.wood += tech.cost.wood - 20;
+        cost.food += tech.cost.food - 5;
+        return;
+      }  
+      // generic cost calculation
+      cost.wood += tech.cost.wood;
+      cost.food += tech.cost.food;
+      cost.gold += tech.cost.gold;
+      cost.stone += tech.cost.stone;
+    });
+    return formatCost(cost);
+  }
 
-    // researching gunpowder technologies costs -50%
-    if (
-      tech.name === "bombard tower research"
-    ) {
-      cost.wood += Math.ceil(tech.cost.wood * 0.5);
-      cost.food += Math.ceil(tech.cost.food * 0.5);
-      cost.gold += Math.ceil(tech.cost.gold * 0.5);
-      cost.stone += Math.ceil(tech.cost.stone * 0.5);
-      return;
-    }
-
-    // Light Cavalry and Hussar upgrades free
-    if (tech.name === "light cavalry research" || tech.name === "hussar research") {
-      return;
-    }
-
-
-
-
-    // generic cost calculation
-    cost.wood += tech.cost.wood;
-    cost.food += tech.cost.food;
-    cost.gold += tech.cost.gold;
-    cost.stone += tech.cost.stone;
-  });
-  return formatCost(cost);
-}
-export const turks: Civilization = {
+export const armenians: Civilization = {
   calculateCost,
-  "name": "turks",
-  
+  "name": "armenians",
+
   // Archery range
   "archery range": true,
   "archer": true,
   "crossbowman research": true,
   "crossbowman": true,
-  "arbalester research": false,
-  "arbalester": false,
+  "arbalester research": true,
+  "arbalester": true,
   "skirmisher": true,
-  "elite skirmisher research": false,
-  "elite skirmisher": false,
-  "hand cannoneer": true,
+  "elite skirmisher research": true,
+  "elite skirmisher": true,
+  "hand cannoneer": false,
   "cavalry archer": true,
-  "heavy cavalry archer research": true,
-  "heavy cavalry archer": true,
+  "heavy cavalry archer research": false,
+  "heavy cavalry archer": false,
   "elephant archer": false,
   "elite elephant archer research": false,
   "elite elephant archer": false,
-  "thumb ring": true,
-  "parthian tactics": true,
+  "thumb ring": false,
+  "parthian tactics": false,
 
   // Barracks
   "barracks": true,
@@ -84,10 +68,10 @@ export const turks: Civilization = {
   "champion research": true,
   "champion": true,
   "spearman": true,
-  "pikeman research": false,
-  "pikeman": false,
-  "halberdier research": false,
-  "halberdier": false,
+  "pikeman research": true,
+  "pikeman": true,
+  "halberdier research": true,
+  "halberdier": true,
   "eagle scout": false,
   "eagle warrior research": false,
   "eagle warrior": false,
@@ -96,18 +80,18 @@ export const turks: Civilization = {
   "squires": true,
   "arson": true,
   "supplies": true,
-  "gambesons": false,
+  "gambesons": true,
 
   // Stable
   "stable": true,
   "scout cavalry": true,
   "light cavalry research": true,
   "light cavalry": true,
-  "hussar research": true,
-  "hussar": true,
-  "camel rider": true,
-  "heavy camel rider research": true,
-  "heavy camel rider": true,
+  "hussar research": false,
+  "hussar": false,
+  "camel rider": false,
+  "heavy camel rider research": false,
+  "heavy camel rider": false,
   "knight": true,
   "cavalier research": true,
   "cavalier": true,
@@ -127,21 +111,21 @@ export const turks: Civilization = {
   "battering ram": true,
   "capped ram research": true,
   "capped ram": true,
-  "siege ram research": true,
-  "siege ram": true,
+  "siege ram research": false,
+  "siege ram": false,
   "armored elephant": false,
   "siege elephant research": false,
   "siege elephant": false,
   "mangonel": true,
-  "onager research": false,
-  "onager": false,
+  "onager research": true,
+  "onager": true,
   "siege onager research": false,
   "siege onager": false,
   "scorpion": true,
   "heavy scorpion research": true,
   "heavy scorpion": true,
   "siege tower": true,
-  "bombard cannon": true,
+  "bombard cannon": false,
 
   // Blacksmith
   "blacksmith": true,
@@ -156,7 +140,7 @@ export const turks: Civilization = {
   "blast furnace": true,
   "scale barding armor": true,
   "chain barding armor": true,
-  "plate barding armor": true,
+  "plate barding armor": false,
   "scale mail armor": true,
   "chain mail armor": true,
   "plate mail armor": true,
@@ -171,10 +155,10 @@ export const turks: Civilization = {
   "transport ship": true,
   "trade cog": true,
   "gillnets": true,
-  "cannon galleon research": true,
-  "cannon galleon": true,
-  "elite cannon galleon research": true,
-  "elite cannon galleon": true,
+  "cannon galleon research": false,
+  "cannon galleon": false,
+  "elite cannon galleon research": false,
+  "elite cannon galleon": false,
   "demolition ship": true,
   "demolition raft": true,
   "heavy demo ship research": true,
@@ -184,33 +168,33 @@ export const turks: Civilization = {
   "war galley": true,
   "galleon research": true,
   "galleon": true,
-  "dromon": false,
+  "dromon": true,
   "careening": true,
   "dry dock": true,
-  "shipwright": true,
+  "shipwright": false,
   "fish trap": true,
 
   // University
   "university": true,
   "masonry": true,
-  "architecture": true,
+  "architecture": false,
   "fortified wall research": true,
   "chemistry": true,
   "bombard tower research": true,
   "ballistics": true,
   "siege engineers": false,
   "guard tower research": true,
-  "keep research": true,
+  "keep research": false,
   "heated shot": true,
-  "arrowslits": true,
+  "arrowslits": false,
   "murder holes": true,
-  "treadmill crane": true,
+  "treadmill crane": false,
 
   // Defensive buildings
   "outpost": true,
   "watch tower": true,
   "guard tower": true,
-  "keep": true,
+  "keep": false,
   "bombard tower": true,
   "palisade wall": true,
   "palisade gate": true,
@@ -229,18 +213,18 @@ export const turks: Civilization = {
 
   // Monastery
   "monastery": true,
-  "fortified church": false,
+  "fortified church": true,
   "monk": true,
   "redemption": true,
   "atonement": true,
-  "herbal medicine": false,
+  "herbal medicine": true,
   "heresy": true,
   "sanctity": true,
   "fervor": true,
   "devotion": true,
   "faith": true,
-  "illumination": false,
-  "block printing": false,
+  "illumination": true,
+  "block printing": true,
   "theocracy": true,
 
   // Town Center
@@ -256,7 +240,7 @@ export const turks: Civilization = {
   "imperial age": true,
 
   // Economy
-  "mule cart": false,
+  "mule cart": true,
   "mining camp": true,
   "gold mining": true,
   "stone mining": true,
@@ -265,7 +249,7 @@ export const turks: Civilization = {
   "lumber camp": true,
   "double bit axe": true,
   "bow saw": true,
-  "two man saw": true,
+  "two man saw": false,
   "mill": true,
   "farm": true,
   "heavy plow": true,

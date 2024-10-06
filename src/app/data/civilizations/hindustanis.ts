@@ -50,6 +50,7 @@ export const hindustanis: Civilization = {
   "squires": true,
   "arson": true,
   "supplies": true,
+  "gambesons": false,
 
   // Stable
   "stable": true,
@@ -137,6 +138,7 @@ export const hindustanis: Civilization = {
   "war galley": true,
   "galleon research": true,
   "galleon": true,
+  "dromon": false,
   "careening": true,
   "dry dock": false,
   "shipwright": false,
@@ -181,6 +183,7 @@ export const hindustanis: Civilization = {
 
   // Monastery
   "monastery": true,
+  "fortified church": false,
   "monk": true,
   "redemption": true,
   "atonement": false,
@@ -188,6 +191,7 @@ export const hindustanis: Civilization = {
   "heresy": false,
   "sanctity": true,
   "fervor": true,
+  "devotion": true,
   "faith": true,
   "illumination": true,
   "block printing": true,
@@ -206,6 +210,7 @@ export const hindustanis: Civilization = {
   "imperial age": true,
 
   // Economy
+  "mule cart": false,
   "mining camp": true,
   "gold mining": true,
   "stone mining": true,
@@ -227,7 +232,7 @@ export const hindustanis: Civilization = {
   "coinage": true,
   "caravan": true,
   "banking": true,
-  "guilds": true,
+  "guilds": false,
 
   // Misc
   "dark age": true,

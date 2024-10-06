@@ -50,6 +50,7 @@ export const gurjaras: Civilization = {
   "squires": false,
   "arson": true,
   "supplies": true,
+  "gambesons": false,
 
   // Stable
   "stable": true,
@@ -137,6 +138,7 @@ export const gurjaras: Civilization = {
   "war galley": true,
   "galleon research": true,
   "galleon": true,
+  "dromon": false,
   "careening": true,
   "dry dock": false,
   "shipwright": true,
@@ -181,6 +183,7 @@ export const gurjaras: Civilization = {
 
   // Monastery
   "monastery": true,
+  "fortified church": false,
   "monk": true,
   "redemption": true,
   "atonement": true,
@@ -188,6 +191,7 @@ export const gurjaras: Civilization = {
   "heresy": true,
   "sanctity": true,
   "fervor": true,
+  "devotion": true,
   "faith": false,
   "illumination": true,
   "block printing": false,
@@ -206,6 +210,7 @@ export const gurjaras: Civilization = {
   "imperial age": true,
 
   // Economy
+  "mule cart": false,
   "mining camp": true,
   "gold mining": true,
   "stone mining": true,

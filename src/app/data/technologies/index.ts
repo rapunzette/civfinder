@@ -86,6 +86,7 @@ import { gold_shaft_mining } from './gold_shaft_mining';
 import { stone_mining } from './stone_mining';
 import { gold_mining } from './gold_mining';
 import { mining_camp } from './mining_camp';
+import { mule_cart } from './mule_cart';
 import { wonder } from './wonder';
 
 ;
@@ -102,6 +103,7 @@ import { house } from './house';
 import { theocracy } from './theocracy';
 import { block_printing } from './block_printing';
 import { illumination } from './illumination';
+import { devotion } from './devotion';
 import { faith } from './faith';
 import { fervor } from './fervor';
 import { sanctity } from './sanctity';
@@ -111,6 +113,7 @@ import { atonement } from './atonement';
 import { redemption } from './redemption';
 import { monk } from './monk';
 import { monastery } from './monastery';
+import { fortified_church } from './fortified_church';
 import { spies } from './spies';
 import { conscription } from './conscription';
 import { sappers } from './sappers';
@@ -141,6 +144,7 @@ import { university } from './university';
 import { shipwright } from './shipwright';
 import { dry_dock } from './dry_dock';
 import { galleon } from './galleon';
+import { dromon } from './dromon';
 import { heavy_demo_ship } from './heavy_demo_ship';
 import { elite_cannon_galleon } from './elite_cannon_galleon';
 import { cannon_galleon } from './cannon_galleon';
@@ -210,6 +214,7 @@ import { pikeman } from './pikeman';
 import { halberdier } from './halberdier';
 import { elite_eagle_warrior } from './elite_eagle_warrior';
 import { squires } from './squires';
+import { gambesons } from './gambesons';
 import { arson } from './arson';
 import { eagle_warrior } from './eagle_warrior';
 import { two_handed_swordsman } from './two_handed_swordsman';
@@ -258,6 +263,7 @@ export { gold_shaft_mining } from './gold_shaft_mining';
 export { stone_mining } from './stone_mining';
 export { gold_mining } from './gold_mining';
 export { mining_camp } from './mining_camp';
+export { mule_cart } from './mule_cart';
 export { wonder } from './wonder';
 export { imperial_age } from './imperial_age';
 export { castle_age } from './castle_age';
@@ -273,6 +279,7 @@ export { house } from './house';
 export { theocracy } from './theocracy';
 export { block_printing } from './block_printing';
 export { illumination } from './illumination';
+export { devotion } from './devotion';
 export { faith } from './faith';
 export { fervor } from './fervor';
 export { sanctity } from './sanctity';
@@ -282,6 +289,7 @@ export { atonement } from './atonement';
 export { redemption } from './redemption';
 export { monk } from './monk';
 export { monastery } from './monastery';
+export { fortified_church } from './fortified_church';
 export { spies } from './spies';
 export { conscription } from './conscription';
 export { sappers } from './sappers';
@@ -312,6 +320,7 @@ export { university } from './university';
 export { shipwright } from './shipwright';
 export { dry_dock } from './dry_dock';
 export { galleon } from './galleon';
+export { dromon } from './dromon';
 export { heavy_demo_ship } from './heavy_demo_ship';
 export { elite_cannon_galleon } from './elite_cannon_galleon';
 export { cannon_galleon } from './cannon_galleon';
@@ -378,6 +387,7 @@ export { pikeman } from './pikeman';
 export { halberdier } from './halberdier';
 export { elite_eagle_warrior } from './elite_eagle_warrior';
 export { squires } from './squires';
+export { gambesons } from './gambesons';
 export { arson } from './arson';
 export { eagle_warrior } from './eagle_warrior';
 export { two_handed_swordsman } from './two_handed_swordsman';
@@ -415,6 +425,7 @@ export const technologies: Technology[] = [
   pikeman,
   eagle_warrior,
   squires,
+  gambesons,
   arson,
   two_handed_swordsman,
   champion,
@@ -491,6 +502,7 @@ export const technologies: Technology[] = [
   elite_cannon_galleon,
   heavy_demo_ship,
   galleon,
+  dromon,
   dry_dock,
   shipwright,
   university,
@@ -521,6 +533,7 @@ export const technologies: Technology[] = [
   conscription,
   spies,
   monastery,
+  fortified_church,
   monk,
   redemption,
   atonement,
@@ -528,6 +541,7 @@ export const technologies: Technology[] = [
   heresy,
   sanctity,
   fervor,
+  devotion,
   faith,
   illumination,
   block_printing,
@@ -545,6 +559,7 @@ export const technologies: Technology[] = [
   imperial_age,
   wonder,
   mining_camp,
+  mule_cart,
   gold_mining,
   stone_mining,
   gold_shaft_mining,

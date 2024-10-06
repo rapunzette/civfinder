@@ -92,6 +92,7 @@ export const dravidians: Civilization = {
   "squires": true,
   "arson": true,
   "supplies": true,
+  "gambesons": true,
 
   // Stable
   "stable": true,
@@ -136,7 +137,7 @@ export const dravidians: Civilization = {
   "heavy scorpion research": true,
   "heavy scorpion": true,
   "siege tower": true,
-  "bombard cannon": false,
+  "bombard cannon": true,
 
   // Blacksmith
   "blacksmith": true,
@@ -179,6 +180,7 @@ export const dravidians: Civilization = {
   "war galley": true,
   "galleon research": true,
   "galleon": true,
+  "dromon": false,
   "careening": true,
   "dry dock": true,
   "shipwright": true,
@@ -223,6 +225,7 @@ export const dravidians: Civilization = {
 
   // Monastery
   "monastery": true,
+  "fortified church": false,
   "monk": true,
   "redemption": false,
   "atonement": true,
@@ -230,6 +233,7 @@ export const dravidians: Civilization = {
   "heresy": false,
   "sanctity": true,
   "fervor": false,
+  "devotion": true,
   "faith": true,
   "illumination": false,
   "block printing": true,
@@ -248,6 +252,7 @@ export const dravidians: Civilization = {
   "imperial age": true,
 
   // Economy
+  "mule cart": false,
   "mining camp": true,
   "gold mining": true,
   "stone mining": true,

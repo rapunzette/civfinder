@@ -15,6 +15,7 @@ export interface Civilization {
   "eagle warrior": boolean;
   "squires": boolean;
   "arson": boolean;
+  "gambesons": boolean;
   "two handed swordsman": boolean;
   "champion": boolean;
   "halberdier": boolean;
@@ -90,6 +91,7 @@ export interface Civilization {
   "elite cannon galleon": boolean;
   "heavy demo ship": boolean;
   "galleon": boolean;
+  "dromon": boolean;
   "dry dock": boolean;
   "shipwright": boolean;
   "university": boolean;
@@ -120,6 +122,7 @@ export interface Civilization {
   "conscription": boolean;
   "spies": boolean;
   "monastery": boolean;
+  "fortified church": boolean;
   "monk": boolean;
   "redemption": boolean;
   "atonement": boolean;
@@ -127,6 +130,7 @@ export interface Civilization {
   "heresy": boolean;
   "sanctity": boolean;
   "fervor": boolean;
+  "devotion": boolean;
   "faith": boolean;
   "illumination": boolean;
   "block printing": boolean;
@@ -143,6 +147,7 @@ export interface Civilization {
   "castle age": boolean;
   "imperial age": boolean;
   "wonder": boolean;
+  "mule cart": boolean;
   "mining camp": boolean;
   "gold mining": boolean;
   "stone mining": boolean;
